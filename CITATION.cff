@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "Evidence for Universal Scale Coupling Across 61 Orders of Magnitude (V2)"
+message: "If you use this software or data, please cite it as below."
+type: software
+authors:
+  - family-names: Murphy
+    given-names: Adam
+    orcid: "https://orcid.org/0009-0000-5101-2683"
+    email: adam@impactme.ai
+    affiliation: "Independent Researcher"
+repository-code: "https://github.com/adammurphy-ie/QH-universal-delta"
+abstract: >-
+  This repository contains the complete submission package for "Evidence for 
+  Universal Scale Coupling Across 61 Orders of Magnitude", demonstrating a 
+  universal scaling parameter δ = 0.502 ± 0.031 that connects quantum 
+  decoherence experiments to cosmological observations with 0.1σ agreement 
+  and no tuned parameters.
+keywords:
+  - quantum mechanics
+  - cosmology
+  - scaling laws
+  - universal constants
+  - decoherence
+  - dark energy
+license: 
+  - MIT
+  - CC-BY-4.0
+version: "v2.0-pre"
+date-released: "2025-01-15"
+preferred-citation:
+  type: article
+  title: "Evidence for Universal Scale Coupling Across 61 Orders of Magnitude"
+  authors:
+    - family-names: Murphy
+      given-names: Adam
+      orcid: "https://orcid.org/0009-0000-5101-2683"
+  journal: "Physical Review X"
+  year: 2025
+  status: submitted
+  abstract: >-
+    We present evidence for a universal scale coupling parameter δ that 
+    describes quantum-to-cosmological scaling across 61 orders of magnitude. 
+    Through hierarchical analysis of quantum decoherence experiments, we find 
+    μ_δ = 0.502 ± 0.031 with ΔBIC = 27.4 strongly favoring universality over 
+    domain-specific couplings. Laboratory measurements predict cosmological 
+    observations with 0.1σ agreement and no adjustable parameters.
+  doi: "TBD"  # Will be updated when DOI is assigned
