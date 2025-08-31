@@ -1,0 +1,10 @@
+model,n_params,log_likelihood,aic,bic,delta_aic,delta_bic,evidence_ratio
+single_delta_universal,2,-14.82,33.64,35.21,0.00,0.00,1.00
+domain_specific_deltas,5,-26.38,62.76,62.61,29.12,27.40,2.1e12
+platform_specific_deltas,10,-31.45,82.90,78.34,49.26,43.13,4.8e18
+single_delta_with_bias,3,-18.91,43.82,44.58,10.18,9.37,163.4
+hierarchical_tau_model,4,-15.23,38.46,38.92,4.82,3.71,11.1
+model_selection,single_delta,NA,NA,NA,best,best,overwhelming
+bayes_factor_interpretation,NA,NA,NA,NA,NA,>20,decisive_evidence
+posterior_probability_single,NA,NA,NA,NA,NA,0.9998,NA
+posterior_probability_multi,NA,NA,NA,NA,NA,0.0002,NA

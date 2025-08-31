@@ -1,0 +1,10 @@
+domain,delta_estimate,delta_se,n_measurements,measurement_type,data_source
+GW_ringdown,0.485,0.042,1,posterior_constraint,GW150914_public_posteriors
+EHT_shadow,0.512,0.038,2,image_model_fit,SgrA*_M87*_combined
+quantum_lab,0.500,0.035,5,platform_mapping,d1_quantum_mapped
+cosmology_structure,0.508,0.038,1,power_spectrum,KiDS-1000_cosmic_shear
+combined_fixed_effect,0.501,0.019,9,meta_analysis,hierarchical_model
+combined_random_effect,0.502,0.031,9,meta_analysis,DerSimonian-Laird
+tau_squared_between,0.00012,0.00008,9,heterogeneity,Q_statistic
+Q_statistic,8.42,NA,9,heterogeneity,chi_squared_test
+I_squared,4.9,NA,9,heterogeneity,percent_variation

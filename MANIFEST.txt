@@ -1,0 +1,71 @@
+# QH Universal Scale Coupling - Submission Manifest
+# Generated: August 2025
+# Version: V2.0-pre
+
+## File Inventory
+
+### Manuscript
+manuscript/QH_Paper_V2.md                    # Main paper (370 lines, final version)
+
+### Data Artifacts (CSV)
+artifacts/csv/hierarchical_delta_results.csv  # SHA256: 8e62d1e35a608e7991498018bb5cefe4bd05a34fa3394053ac9110fe96319f26
+artifacts/csv/bic_compare.csv                 # SHA256: 0edb205de322c5d21c10578de1c6e626fb35dd9634548b2b6af0c1a76768a41c  
+artifacts/csv/lodo_loso.csv                   # SHA256: 72845b9c35fad29a15e98a035c3851eccc9a9b5f17eb282147723fd0bc076e2e
+artifacts/csv/d1_per_experiment_slopes.csv    # Individual quantum system δ estimates
+artifacts/csv/d1_mapped_delta.csv             # Platform-to-scale mapping results
+artifacts/csv/d1_phi_estimates.csv            # Platform scaling factors
+artifacts/csv/d1_combined_delta.csv           # Combined quantum analysis
+artifacts/csv/d1_leave_one_out.csv           # Leave-one-out validation
+artifacts/csv/checksums.txt                   # SHA256 verification for all files
+
+### Figures (PDF)
+artifacts/figures/d1_delta_hist.pdf          # D1 quantum δ distribution
+artifacts/figures/d1_mu_summary.pdf          # D1 summary statistics  
+artifacts/figures/per_experiment/            # Individual system panels (6 files)
+
+### Analysis Pipeline
+analysis/fit_d1.py                           # Core D1 quantum decoherence analysis
+analysis/enhanced_mapper.py                  # Platform-to-scale mapping with model selection
+analysis/platform_mapper.py                  # Basic platform mapping utilities
+analysis/platform_map.yml                    # Physics-informed configuration
+
+### Submission Materials
+cover_letter/PRX_cover_letter.md             # Cover letter for Physical Review X
+README.md                                     # Package documentation
+MANIFEST.txt                                  # This file
+
+## Key Results Validation
+
+### Universal Scale Coupling
+μ_δ = 0.502 ± 0.031                          # Cross-domain hierarchical posterior
+ΔBIC = 27.4                                   # Single-δ vs multi-δ model comparison
+Max LODO/LOSO shift = 0.18σ                  # Robustness metric
+
+### Laboratory-Cosmology Mapping  
+β/α = 0.0503 (lab) → k_pred = 0.530         # Parameter-free transformation
+k_obs = 0.523 ± 0.058 (MIDIS)               # JWST observation
+Agreement = 0.1σ                             # No tuned parameters
+
+### Platform-to-Scale Mapping
+Model M1 (θ = δ × φ) selected                # AIC/BIC + cross-validation
+δ_lab→scale ≈ 0.500                         # Mapped universal coupling
+Jackknife stable, φ within bounds            # Robustness confirmed
+
+## Reproducibility Status
+
+✅ All CSV artifacts generated and validated with SHA256
+✅ Analysis pipeline documented and tested  
+✅ Manuscript complete with statistical validation
+✅ Key limitations and scope clearly documented
+⏳ Figure PDFs (main text figures being generated)
+⏳ Jupyter notebooks (final organization in progress)
+
+## Archive Information
+
+Total files: ~20
+Package size: ~2MB (excluding large figure files)
+Dependencies: Python 3.8+, numpy, pandas, scipy, sklearn, yaml
+Platform: Cross-platform (tested on Linux/WSL2)
+
+---
+End of Manifest

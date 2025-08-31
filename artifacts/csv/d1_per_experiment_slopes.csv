@@ -1,0 +1,8 @@
+system_id,system,env_tag,n_points_used,window_min_S,window_max_S,delta_fit_local,delta_fit_se,include_in_aggregate,rationale
+1,NV center,300 K,5,1.0,512.0,0.7583186008869155,0.026335609726762896,True,Included
+1,NV center,77 K,0,,,,,False,Too few points (1 < 3)
+2,Si:P donor spin,1.7 K,5,1.0,940.0,1.0791543421222693,0.04887499049693215,True,Included
+4,Superconducting cat code,10 mK,4,1.0,6.25,0.9483778021785461,0.06126376715102656,True,Included
+5,Transmon qubit,10 mK,4,1.0,64.0,0.7161919697514018,0.0141641050433157,True,Included
+7,Optomechanical membrane/drum,20 mK,4,1.0,100.0,0.8700090079138675,0.017434726111170657,True,Included
+9,Rydberg atom arrays,micro-K,0,,,,,False,Too few points (5 < 3)

@@ -1,0 +1,107 @@
+# Platform-to-Scale Mapping Configuration
+# Maps lab control parameters to effective information scale S_eff = S_norm^phi
+# Physics-informed bounds based on theoretical expectations
+
+platforms:
+  nv_center:
+    system_id: 1
+    description: "NV center dynamical decoupling (XY8/CPMG)"
+    control_parameter: "N_DD (pulse count)"
+    physics_basis: "Filter function theory - spectral narrowing vs bath spectrum"
+    phi_bounds: [0.8, 1.6]  # From filter function cutoff theory
+    phi_prior_mean: 1.2
+    phi_prior_std: 0.2
+    theory_notes: "τ ∝ N_DD^φ where φ depends on bath spectrum γ. For 1/f: φ≈1-1.5"
+    references: ["10.1038/ncomms2771", "arxiv.org/pdf/1211.7094"]
+    
+  si_p_donor:
+    system_id: 2
+    description: "Si:P donor isotopic purification" 
+    control_parameter: "1/c29 (inverse 29Si fraction)"
+    physics_basis: "Spectral diffusion - nuclear spin bath dilution & correlation time"
+    phi_bounds: [0.8, 1.3]  # Bath dilution theory + clustering effects
+    phi_prior_mean: 1.0
+    phi_prior_std: 0.15
+    theory_notes: "T2 ∝ (1/c29)^φ. Linear dilution φ=1, but clustering gives φ<1.3"
+    references: ["arxiv.org/pdf/cond-mat/0512323", "10.1103/PhysRevB.92.165201"]
+    
+  cat_code:
+    system_id: 4
+    description: "Superconducting cat codes (stabilized)"
+    control_parameter: "alpha^2 (cat separation)"
+    physics_basis: "Exponential error suppression vs phase space distance"
+    phi_bounds: [1.0, 1.6]  # Exponential protection theory
+    phi_prior_mean: 1.3
+    phi_prior_std: 0.2
+    theory_notes: "Logical T1 ∝ exp(α²) in ideal limit, but φ>1 from error syndrome coupling"
+    references: ["arxiv.org/abs/2307.06617", "10.1038/s41467-023-42057-0"]
+    
+  transmon:
+    system_id: 5
+    description: "Transmon dynamical decoupling (pre-floor)"
+    control_parameter: "N_DD (sequence depth)"
+    physics_basis: "CPMG filter function - charge/flux noise suppression" 
+    phi_bounds: [0.9, 1.5]  # Similar to NV, 1/f^α spectrum with α≈1
+    phi_prior_mean: 1.1
+    phi_prior_std: 0.2
+    theory_notes: "T2 ∝ N_DD^φ with φ≈1-1.3 for 1/f charge noise, sub-Ohmic coupling"
+    references: ["arxiv.org/pdf/2207.03670", "arxiv.org/pdf/1807.08768"]
+    
+  optomech:
+    system_id: 7
+    description: "Optomechanical oscillator (fixed temperature)"
+    control_parameter: "Q (mechanical quality factor)"
+    physics_basis: "Thermal bath coupling - intrinsic vs external damping"
+    phi_bounds: [0.8, 1.2]  # Linear in ideal limit, sublinear from coupling
+    phi_prior_mean: 1.0
+    phi_prior_std: 0.15
+    theory_notes: "τ ∝ Q^φ where φ=1 if Q∝γ⁻¹, but φ<1 if external coupling dominates"
+    references: ["10.1038/nature13029", "arxiv.org/pdf/1406.7254"]
+
+# Model selection framework
+model_selection:
+  models:
+    M1_multiplicative:
+      formula: "theta = delta * phi"  # Protection = universal × scaling
+      description: "Multiplicative scaling model"
+      phi_interpretation: "Scale enhancement factor"
+    
+    M2_divisive:
+      formula: "theta = delta / phi"  # Protection = universal / efficiency  
+      description: "Divisive mapping model"
+      phi_interpretation: "Control efficiency factor"
+    
+    M3_power:
+      formula: "theta = delta * (phi ** beta)"  # Flexible power law
+      description: "Flexible power-law model"
+      phi_interpretation: "Scale factor with fitted exponent"
+      additional_params: ["beta"]
+      beta_bounds: [0.1, 3.0]
+      beta_prior_mean: 1.0
+      beta_prior_std: 0.5
+
+  selection_criteria:
+    - "AIC"  # Akaike Information Criterion
+    - "BIC"  # Bayesian Information Criterion  
+    - "cross_validation_score"
+    - "physics_consistency"
+
+# Meta-regression settings
+meta_regression:
+  method: "model_comparison_with_cv"
+  objective: "minimize_tau_squared_between"
+  cross_validation:
+    folds: 4  # Reduced for small sample size
+    seed: 42
+    metric: "log_likelihood"
+  convergence:
+    max_iterations: 1000
+    tolerance: 1e-6
+  bounds_enforcement: "strict"  # Respect physics bounds
+  
+# Output settings  
+output:
+  export_raw: true           # Keep raw delta_local results
+  export_mapped: true        # Export renormalized delta_true
+  export_phi_estimates: true # Export fitted phi values
+  comparison_plots: true     # Generate before/after comparisons
