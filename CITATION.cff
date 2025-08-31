@@ -34,9 +34,7 @@ preferred-citation:
     - family-names: Murphy
       given-names: Adam
       orcid: "https://orcid.org/0009-0000-5101-2683"
-  journal: "Physical Review X"
-  year: 2025
-  status: submitted
+
   abstract: >-
     We present evidence for a universal scale coupling parameter δ that 
     describes quantum-to-cosmological scaling across 61 orders of magnitude. 
