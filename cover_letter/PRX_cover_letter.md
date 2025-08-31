@@ -34,7 +34,7 @@ We include:
 
 Artifacts: `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`. 
 
-An anonymized archive is staged for review.
+Complete reproducibility package available at: https://github.com/wsuduce/QH_submission_package
 
 ## Impact and Falsifiability
 

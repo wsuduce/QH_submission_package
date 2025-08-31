@@ -106,11 +106,18 @@ QH_submission_package/
 }
 ```
 
+## Repository
+
+**GitHub:** https://github.com/wsuduce/QH_submission_package  
+**Archive:** One-command reproducibility: `conda env create -f environment.yml && conda activate qh-delta && make all`  
+**License:** MIT (code) + CC-BY-4.0 (data)
+
 ## Contact
 
 Adam Murphy  
 Independent Researcher  
-adam@impactme.ai
+adam@impactme.ai  
+ORCID: https://orcid.org/0009-0000-5101-2683
 
 ---
 

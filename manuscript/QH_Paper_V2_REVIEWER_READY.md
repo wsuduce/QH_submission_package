@@ -422,7 +422,7 @@ Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the 
 
 ## Data Availability — artifact snapshot
 
-All datasets and analysis code will be made public upon acceptance; an anonymized archive is available to editors and reviewers during peer review.
+All datasets and analysis code are publicly available at https://github.com/wsuduce/QH_submission_package with complete reproducibility documentation.
 
 **Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`.
 
