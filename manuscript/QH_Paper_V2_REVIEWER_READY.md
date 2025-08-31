@@ -422,7 +422,11 @@ Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the 
 
 ## Data Availability — artifact snapshot
 
-All datasets and analysis code are publicly available at https://github.com/wsuduce/QH_submission_package with complete reproducibility documentation.
+All datasets and analysis code are publicly available with complete reproducibility documentation:
+
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.17010399  
+**GitHub:** https://github.com/wsuduce/QH_submission_package (tag v2.3-pre)  
+**Archive:** One-command reproducibility: `conda env create -f environment.yml && conda activate qh-delta && make all`
 
 **Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`.
 

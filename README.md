@@ -1,5 +1,7 @@
 # QH Universal Scale Coupling - Submission Package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17010399.svg)](https://doi.org/10.5281/zenodo.17010399)
+
 **Paper:** Evidence for Universal Scale Coupling Across 61 Orders of Magnitude  
 **Version:** v2.3-pre  
 **Date:** August 2025  

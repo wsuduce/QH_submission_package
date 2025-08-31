@@ -30,3 +30,4 @@ preferred-citation:
   journal: "Physical Review X"
   year: 2025
   abstract: "We present evidence for a universal scale coupling parameter delta that describes quantum-to-cosmological scaling across 61 orders of magnitude. Through hierarchical analysis of quantum decoherence experiments, we find mu_delta = 0.502 ± 0.031 with DELTA BIC = 27.4 strongly favoring universality over domain-specific couplings. Laboratory measurements predict cosmological observations with 0.1 sigma agreement and no adjustable parameters."
+  doi: "10.5281/zenodo.17010399"
