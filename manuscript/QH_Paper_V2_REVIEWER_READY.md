@@ -8,7 +8,7 @@
 
 <!-- Version Stamp -->
 
-**Manuscript ID:** QH‑δ/V2 • **Draft:** V2.0‑pre • **Timestamp (PT):** 2025‑08‑29 14:06 • **Editor:** AM + GPT • **Commit:** *pending*
+**Manuscript ID:** QH‑δ/V2 • **Draft:** v2.3‑pre • **Timestamp (PT):** 2025‑08‑31 16:30 • **Editor:** AM + GPT • **Commit:** *ready*
 **Change set:** Abstract toned to “evidence,” priors/uncertainties noted; BAO reframed as fractional distance‑indicator shift; DESI w(0.5) corrected to ≈ −1.009; §6 Statistical Validation added (priors/likelihoods/correlations + LODO/LOSO scaffold); §7 Key Limitations added; Appendix D1 δ\_quantum provenance table added; Appendix E Assertions map added; MIDIS k updated to **0.523 ± 0.058** via script replication; Lab platform‑to‑scale mapping integrated (M1 selected by BIC/CV; δ_lab→scale ≈ 0.500, consistent with cross‑domain δ).
 
 ## Abstract

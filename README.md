@@ -1,7 +1,7 @@
 # QH Universal Scale Coupling - Submission Package
 
 **Paper:** Evidence for Universal Scale Coupling Across 61 Orders of Magnitude  
-**Version:** V2.0-pre  
+**Version:** v2.3-pre  
 **Date:** August 2025  
 **Author:** Adam Murphy  
 
@@ -85,7 +85,7 @@ QH_submission_package/
 
 ## Reviewer Response Summary
 
-**Added in V2.0-reviewer:**
+**Added in v2.3-reviewer:**
 - §2.1.1: Physical basis for platform-to-scale mapping with φ bounds  
 - §6.3: Complete parameter provenance for α, β, γ, ε  
 - TDF intuition paragraph in §3 Mathematical Framework  

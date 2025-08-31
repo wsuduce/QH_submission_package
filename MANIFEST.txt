@@ -1,6 +1,6 @@
 # QH Universal Scale Coupling - Submission Manifest
 # Generated: August 2025
-# Version: V2.0-pre
+# Version: v2.3-pre
 
 ## File Inventory
 
