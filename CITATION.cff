@@ -25,8 +25,8 @@ keywords:
 license: 
   - MIT
   - CC-BY-4.0
-version: "v2.0-pre"
-date-released: "2025-01-15"
+version: "v2.3-pre"
+date-released: "2025-08-31"
 preferred-citation:
   type: article
   title: "Evidence for Universal Scale Coupling Across 61 Orders of Magnitude"
@@ -34,7 +34,9 @@ preferred-citation:
     - family-names: Murphy
       given-names: Adam
       orcid: "https://orcid.org/0009-0000-5101-2683"
-
+  journal: "Physical Review X"
+  year: 2025
+  status: "in preparation"
   abstract: >-
     We present evidence for a universal scale coupling parameter δ that 
     describes quantum-to-cosmological scaling across 61 orders of magnitude. 
