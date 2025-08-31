@@ -30,7 +30,7 @@ We include:
 - Complete analysis pipeline with documented scripts
 - All data artifacts with SHA256 verification 
 - Physics-informed configuration files
-- One-command reproducibility (in preparation)
+- One-command reproducibility provided (make all)
 
 Artifacts: `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`. 
 
@@ -59,10 +59,10 @@ Sincerely,
 
 Adam Murphy  
 Independent Researcher  
-[Contact details for correspondence]
+adam@impact.me.ai
 
 ---
 
-**Manuscript:** QH_Paper_V2.md  
+**Manuscript:** QH_Paper_V2_REVIEWER_READY.md  
 **Supplementary Materials:** Complete reproducibility package  
 **Suggested Referees:** [To be provided based on journal guidelines]
