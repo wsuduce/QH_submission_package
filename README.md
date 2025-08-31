@@ -110,7 +110,7 @@ QH_submission_package/
 
 Adam Murphy  
 Independent Researcher  
-[Contact information for correspondence]
+adam@impactme.ai
 
 ---
 
