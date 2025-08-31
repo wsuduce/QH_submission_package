@@ -9,7 +9,7 @@
 <!-- Version Stamp -->
 
 **Manuscript ID:** QH‑δ/V2 • **Draft:** V2.0‑pre • **Timestamp (PT):** 2025‑08‑29 14:06 • **Editor:** AM + GPT • **Commit:** *pending*
-**Change set:** Abstract toned to “evidence,” priors/uncertainties noted; BAO reframed as fractional distance‑indicator shift; DESI w(0.5) corrected to ≈ −1.009; §6 Statistical Validation added (priors/likelihoods/correlations + LODO/LOSO scaffold); §7 Key Limitations added; Appendix D1 δ\_quantum provenance table added; Appendix E Assertions map added; MIDIS k updated to **0.523 ± 0.058** via script replication; Lab platform‑to‑scale mapping integrated (M1 selected by BIC/CV; δ\_lab→scale ≈ 0.500, consistent with cross‑domain δ).
+**Change set:** Abstract toned to “evidence,” priors/uncertainties noted; BAO reframed as fractional distance‑indicator shift; DESI w(0.5) corrected to ≈ −1.009; §6 Statistical Validation added (priors/likelihoods/correlations + LODO/LOSO scaffold); §7 Key Limitations added; Appendix D1 δ\_quantum provenance table added; Appendix E Assertions map added; MIDIS k updated to **0.523 ± 0.058** via script replication; Lab platform‑to‑scale mapping integrated (M1 selected by BIC/CV; δ_lab→scale ≈ 0.500, consistent with cross‑domain δ).
 
 ## Abstract
 
@@ -64,7 +64,7 @@ Using mass/distance priors and image-model systematics for Sgr A\* and M87\*, we
 (Posterior bands and priors detailed in Supplement §G; notebook eht\_delta\_constraint.ipynb)
 
 **Laboratory Quantum Entanglement**:
-Curated protection‑window fits across multiple platforms (NV center, Si\:P donors, stabilized cat codes, transmons, optomechanics) yield **platform protection exponents** θ (raw, per platform; typically 0.7–1.1). A **physics‑informed platform‑to‑scale mapping** was then applied to compare lab measurements to the universal coupling axis. Model selection (AIC/BIC with cross‑validation) **strongly favors M1: θ = δ × φ** over M2/M3; the mapped lab‑to‑scale coupling is **δ\_lab→scale ≈ 0.500** with **negligible jackknife shift**, and φ values within theory bounds. This agrees with the cross‑domain posterior δ = 0.502 ± 0.031 within \~0.1σ. (See Appendix D4 and artifacts: `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`.)
+Curated protection‑window fits across multiple platforms (NV center, Si\:P donors, stabilized cat codes, transmons, optomechanics) yield **platform protection exponents** θ (raw, per platform; typically 0.7–1.1). A **physics‑informed platform‑to‑scale mapping** was then applied to compare lab measurements to the universal coupling axis. Model selection (AIC/BIC with cross‑validation) **strongly favors M1: θ = δ × φ** over M2/M3; the mapped lab‑to‑scale coupling is **δ_lab→scale ≈ 0.500** with **negligible jackknife shift**, and φ values within theory bounds. This agrees with the cross‑domain posterior δ = 0.502 ± 0.031 within \~0.1σ. (See Appendix D4 and artifacts: `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`.)
 
 #### 2.1.1 Physical Basis for Platform-to-Scale Mapping
 
@@ -88,7 +88,7 @@ Matter power spectrum analysis reveals scale-dependent growth:
 * Result: δ_cosmo = 0.508 ± 0.038
 
 **Hierarchical Analysis**:
-A hierarchical model with domain-level δᵢ \~ N(μ\_δ, τ²) strongly favors τ → 0 (single δ) over free τ with ΔBIC ≫ 10. Leave-one-domain-out tests confirm this preference.
+A hierarchical model with domain-level δᵢ \~ N(μ_δ, τ²) strongly favors τ → 0 (single δ) over free τ with ΔBIC ≫ 10. Leave-one-domain-out tests confirm this preference.
 
 * Combined constraint: δ = 0.502 ± 0.031
 * Model comparison: χ²/dof = 0.97 (p = 0.41)
@@ -112,17 +112,17 @@ The QH temporal distribution function uses a dimensionless time coordinate, cons
 
 du/dz = E(z) ≡ H(z)/H₀
 
-where E(z) = √(Ω\_m(1+z)³ + Ω\_Λ) is the dimensionless expansion rate.
+where E(z) = √(Ω_m(1+z)³ + Ω_Λ) is the dimensionless expansion rate.
 
 An intrinsic decay exp\[-(β/α)u] in the temporal distribution function therefore appears observationally as exp\[-kz] with:
 
 **k(z) = (β/α)E(z)**
 
-Using the QH parameters α = 0.314, β = 0.0158, and Planck cosmology (Ω\_m = 0.315, Ω\_Λ = 0.685):
+Using the QH parameters α = 0.314, β = 0.0158, and Planck cosmology (Ω_m = 0.315, Ω_Λ = 0.685):
 
 * β/α = 0.0503
 * ⟨E(z)⟩\_\[4,8] = 10.54
-* k\_predicted = 0.530
+* k_predicted = 0.530
 
 This matches the MIDIS observation k_obs = 0.523 ± 0.058 within 0.1σ, with no adjustable parameters.
 
@@ -304,20 +304,20 @@ These trends are suggestive but not decisive; critical tests remain active and s
 
 ### 6.1 Inference setup (priors, likelihoods, correlations)
 
-* **Priors.** Domain parameters use uniform priors over physically motivated intervals; nuisance terms (e.g., distances, spins, intrinsic scatters) use normal priors from published posteriors. Hyperparameters (μ\_δ, τ) use broad, weakly informative priors.
+* **Priors.** Domain parameters use uniform priors over physically motivated intervals; nuisance terms (e.g., distances, spins, intrinsic scatters) use normal priors from published posteriors. Hyperparameters (μ_δ, τ) use broad, weakly informative priors.
 * **Likelihoods.** Gaussian likelihoods where residuals are consistent with normality; otherwise Student‑t (ν=5) to mitigate outliers. Weights take the larger of (propagated measurement error, cross‑domain scatter proxy).
-* **Correlations.** Cross‑domain correlations are bounded via sensitivity tests: we re‑fit with inflated covariance blocks and report stability; LODO/LOSO checks bound residual coupling. No single domain moves μ\_δ by >0.2σ.
+* **Correlations.** Cross‑domain correlations are bounded via sensitivity tests: we re‑fit with inflated covariance blocks and report stability; LODO/LOSO checks bound residual coupling. No single domain moves μ_δ by >0.2σ.
 * **Computation.** Ensemble MCMC with Gelman–Rubin (R̂<1.01) and long‑lag autocorrelation checks; chains and diagnostics are provided in the repository.
 
 ### 6.2 Model selection and robustness
 
 * **Model comparison.** Report ΔBIC vs. multi‑δ alternatives; show posterior predictive checks.
-* **Leave‑one‑out tests.** Provide LODO/LOSO tables; target max |Δμ\_δ| < 0.2σ.
+* **Leave‑one‑out tests.** Provide LODO/LOSO tables; target max |Δμ_δ| < 0.2σ.
 * **Ablations.** Spin‑prior windows (GW), distance/scattering inflations (EHT), exponent stress tests (M^{-0.6}→M^{-1/2}) as pre‑registered sensitivity checks.
 
-**LODO/LOSO summary (from `hierarchical_delta.ipynb`):** max |Δμ\_δ| = **0.18σ**. See `/artifacts/v2/csv/lodo_loso.csv` for full table.
+**LODO/LOSO summary (from `hierarchical_delta.ipynb`):** max |Δμ_δ| = **0.18σ**. See `/artifacts/v2/csv/lodo_loso.csv` for full table.
 
-| Dropped domain             | μ\_δ (all) | μ\_δ (drop) | Δ(μ\_δ)/σ | Note                                                           |
+| Dropped domain             | μ_δ (all) | μ_δ (drop) | Δ(μ_δ)/σ | Note                                                           |
 | -------------------------- | ---------: | ----------: | --------: | -------------------------------------------------------------- |
 | GW ringdown                |      0.502 |       0.504 |      0.06 | Posterior from public O(3/O4) events; conservative spin prior. |
 | EHT shadows                |      0.502 |       0.500 |     -0.06 | Distance/scattering systematics inflated by 50%.               |
@@ -361,11 +361,11 @@ All parameter posteriors and correlation matrices are provided in the repository
 
 ## Figures — captions (snapshot)
 
-**Figure 1. Cross‑domain δ constraints and posterior.** Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ\_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**). Artifacts: `/artifacts/v2/figures/fig1_delta_posterior.pdf`; CSVs: `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`.
+**Figure 1. Cross‑domain δ constraints and posterior.** Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**). Artifacts: `/artifacts/v2/figures/fig1_delta_posterior.pdf`; CSVs: `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`.
 
 **Figure 2. β/α → k mapping vs MIDIS.** Predicted k(z)=(β/α)E(z) (solid) vs JWST/MIDIS bins (z∈[4,8]); **k_obs = 0.523 ± 0.058**; mean predicted **0.530**; no tuned parameters. Artifact: `/artifacts/v2/figures/fig2_beta_over_alpha_to_k.pdf`; CSV: `midis_k_posterior.csv`.
 
-**Figure 3. Hierarchical model diagnostics.** Corner plot for (μ\_δ, τ) with posterior predictive checks and a ΔBIC bar chart; LODO/LOSO table excerpt. Artifact: `/artifacts/v2/figures/fig3_hierarchical_corner.pdf`; CSVs: `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`.
+**Figure 3. Hierarchical model diagnostics.** Corner plot for (μ_δ, τ) with posterior predictive checks and a ΔBIC bar chart; LODO/LOSO table excerpt. Artifact: `/artifacts/v2/figures/fig3_hierarchical_corner.pdf`; CSVs: `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`.
 
 **Figure 4. Gravitational‑wave forecast band.** Overtone frequency window for **M_f ∈ [70,90] M⊙**, **a* ≤ 0.7**: f≈420 Hz · (80 M⊙/M_f) with propagated δ, mass/spin, calibration uncertainties; 1/M trend shown across the window. Artifact: `/artifacts/v2/figures/fig4_ringdown_forecast.pdf`.
 
