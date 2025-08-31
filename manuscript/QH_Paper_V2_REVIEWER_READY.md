@@ -432,6 +432,11 @@ All datasets and analysis code are publicly available with complete reproducibil
 
 **Key artifacts (Figures/PDF):** `fig1_delta_posterior.pdf`, `fig2_beta_over_alpha_to_k.pdf`, `fig3_hierarchical_corner.pdf`, `fig4_ringdown_forecast.pdf`, `fig_D1_*` per‑experiment panels, `fig_D4_phi_posteriors.pdf`.
 
+**Archive Details:**
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.17010399  
+**GitHub Release:** https://github.com/wsuduce/QH_submission_package/releases/tag/v2.3-pre  
+**Archive SHA256:** Available upon request for verification
+
 ---
 
 ## References (sample - to be expanded)
