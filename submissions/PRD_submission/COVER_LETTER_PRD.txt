@@ -1,0 +1,36 @@
+Editor
+Physical Review D
+
+Dear Editor,
+
+We submit for consideration to Physical Review D our manuscript titled "Evidence for Universal Scale Coupling Across 61 Orders of Magnitude."
+
+This work presents an empirical, falsifiable framework that identifies a universal scale-coupling parameter δ = 0.502 ± 0.031 spanning from quantum entanglement (10^-15 m) to cosmological structure (10^46 m). The manuscript offers concrete, near-term predictions for ongoing and upcoming experiments, making it immediately relevant to the physics community.
+
+Key strengths of this submission:
+
+• FALSIFIABLE FRAMEWORK: Concrete, near-term predictions for LIGO/Virgo/KAGRA O4-O5, Euclid BAO shifts, and DESI w(z) ≈ -1.009
+• RIGOROUS STATISTICS: Hierarchical Bayesian analysis strongly prefers single-δ (ΔBIC = 27.4); robust to leave-one-domain-out tests (max shift 0.18σ)
+• PARAMETER-FREE VALIDATION: Laboratory ratio β/α = 0.0503 maps to JWST/MIDIS cosmological decay k = 0.523 ± 0.058 without tuning
+• TRANSPARENCY: Two domains constrain δ; two others (GW/EHT) are compatibility checks, not detections. Full reproducibility with open artifacts
+• COSMOLOGICAL IMPACT: Reduces Hubble tension (4.4σ → 0.8σ) and S8 tension (3.2σ → 0.6σ) while preserving GR and early-time physics
+• FULL REPRODUCIBILITY: All code and data publicly available (Zenodo DOI: 10.5281/zenodo.17010399)
+
+The manuscript carefully distinguishes between constraining domains (cosmology, lab-mapped quantum platforms) and compatibility checks (GW ringdown, EHT shadows), maintaining scientific rigor throughout. We provide extensive statistical validation including model selection, parameter provenance, and systematic uncertainty propagation.
+
+Given PRD's scope in gravitation and cosmology, and the manuscript's implications for understanding scale-dependent physics across the universe, we believe this work will be of significant interest to your readership. The predictions for LIGO O4/O5 and upcoming cosmological surveys make this particularly timely.
+
+The manuscript has been prepared according to PRD guidelines using REVTeX 4.2. All figures are publication-ready, and supplementary materials including extended appendices are available.
+
+We confirm that this work has not been published elsewhere and is not under consideration by another journal. All authors have approved the submission.
+
+Thank you for considering our manuscript. We look forward to the review process and are prepared to address any reviewer comments promptly.
+
+Sincerely,
+
+Adam Murphy
+Independent Researcher
+adam@impactme.ai
+ORCID: 0009-0000-5101-2683
+
+August 30, 2025

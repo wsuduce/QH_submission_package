@@ -1,11 +1,15 @@
 # QH Universal Scale Coupling - Submission Manifest
-# Generated: August 2025
-# Version: v2.3-pre
+# Generated: August 30, 2025
+# Version: v2.3-final
 
 ## File Inventory
 
 ### Manuscript
-manuscript/QH_Paper_V2.md                    # Main paper (370 lines, final version)
+manuscript/QH_Paper_V2_REVIEWER_READY.md     # Main paper (final submission version)
+manuscript/QH_Paper_V2_SUBMISSION_READY.pdf  # PDF for journal submission
+manuscript/appendix_F_addendum_phi_bounds.md # Extended φ-mapping discussion
+manuscript/appendix_H_gamma_interface_normalization.md # γ interface details
+manuscript/appendix_I_anomalous_dimension_sketch.md    # S^(-0.6) derivation
 
 ### Data Artifacts (CSV)
 artifacts/csv/hierarchical_delta_results.csv  # SHA256: 8e62d1e35a608e7991498018bb5cefe4bd05a34fa3394053ac9110fe96319f26
@@ -16,6 +20,8 @@ artifacts/csv/d1_mapped_delta.csv             # Platform-to-scale mapping result
 artifacts/csv/d1_phi_estimates.csv            # Platform scaling factors
 artifacts/csv/d1_combined_delta.csv           # Combined quantum analysis
 artifacts/csv/d1_leave_one_out.csv           # Leave-one-out validation
+artifacts/csv/exponent_stress_test.csv        # S^(-0.6) vs alternatives (ΔBIC validation)
+artifacts/csv/gamma_iface_sensitivity.csv     # γ interface area sensitivity (≤0.2σ shift)
 artifacts/csv/checksums.txt                   # SHA256 verification for all files
 
 ### Figures (PDF)

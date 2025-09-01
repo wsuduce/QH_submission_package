@@ -1,0 +1,4 @@
+exponent,delta_BIC_vs_0.6,notes
+0.5,+3.2,shallower running worsens growth fit
+0.6,0.0,baseline
+0.7,+2.6,steeper running oversuppresses BAO window

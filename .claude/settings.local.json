@@ -4,7 +4,17 @@
       "Read(/mnt/c/Business/**)",
       "Bash(sudo apt:*)",
       "Bash(sudo apt install:*)",
-      "Bash(pandoc:*)"
+      "Bash(pandoc:*)",
+      "Bash(find:*)",
+      "Bash(pdflatex:*)",
+      "Bash(bibtex:*)",
+      "Bash(timeout 60 pdflatex:*)",
+      "Bash(chmod:*)",
+      "Bash(python3:*)",
+      "Bash(pip install:*)",
+      "Bash(./scripts/generate_fig2_gnuplot.sh:*)",
+      "Bash(./REBUILD_ALL.sh)",
+      "Bash(./SIMPLE_REBUILD.sh:*)"
     ],
     "deny": [],
     "ask": []

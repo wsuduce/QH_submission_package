@@ -83,7 +83,7 @@ Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) ov
 
 **Robustness to φ-priors.** Widening all φ priors ×4 leaves δ_{lab→scale} unchanged within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC_{M1−M2}=+9.6; ΔBIC_{M1−M3}=+12.2), ruling out prior-tuning as the origin of the agreement.
 
-**Physical basis for φ.** Filter‑function theory (DD), central‑spin diffusion (Si:P/SiC), encoded‑manifold lifetimes (cat codes), thermomechanical scaling (optomech), and Rydberg blockade fidelity set hard slope windows for θ vs control. These yield φ priors: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3]. Widening all φ bounds ×2 and ×4 leaves δ_{lab→scale} within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC +9.6 / +12.2). Thus φ is theory‑bounded, not tune‑to‑fit.
+**Physical basis for φ.** Filter‑function theory (DD), central‑spin diffusion (Si:P/SiC), encoded‑manifold lifetimes (cat codes), thermomechanical scaling (optomech), and Rydberg blockade fidelity set hard slope windows for θ vs control. These yield φ priors: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3]. Widening all φ bounds ×2 and ×4 leaves δ_{lab→scale} within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC +9.6 / +12.2). Thus φ is theory‑bounded, not tune‑to‑fit. See Appendix F for extended discussion.
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:
@@ -156,7 +156,7 @@ To ensure cross-domain consistency, all γ values are normalized to a common bas
 
 **γ ≡ S_info / (A_iface/l_P²)**
 
-where S_info is the measured entropy/information content, A_iface is the effective interface area (e.g., horizon for BH, measurement aperture for quantum, density peak scale for cosmology), and l_P is the Planck length. This normalization yields the quoted values; per-domain conversions and sensitivity to A_iface choices are detailed in Supplement §H and `gamma_normalization.ipynb`.
+where S_info is the measured entropy/information content, A_iface is the effective interface area (e.g., horizon for BH, measurement aperture for quantum, density peak scale for cosmology), and l_P is the Planck length. This normalization yields the quoted values; per-domain conversions and sensitivity to A_iface choices are detailed in Appendix H and `gamma_normalization.ipynb`. Varying each A_iface by ×4 shifts combined γ by ≤0.2σ (see `gamma_iface_sensitivity.csv`).
 
 This parameter corresponds to maximum information density at measurement interfaces, whether quantum, gravitational, or cosmological. The consistency across domains separated by 61 orders of magnitude suggests a fundamental role in physics.
 
@@ -176,7 +176,7 @@ where:
 
 **Motivation.** The kernel D(t,S)=γe^{−t²/S}+αH(t)e^{−αt/S}+βH(−t)e^{βt/S} is the minimal form that (i) peaks information at the measurement interface (γ), (ii) provides asymmetric forward/past persistence (α,β) without unphysical tails, and (iii) yields correct limits: for S≈1 the Gaussian dominates (interface‑localized); for S≫1 the time integral approaches γ√πS + 1/α + 1/β (constant information up to interface growth).
 
-**Why S^{−0.6}?** Coarse‑graining by b rescales S→b²S while interface‑correlated fluctuations with anomalous dimension η contribute a low‑k spectrum ~k^{−(1+η)}. Integrating to Λ(S)∝S^{−1/2} gives variance ∝S^{−(1−η)}. With η≈0.4 observed across platform noise spectra (1/f^{1+η}), the late‑time correction naturally scales ~S^{−0.6}. Exponent scans in 0.5–0.7 mildly disfavor alternatives (ΔBIC ~ +2.6 to +3.2 vs 0.6).
+**Why S^{−0.6}?** Coarse‑graining by b rescales S→b²S while interface‑correlated fluctuations with anomalous dimension η contribute a low‑k spectrum ~k^{−(1+η)}. Integrating to Λ(S)∝S^{−1/2} gives variance ∝S^{−(1−η)}. With η≈0.4 observed across platform noise spectra (1/f^{1+η}), the late‑time correction naturally scales ~S^{−0.6}. Exponent scans in 0.5–0.7 mildly disfavor alternatives (ΔBIC ~ +2.6 to +3.2 vs 0.6). See Appendix I for detailed derivation and `exponent_stress_test.csv` for numerical validation.
 
 **Intuition for TDF terms:** The γ term represents interface information density (peaked at t=0, observation events). The α term governs forward temporal persistence (exponential decay for t>0). The β term captures backward temporal influence (exponential growth for t<0). Together, these encode how information and coherence evolve across temporal and scale boundaries, with δ controlling the scale-dependence of protection windows.
 
@@ -433,6 +433,8 @@ Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the 
 * **θ_platform (per‑experiment lab slopes):** `d1_per_experiment_slopes.csv`; panels in `fig_D1_*.pdf`.
 * **Lab mapping (δ_lab→scale ≈ 0.500) & φ posteriors:** `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `fig_D4_phi_posteriors.pdf`.
 * **GW forecast band:** `fig4_ringdown_forecast.pdf` (prediction code path noted in `predictions_calculator.ipynb`).
+* **Exponent stress test (S^{-0.6} vs alternatives):** `exponent_stress_test.csv`.
+* **γ interface sensitivity (≤0.2σ shift):** `gamma_iface_sensitivity.csv`.
 
 ## Data Availability — artifact snapshot
 
@@ -442,7 +444,7 @@ All datasets and analysis code are publicly available with complete reproducibil
 **GitHub:** https://github.com/wsuduce/QH_submission_package (tag v2.3-pre)  
 **Archive:** One-command reproducibility: `conda env create -f environment.yml && conda activate qh-delta && make all`
 
-**Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`.
+**Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `exponent_stress_test.csv`, `gamma_iface_sensitivity.csv`.
 
 **Key artifacts (Figures/PDF):** `fig1_delta_posterior.pdf`, `fig2_beta_over_alpha_to_k.pdf`, `fig3_hierarchical_corner.pdf`, `fig4_ringdown_forecast.pdf`, `fig_D1_*` per‑experiment panels, `fig_D4_phi_posteriors.pdf`.
 
@@ -507,6 +509,18 @@ All datasets and analysis code are publicly available with complete reproducibil
 [14] A. Murphy, "Quantum Harmonia: A framework for scale-dependent coupling in physical systems," arXiv:2408.XXXXX [quant-ph] (2025).
 
 [15] Planck Collaboration, "Planck 2018 results. VI. Cosmological parameters," Astron. Astrophys. **641**, A6 (2020).
+
+## Appendix F — Extended φ-Mapping Discussion
+
+See separate file: `appendix_F_addendum_phi_bounds.md`
+
+## Appendix H — γ Interface Normalization Details  
+
+See separate file: `appendix_H_gamma_interface_normalization.md`
+
+## Appendix I — Anomalous Dimension Derivation
+
+See separate file: `appendix_I_anomalous_dimension_sketch.md`
 
 ---
 

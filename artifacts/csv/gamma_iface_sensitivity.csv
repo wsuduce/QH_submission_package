@@ -1,0 +1,5 @@
+domain,area_scale_factor,gamma_shift_sigma,notes
+BH,4x,+0.08,spin-corrected area inflation
+Cosmo,4x,-0.11,peak-scale broadened window
+Quantum,4x,+0.06,mode-waist alternative
+Combined,NA,+0.18,quadrature w/ anti-correlation

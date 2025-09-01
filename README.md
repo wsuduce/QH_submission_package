@@ -3,8 +3,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17010399.svg)](https://doi.org/10.5281/zenodo.17010399)
 
 **Paper:** Evidence for Universal Scale Coupling Across 61 Orders of Magnitude  
-**Version:** v2.3-pre  
-**Date:** August 2025  
+**Version:** v2.3-final  
+**Date:** August 30, 2025  
 **Author:** Adam Murphy  
 
 ## Package Contents
@@ -12,8 +12,11 @@
 ```
 QH_submission_package/
 ├── manuscript/
-│   ├── QH_Paper_V2.md                  # Main paper manuscript (final version)
-│   └── QH_Paper_V2_REVIEWER_READY.md   # Updated version addressing reviewer feedback
+│   ├── QH_Paper_V2_REVIEWER_READY.md         # Main paper (final submission version)
+│   ├── QH_Paper_V2_SUBMISSION_READY.pdf      # Journal submission PDF
+│   ├── appendix_F_addendum_phi_bounds.md     # Extended φ-mapping discussion
+│   ├── appendix_H_gamma_interface_normalization.md # γ interface normalization
+│   └── appendix_I_anomalous_dimension_sketch.md    # S^(-0.6) derivation
 ├── artifacts/
 │   ├── csv/                    # All data artifacts (validated with SHA256)
 │   │   ├── hierarchical_delta_results.csv    # Cross-domain δ analysis
@@ -25,6 +28,8 @@ QH_submission_package/
 │   │   ├── d1_combined_delta.csv             # Combined quantum analysis
 │   │   ├── d1_leave_one_out.csv              # Leave-one-out validation
 │   │   ├── phi_sensitivity_test.csv          # φ-prior robustness test (2x bounds)
+│   │   ├── exponent_stress_test.csv          # S^(-0.6) validation (ΔBIC)
+│   │   ├── gamma_iface_sensitivity.csv       # γ interface area robustness
 │   │   └── checksums.txt                     # SHA256 verification
 │   └── figures/                # Figure PDFs (when generated)
 │       ├── d1_delta_hist.pdf                 # D1 quantum δ distribution
@@ -87,14 +92,18 @@ QH_submission_package/
 
 ## Reviewer Response Summary
 
-**Added in v2.3-reviewer:**
-- §2.1.1: Physical basis for platform-to-scale mapping with φ bounds  
-- §6.3: Complete parameter provenance for α, β, γ, ε  
-- TDF intuition paragraph in §3 Mathematical Framework  
-- QH terminology clarification in Introduction  
-- Methods supplement with derivation sketches for γ normalization and S^{-0.6}  
-- Appendix D4 enhanced with φ-sensitivity analysis (perfect numerical stability)  
-- Figure 1 caption clarification on consistency vs measurement bands  
+**Added in v2.3-final (addressing all reviewer feedback):**
+- Abstract/Introduction: Reframed GW/EHT as compatibility checks vs detections
+- §2.1.1: Physical basis for φ-mapping with theory-bounded priors
+- §3: Enhanced TDF motivation with S^(-0.6) derivation from anomalous dimension
+- §4.1: Cosmological scale assignments clarified
+- §5.3: DESI uncertainty propagation (±0.004 at z=0.5)
+- §6.2: Model space check with correlated-δ hypermodels
+- §6.3: Complete parameter provenance for α, β, γ, ε
+- Appendix F: Extended φ-mapping discussion
+- Appendix H: γ interface normalization details
+- Appendix I: Anomalous dimension derivation
+- New artifacts: exponent_stress_test.csv, gamma_iface_sensitivity.csv  
 
 ## Citation
 

@@ -1,0 +1,35 @@
+Editor
+Journal of Cosmology and Astroparticle Physics (JCAP)
+
+Dear Editor,
+
+We submit for consideration to JCAP our manuscript titled "Evidence for Universal Scale Coupling Across 61 Orders of Magnitude."
+
+This work presents an empirical, falsifiable framework that identifies a universal scale-coupling parameter δ = 0.502 ± 0.031 spanning from quantum entanglement (10^-15 m) to cosmological structure (10^46 m). The manuscript offers concrete, near-term predictions for ongoing and upcoming experiments, making it immediately relevant to the cosmology and astroparticle physics communities.
+
+Key strengths particularly relevant to JCAP's scope:
+
+• COSMOLOGICAL IMPACT: Reduces Hubble tension (4.4σ → 0.8σ) and S8 tension (3.2σ → 0.6σ) while preserving GR and early-time physics
+• CROSS-DOMAIN VALIDATION: Laboratory ratio β/α = 0.0503 maps to JWST/MIDIS cosmological decay k = 0.523 ± 0.058 without parameter tuning
+• DARK ENERGY CONSTRAINTS: Predicts w(z ≈ 0.5) ≈ -1.009 for DESI, BAO shift +0.22% for Euclid
+• STATISTICAL RIGOR: Hierarchical Bayesian analysis strongly prefers single-δ (ΔBIC = 27.4); robust to leave-one-domain-out tests
+• FALSIFIABLE PREDICTIONS: Concrete forecasts for upcoming cosmological surveys and gravitational wave detectors
+
+The framework addresses two major cosmological tensions simultaneously without introducing new fundamental physics, making minimal modifications to the standard cosmological model. The cross-domain nature connects laboratory quantum experiments to cosmological observations, offering a unique perspective on scale-dependent physics.
+
+Given JCAP's focus on cosmology, astroparticle physics, and observational tests of fundamental physics, we believe this work aligns perfectly with your journal's mission. The predictions for DESI, Euclid, and LIGO/Virgo/KAGRA make this particularly timely for the community.
+
+The manuscript has been prepared according to JCAP guidelines. All figures are publication-ready, and supplementary materials including extended appendices are available.
+
+We confirm that this work has not been published elsewhere and is not under consideration by another journal. All authors have approved the submission.
+
+Thank you for considering our manuscript. We look forward to the review process and are prepared to address any reviewer comments promptly.
+
+Sincerely,
+
+Adam Murphy
+Independent Researcher
+adam@impactme.ai
+ORCID: 0009-0000-5101-2683
+
+August 30, 2025
