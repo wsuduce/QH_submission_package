@@ -91,7 +91,7 @@ def calculate_binned_data(df, z_edges_str):
 def main():
     # Simplified arg parsing for this specific execution
     args = {
-        'out': 'data/midis_bins.csv',
+        'out': 'data/midis_f560w_masslim.csv',
         'z_edges': '4,5,6,7,8',
         'match_radius': 1.0,
         'logm_min': 10.0,
