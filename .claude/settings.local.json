@@ -14,7 +14,20 @@
       "Bash(pip install:*)",
       "Bash(./scripts/generate_fig2_gnuplot.sh:*)",
       "Bash(./REBUILD_ALL.sh)",
-      "Bash(./SIMPLE_REBUILD.sh:*)"
+      "Bash(./SIMPLE_REBUILD.sh:*)",
+      "Bash(source:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Bash(cd:*)",
+      "Read(/mnt/c/Business/**)",
+      "Read(/mnt/c/Business/**)",
+      "Bash(for dir in submissions/PRD_submission submissions/JCAP_submission submissions/arXiv_package)",
+      "Bash(do mkdir -p $dir/figures)",
+      "Bash(echo \"✅ Copied to $dir\")",
+      "Bash(done)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []

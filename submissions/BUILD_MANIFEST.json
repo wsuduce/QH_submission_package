@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-09-02T21:11:32.612848",
+  "figures": {
+    "fig2_beta_over_alpha_to_k.pdf": "727505d0"
+  },
+  "packages": [
+    "PRD_submission",
+    "JCAP_submission",
+    "arXiv_package"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "validation_status": "PASS",
+  "csv_path": "artifacts/data/midis_flux_bins.csv",
+  "n_points": 12,
+  "z_range": [
+    4.2,
+    7.8
+  ],
+  "g_range": [
+    3.9,
+    25.6
+  ],
+  "k_fit": 0.5223742509247561,
+  "k_fit_err": 0.0008927129663405613,
+  "k_two_point_mean": 0.5219811922678018,
+  "k_two_point_std": 0.019345666489210166,
+  "k_paper": 0.523,
+  "k_pred": 0.53,
+  "deviation_from_paper": 0.000625749075243931,
+  "sigma_deviation": 0.01078877715937812,
+  "prediction_deviation": 0.007625749075243937,
+  "g0_fit": 229.71346442203597
+}

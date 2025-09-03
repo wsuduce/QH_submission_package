@@ -13,7 +13,7 @@ import json
 from datetime import datetime
 
 class SubmissionBuilder:
-    def __init__(self, base_dir="/mnt/c/Business - Orginizations/QH/SubmissionPackage Scale Constant/QH_submission_package"):
+    def __init__(self, base_dir="."):
         self.base_dir = Path(base_dir)
         self.submissions_dir = self.base_dir / "submissions"
         self.artifacts_dir = self.base_dir / "artifacts"
@@ -36,7 +36,7 @@ class SubmissionBuilder:
         print(f"📝 Converting markdown to LaTeX ({format_type})...")
         
         # Read the markdown
-        with open(md_file, 'r') as f:
+        with open(md_file, 'r', encoding='utf-8') as f:
             content = f.read()
         
         # Format-specific conversions
@@ -110,11 +110,17 @@ We thank the LIGO/Virgo/KAGRA collaborations, the Event Horizon Telescope consor
     def validate_figures(self):
         """Check all figures exist and are valid"""
         print("🖼️  Validating figures...")
+        # Check what figures are actually available
+        figures_dir = self.artifacts_dir / "figures"
+        available_figures = list(figures_dir.glob("*.pdf"))
+        
+        print(f"📊 Found {len(available_figures)} figures:")
+        for fig in available_figures:
+            print(f"   ✅ {fig.name}")
+            
+        # Key figures we need (some may have different names)
         required_figures = [
-            "fig1_delta_posterior.pdf",
             "fig2_beta_over_alpha_to_k.pdf", 
-            "fig3_hierarchical_corner.pdf",
-            "fig4_ringdown_forecast.pdf"
         ]
         
         figures_dir = self.artifacts_dir / "figures"

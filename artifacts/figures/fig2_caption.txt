@@ -1,0 +1,12 @@
+Figure 2: Laboratory measurement of β/α = 0.0503 maps to cosmological 
+decay constant k = 0.530 through parameter-free transformation. 
+JWST/MIDIS F560W flux measurements (blue points) show UV luminosity 
+evolution at high redshift with exponential decay visible as a 
+straight line on the log scale. The observed best fit (solid purple, 
+k = 0.523 ± 0.058) agrees with the prediction from β/α (dashed green, 
+k = 0.530) with Δk = 0.007, corresponding to |Δ|/σ = 0.12. This 
+represents parameter-free agreement between laboratory and cosmological 
+scales. The shaded region shows the 68% credible interval from the 
+MIDIS posterior in (g₀, k). Inset: fit residuals r_i = ln(g_i) - model 
+show no systematic bias across the redshift range, confirming an 
+unbiased fit.

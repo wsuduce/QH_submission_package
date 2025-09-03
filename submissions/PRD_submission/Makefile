@@ -1,6 +1,4 @@
-# Makefile for PRD submission
-# Compile with: make pdf
-
+# Auto-generated Makefile
 pdf:
 	pdflatex main.tex
 	bibtex main
@@ -8,11 +6,6 @@ pdf:
 	pdflatex main.tex
 
 clean:
-	rm -f *.aux *.log *.bbl *.blg *.out *.toc *.lot *.lof
+	rm -f *.aux *.log *.bbl *.blg *.out *.toc
 
-view:
-	open main.pdf || xdg-open main.pdf || start main.pdf
-
-all: clean pdf view
-
-.PHONY: pdf clean view all
+.PHONY: pdf clean
