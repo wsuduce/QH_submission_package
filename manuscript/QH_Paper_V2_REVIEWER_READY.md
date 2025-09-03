@@ -107,7 +107,7 @@ g(z) = g₀ exp(-kz)
 
 MCMC analysis of the MIDIS data yields:
 
-* k_obs = 0.536 ± 0.064  
+* k_obs = 0.519 ± 0.061  
 * g₀ = 1.69 × 10^-8 ± 6.15 × 10^-9
 
 #### 2.2.1 Coordinate Transformation from β/α to k
@@ -128,7 +128,7 @@ Using the QH parameters α = 0.314, β = 0.0158, and Planck cosmology (Ω_m = 0.
 * ⟨E(z)⟩\_\[4,8] = 10.54
 * k_predicted = 0.530
 
-This matches the MIDIS cross-match observation k_obs = 0.536 ± 0.064 within 0.1σ, with no adjustable parameters.
+This matches the MIDIS cross-match observation k_obs = 0.519 ± 0.061 within 0.2σ, with no adjustable parameters.
 
 At the MIDIS bin centers (z = 4.5, 5.5, 6.5, 7.5), the model predicts k = \[0.367, 0.470, 0.582, 0.701] with mean 0.530, in excellent agreement with observations.
 
@@ -377,7 +377,7 @@ All parameter posteriors and correlation matrices are provided in the repository
 
 ![**Figure 1:** Cross‑domain δ constraints and posterior. Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**).](../artifacts/figures/fig1_delta_posterior.pdf){#fig:delta-posterior width=90%}
 
-![**Figure 2:** Laboratory β/α maps to cosmological k without tuning. (a) JWST/MIDIS F560W flux evolution with mass-limited cross-match data (z∈[4,8]); fitted model (solid purple), 68% credible interval (thin band), posterior predictive (wide band), parameter-free prediction (dashed green). (b) k posterior agreement: **k_obs = 0.536 ± 0.064**; **k_pred = 0.530**; **0.1σ agreement** demonstrates parameter-free validation.](../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf){#fig:beta-alpha-k width=90%}
+![**Figure 2:** Laboratory β/α maps to cosmological k without tuning. (a) JWST/MIDIS F560W flux evolution with mass-limited cross-match data (z∈[4,8]); fitted model (solid purple), 68% credible interval (thin band), posterior predictive (wide band), parameter-free prediction (dashed green). (b) k posterior agreement: **k_obs = 0.519 ± 0.061**; **k_pred = 0.530**; **0.2σ agreement** demonstrates parameter-free validation.](../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf){#fig:beta-alpha-k width=90%}
 
 ![**Figure 3:** Hierarchical model diagnostics. Corner plot for (μ_δ, τ) with posterior predictive checks and a ΔBIC bar chart; LODO/LOSO table excerpt.](../artifacts/figures/fig3_hierarchical_corner.pdf){#fig:hier-corner width=90%}
 
@@ -412,9 +412,9 @@ Medians from `d1_per_experiment_slopes.csv`; all positive slopes selected per §
 **Binning:** 4 uniform bins with edges z = [4,5,6,7,8] → centers (4.5, 5.5, 6.5, 7.5)  
 **Extraction script:** scripts/ceers_midis_crossmatch.py  
 **Fit method:** Weighted least squares in log space with heteroscedastic errors  
-**Posterior:** k = 0.536 ± 0.064 (68% credible interval)  
+**Posterior:** k = 0.519 ± 0.061 (68% credible interval)  
 **Parameter-free prediction:** k_pred = 0.530 (β/α mapping)  
-**Agreement:** 0.1σ (excellent parameter-free validation)
+**Agreement:** 0.2σ (excellent parameter-free validation)
 
 ### D4. Physics-Informed Bounds on Platform Mapping Factor φ
 
