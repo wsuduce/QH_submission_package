@@ -1,10 +1,10 @@
 {
   "k_fit": 0.519,
   "k_err": 0.061,
-  "k_pred": 0.530,
-  "agreement_sigma": 0.18032786885245902,
+  "k_pred": 0.53,
+  "agreement_sigma": 0.1803278688524592,
   "ln_g0": -17.89714270204071,
-  "sigma_intrinsic": 0.012204670276399293,
-  "timestamp": "2025-09-03T20:54:03.678729Z",
+  "sigma_intrinsic": 0.025802574221358406,
+  "timestamp": "2025-09-03T21:08:10.448617Z",
   "csv_source": "data/midis_f560w_masslim.csv"
 }

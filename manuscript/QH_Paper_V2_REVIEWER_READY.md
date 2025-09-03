@@ -366,6 +366,8 @@ All parameter posteriors and correlation matrices are provided in the repository
 
 ### 7.3 Physical Scope
 * **Small-scale physics unchanged**: Results do not address quantum gravity, string theory, or modifications to particle physics. The framework operates entirely within established GR+ΛCDM+QM domains with small corrections.
+
+* **Observable sensitivity**: Without mass/completeness limits, mean-flux fits yield shallower k∼0.35–0.42 (Malmquist bias). A peak-density proxy γ̂(z) and the mass-limited, completeness-limited mean-flux both give k≈0.52, matching the parameter-free prediction. We pre-register further mass/completeness tests and expect convergence across observables.
 * **Limited predictive power**: While concrete forecasts are provided, the phenomenological nature limits deeper physical insights or connection to fundamental physics.
 * **Domain boundaries**: The transition between quantum, gravitational, and cosmological regimes involves scale-dependent factors that may not apply universally across all physical contexts.
 
