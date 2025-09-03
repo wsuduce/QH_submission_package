@@ -63,10 +63,39 @@ QH_submission_package/
 
 ## Reproducibility
 
-**Environment:**
-- Python 3.8+
+**Environment Setup:**
+
+For AI developers and researchers, create an isolated Python environment:
+
+```bash
+# Create virtual environment
+python -m venv venv_fig
+
+# Activate virtual environment
+# Windows (PowerShell):
+venv_fig\Scripts\Activate.ps1
+# Windows (Command Prompt):
+venv_fig\Scripts\activate.bat
+# Linux/macOS:
+source venv_fig/bin/activate
+
+# Install required packages
+pip install numpy pandas scipy scikit-learn pyyaml matplotlib seaborn
+pip install jupyter notebook  # For notebooks
+pip install pathlib pathlib2   # For cross-platform paths
+
+# Optional: Install additional analysis packages
+pip install corner emcee      # For MCMC and corner plots
+pip install astropy           # For cosmological calculations
+```
+
+**Core Requirements:**
+- Python 3.8+ (tested with 3.12)
 - Key packages: numpy, pandas, scipy, sklearn, yaml
-- See analysis scripts for specific dependencies
+- Figure generation: matplotlib, seaborn
+- See individual analysis scripts for specific dependencies
+
+**Note:** The `venv_fig/` directory is git-ignored to prevent committing virtual environment files.
 
 **Data Artifacts:**
 - All CSV files include headers and metadata
