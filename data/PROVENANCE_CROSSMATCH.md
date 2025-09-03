@@ -15,4 +15,5 @@
 - **Extraction Script:** `scripts/ceers_midis_crossmatch.py`
 - **Extraction Date (UTC):** 2025-09-03 20:13:20
 - **SHA256:** `370745AE4E9ADC8C4398A6E303AAB8A76E565FD1EB8380B363EBE014E6F89C53`
-- **Validator Results:** `k_fit` = 0.519 (PASS) within tolerance of k_target = 0.523
+- **QC:** Data Gate PASS; see `artifacts/checks/midis_validator_summary.json` for current k_fit.
+- **Notes:** The manuscript uses `k_obs = 0.519 ± 0.061` (MCMC with intrinsic scatter); Data Gate uses WLS for fast CI validation.

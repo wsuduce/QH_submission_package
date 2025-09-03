@@ -38,7 +38,7 @@
     }
   },
   "metadata": {
-    "extraction_date": "2025-01-27T19:45:23Z",
+    "extraction_date": "2025-09-03T23:40:29.577549Z",
     "extractor": "scripts/eht_extract.py",
     "framework": "QH scale-coupling analysis",
     "status": "Derived from published EHT measurements"
