@@ -107,8 +107,8 @@ g(z) = g₀ exp(-kz)
 
 MCMC analysis of the MIDIS data yields:
 
-* k_obs = 0.523 ± 0.058
-* g₀ = 55.98 ± 2.45
+* k_obs = 0.536 ± 0.064  
+* g₀ = 1.69 × 10^-8 ± 6.15 × 10^-9
 
 #### 2.2.1 Coordinate Transformation from β/α to k
 
@@ -128,7 +128,7 @@ Using the QH parameters α = 0.314, β = 0.0158, and Planck cosmology (Ω_m = 0.
 * ⟨E(z)⟩\_\[4,8] = 10.54
 * k_predicted = 0.530
 
-This matches the MIDIS observation k_obs = 0.523 ± 0.058 within 0.1σ, with no adjustable parameters.
+This matches the MIDIS cross-match observation k_obs = 0.536 ± 0.064 within 0.1σ, with no adjustable parameters.
 
 At the MIDIS bin centers (z = 4.5, 5.5, 6.5, 7.5), the model predicts k = \[0.367, 0.470, 0.582, 0.701] with mean 0.530, in excellent agreement with observations.
 
@@ -377,7 +377,7 @@ All parameter posteriors and correlation matrices are provided in the repository
 
 ![**Figure 1:** Cross‑domain δ constraints and posterior. Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**).](../artifacts/figures/fig1_delta_posterior.pdf){#fig:delta-posterior width=90%}
 
-![**Figure 2:** β/α → k mapping vs MIDIS. Predicted k(z)=(β/α)E(z) (solid) vs JWST/MIDIS bins (z∈[4,8]); **k_obs = 0.523 ± 0.058**; mean predicted **0.530**; no tuned parameters.](../artifacts/figures/fig2_beta_over_alpha_to_k.pdf){#fig:beta-alpha-k width=90%}
+![**Figure 2:** Laboratory β/α maps to cosmological k without tuning. (a) JWST/MIDIS F560W flux evolution with mass-limited cross-match data (z∈[4,8]); fitted model (solid purple), 68% credible interval (thin band), posterior predictive (wide band), parameter-free prediction (dashed green). (b) k posterior agreement: **k_obs = 0.536 ± 0.064**; **k_pred = 0.530**; **0.1σ agreement** demonstrates parameter-free validation.](../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf){#fig:beta-alpha-k width=90%}
 
 ![**Figure 3:** Hierarchical model diagnostics. Corner plot for (μ_δ, τ) with posterior predictive checks and a ΔBIC bar chart; LODO/LOSO table excerpt.](../artifacts/figures/fig3_hierarchical_corner.pdf){#fig:hier-corner width=90%}
 
@@ -404,12 +404,17 @@ Medians from `d1_per_experiment_slopes.csv`; all positive slopes selected per §
 **δ extraction:** scale-dependent growth fit (χ² minimization) with TreeCorr + CAMB  
 **Priors:** Ω_m ~ N(0.315, 0.01²)
 
-### D3. MIDIS Mapping Details
-**Definition:** g(z) = mean F560W flux for log₁₀(M_⋆/M_⊙) > 10  
-**Bins:** z ∈ [4,5], [5,6], [6,7], [7,8]  
-**Priors:** k ~ U[0,1], g₀ > 0  
-**MCMC:** emcee 10k steps, burn-in 2k  
-**Posterior:** k = 0.523 ± 0.058
+### D3. MIDIS Cross-Match Mapping Details  
+**Cross-match:** JWST MIDIS/CEERS (J/A+A/696/A57) × CEERS stellar masses (J/AJ/168/113), 1.0" radius coordinate matching  
+**Selection cuts:** z_ph > 4; log₁₀(M_⋆/M_⊙) > 10  
+**Completeness cut:** Uniform faint-end magnitude limit F560W < 26.85 (95th percentile of z=[7,8) bin) applied to mitigate selection bias  
+**Observable definition:** g(z) = mean F560W flux per bin; g_err = standard error of the mean  
+**Binning:** 4 uniform bins with edges z = [4,5,6,7,8] → centers (4.5, 5.5, 6.5, 7.5)  
+**Extraction script:** scripts/ceers_midis_crossmatch.py  
+**Fit method:** Weighted least squares in log space with heteroscedastic errors  
+**Posterior:** k = 0.536 ± 0.064 (68% credible interval)  
+**Parameter-free prediction:** k_pred = 0.530 (β/α mapping)  
+**Agreement:** 0.1σ (excellent parameter-free validation)
 
 ### D4. Physics-Informed Bounds on Platform Mapping Factor φ
 
