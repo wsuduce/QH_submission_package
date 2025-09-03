@@ -1,0 +1,4 @@
+parameter,mean,std,n_samples,source_file
+final_mass,62.3,3.1,4096,gw150914_posterior_samples.h5
+final_spin,0.68,0.05,4096,gw150914_posterior_samples.h5
+delta_constraint,0.48,0.15,4096,gw150914_posterior_samples.h5

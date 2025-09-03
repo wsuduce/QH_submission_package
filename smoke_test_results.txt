@@ -1,0 +1,1 @@
+cripts/run_notebooks_smoke.py --timeout 120

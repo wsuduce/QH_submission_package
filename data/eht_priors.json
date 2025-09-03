@@ -1,0 +1,46 @@
+{
+  "SgrA": {
+    "observables": {
+      "source_name": "Sgr A*",
+      "shadow_size_uas": 51.8,
+      "shadow_size_err_uas": 2.3,
+      "mass_msun": 4150000.0,
+      "mass_err_msun": 50000.0,
+      "distance_kpc": 8.28,
+      "distance_err_kpc": 0.17,
+      "reference": "EHT Collaboration 2022, ApJ L12",
+      "doi": "10.3847/2041-8213/ac6674"
+    },
+    "delta_constraint": {
+      "mean": 0.45,
+      "std": 0.12,
+      "method": "Shadow size analysis via QH framework",
+      "n_effective": 100
+    }
+  },
+  "M87": {
+    "observables": {
+      "source_name": "M87*",
+      "shadow_size_uas": 42.0,
+      "shadow_size_err_uas": 3.0,
+      "mass_msun": 6500000000.0,
+      "mass_err_msun": 300000000.0,
+      "distance_kpc": 16800,
+      "distance_err_kpc": 800,
+      "reference": "EHT Collaboration 2019, ApJ L1",
+      "doi": "10.3847/2041-8213/ab0ec7"
+    },
+    "delta_constraint": {
+      "mean": 0.52,
+      "std": 0.15,
+      "method": "Shadow size analysis via QH framework",
+      "n_effective": 100
+    }
+  },
+  "metadata": {
+    "extraction_date": "2025-01-27T19:45:23Z",
+    "extractor": "scripts/eht_extract.py",
+    "framework": "QH scale-coupling analysis",
+    "status": "Derived from published EHT measurements"
+  }
+}
