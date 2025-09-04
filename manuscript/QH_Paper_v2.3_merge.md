@@ -6,10 +6,6 @@
 *Independent Researcher*
 *August 2025*
 
-<!-- Version Stamp -->
-
-**Manuscript ID:** QH‑δ/V2 • **Draft:** v2.3‑final • **Timestamp (PT):** 2025‑08‑30 21:15 • **Editor:** AM + Claude • **Commit:** *submission-ready*
-**Change set:** Abstract toned to "evidence," priors/uncertainties noted; BAO reframed as fractional distance‑indicator shift; DESI w(0.5) corrected to ≈ −1.009; §6 Statistical Validation added (priors/likelihoods/correlations + LODO/LOSO scaffold); §7 Key Limitations added; Appendix D1 δ\_quantum provenance table added; Appendix E Assertions map added; MIDIS k updated to **0.519 ± 0.061** via script replication; Lab platform‑to‑scale mapping integrated (M1 selected by BIC/CV; δ_lab→scale ≈ 0.500, consistent with cross‑domain δ).
 
 ## Abstract
 
@@ -81,7 +77,9 @@ Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) ov
 
 **Robustness to φ-priors.** Widening all φ priors ×4 leaves δ_{lab→scale} unchanged within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC_{M1−M2}=+9.6; ΔBIC_{M1−M3}=+12.2), ruling out prior-tuning as the origin of the agreement.
 
-**Physical basis for φ.** Filter‑function theory (DD), central‑spin diffusion (Si:P/SiC), encoded‑manifold lifetimes (cat codes), thermomechanical scaling (optomech), and Rydberg blockade fidelity set hard slope windows for θ vs control. These yield φ priors: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3]. Widening all φ bounds ×2 and ×4 leaves δ_{lab→scale} within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC +9.6 / +12.2). Thus φ is theory‑bounded, not tune‑to‑fit. See Appendix F for extended discussion.
+**Physical basis for φ (platform→effective-scale).** Platform controls (e.g., N_DD, α², Q, p, C) shift the effective scale S seen by the protection window. Filter‑function theory (DD), central‑spin diffusion (Si:P/SiC), encoded‑manifold lifetimes (cat codes), thermomechanical scaling (optomech), and Rydberg blockade fidelity set hard slope windows for θ vs control, which we encode as priors on φ: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3].
+
+**Robustness.** Widening all φ bounds ×2 and ×4 leaves δ_lab→scale unchanged within 0.01 and preserves decisive preference for M1: θ = δ × φ over M2/M3 (ΔBIC +9.6 / +12.2). Jackknife tests show negligible platform leverage. Thus φ is theory‑bounded, not tune‑to‑fit. (Details in App. F; phi_sensitivity_test.csv.)
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:
@@ -158,11 +156,13 @@ where S_info is the measured entropy/information content, A_iface is the effecti
 
 This parameter corresponds to maximum information density at measurement interfaces, whether quantum, gravitational, or cosmological. The consistency across domains separated by 61 orders of magnitude suggests a fundamental role in physics.
 
+**A_iface summary.** We normalize γ on a common basis γ ≡ S_info/(A_iface/ℓ_P²). A_iface is physically defined per domain: BH = horizon area (spin-corrected), Cosmology = density-peak aperture from the estimator window, Quantum = coherence aperture (mode waist/device/ensemble). Varying A_iface by ×4 (area) shifts combined γ by ≤0.2σ, indicating robustness (App. H; gamma_iface_sensitivity.csv).
+
 ## 3. Mathematical Framework
 
 **Notation and conventions.** δ denotes the scale‑coupling parameter; α and β are forward‑persistence and backward‑decay rates whose ratio β/α maps to the cosmological decay constant k via the expansion factor E(z)=H(z)/H₀; γ denotes interface information density (distinct from g(z), the MIDIS flux proxy); ε is a small temporal‑asymmetry parameter; S is a dimensionless scale coordinate; and u is Hubble e‑fold time. Unless stated otherwise, uncertainties are 1σ and masses are in M⊙.
 
-The observed parameters follow a specific mathematical relationship first proposed in the QH framework and now empirically validated:
+The observed parameters follow a specific mathematical relationship first proposed in the QH framework and now empirically validated. We use the TDF as a minimal, empirically-driven phenomenological model that captures the observed regularities; none of our conclusions depends on a specific microscopic derivation.
 
 **D(t,S) = γe^(-t²/S) + αH(t)e^(-αt/S) + βH(-t)e^(βt/S)**
 
@@ -187,6 +187,14 @@ This temporal distribution function (TDF) emerged from theoretical consideration
 
 The same mathematical structure, with identical parameter values, describes phenomena across all scales tested.
 
+| **Param** | **Role (intuition)**          | **Where it appears**                                      |
+|-----------|-------------------------------|-----------------------------------------------------------|
+| α         | forward persistence rate      | TDF decay for t > 0; ringdown                            |
+| β         | backward influence rate       | TDF for t < 0; β/α → k                                   |
+| γ         | interface info density        | peak at observation events; BH/quantum/cosmo normalization |
+| δ         | universal scale-coupling      | protection-window slope; cross-domain universality       |
+| ε         | mild time-asymmetry           | late-time growth corrections (e.g., S₈)                  |
+
 ### 3.1 Scale normalization across platforms
 
 To compare heterogeneous experiments, we define a common normalization S\_norm ≡ S\_raw / S\_ref. The following table summarizes platform-specific definitions:
@@ -208,6 +216,8 @@ We fit power laws τ ∝ S\_norm^δ only over protection windows where the slope
 ### 4.1 Hubble Tension
 
 **Scale assignments:** CMB uses the comoving sound‑horizon r_s; BAO uses the effective D_V/r_s kernel in the quoted z‑bin; SNe use the effective distance‑ladder kernel (calibrator sample depth). Reported results are fractional shifts relative to ΛCDM baselines; early‑time physics and r_s are unmodified. For background distances we take S(z) to track the **effective comoving measurement scale** (e.g., D_V(z) or r_com(z)), which **increases** with z. Thus CMB > BAO > SN in S, matching the Hubble-tension illustration.
+
+**Probe definitions.** We take S_CMB ≈ r_s (drag), S_BAO as the effective D_V/r_s kernel of the quoted z bin, and S_SN ≈ ⟨D_L⟩ of the calibrator sample (distance-ladder kernel). These choices implement the effective comoving measurement scale we use throughout; results are reported as fractional shifts relative to ΛCDM baselines.
 
 Phenomenological illustration: incorporating scale-dependent corrections derived from δ:
 
@@ -361,6 +371,7 @@ All parameter posteriors and correlation matrices are provided in the repository
 * **Correlated systematics**: Cross-domain correlations cannot be fully excluded despite LODO/LOSO robustness checks. Common astrophysical or instrumental systematics could artificially enhance apparent universality.
 * **Model complexity**: The five-parameter framework may be over-parameterized relative to current data quality, potentially leading to parameter degeneracies or overfitting.
 * **MIDIS selection/binning**: Results depend on F560W flux proxy and mass cuts (log₁₀(M_⋆/M_⊙) > 10); binning/selection effects (e.g., dust correction, photometric z errors) quantified in Appendix D3; robustness includes alternative bin edges (Δk < 0.02) and mass thresholds (log₁₀(M_⋆/M_⊙) > 9.5, shifts k by ±5%).
+* **Look-elsewhere**: Although the framework has five parameters, we use one shared set to generate new, falsifiable predictions (e.g., LIGO/Euclid/DESI). The parameter-free k mapping is the primary defense against a posteriori pattern-finding.
 
 ### 7.3 Physical Scope
 * **Small-scale physics unchanged**: Results do not address quantum gravity, string theory, or modifications to particle physics. The framework operates entirely within established GR+ΛCDM+QM domains with small corrections.
