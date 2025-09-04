@@ -415,7 +415,7 @@ Observable sensitivity and convergence tests are summarized in **Appendix J**, s
 
 ## Figures
 
-![**Figure 1:** Cross‑domain δ constraints and posterior. Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**).](../artifacts/figures/fig1_delta_posterior.pdf){#fig:delta-posterior width=90%}
+![**Figure 1:** Cross‑domain δ constraints and posterior. Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**). Horizontal dashed line at δ=0 marks the General Relativity prediction. S-ladder inset shows scale hierarchy: S_CMB ≈ r_s > S_BAO ≈ D_V(z≈1) > S_SNe ≈ ⟨D_L⟩.](../artifacts/figures/fig1_delta_posterior.pdf){#fig:delta-posterior width=90%}
 
 ![**Figure 2a:** JWST/MIDIS F560W flux evolution with mass-limited cross-match data (z∈[4,8]); fitted model (solid purple), 68% credible interval (thin band), posterior predictive (wide band), parameter-free prediction (dashed green).](../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf){#fig:beta-alpha-k-a width=90%}
 
