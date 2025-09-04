@@ -9,7 +9,9 @@
 
 ## Abstract
 
-We present evidence for a universal scale‑coupling constant δ = 0.502 ± 0.031 spanning 61 orders of magnitude, from quantum entanglement (10⁻¹⁵ m) to cosmological structure (10⁴⁶ m). A hierarchical cross‑domain analysis prefers a single δ over domain‑specific values (ΔBIC = 27.4). Two domains (cosmology; lab‑mapped quantum platforms) constrain a non‑zero δ. Two others (GW ringdown; EHT shadows) are compatible and used as consistency checks, not detections. A laboratory‑measured ratio β/α = 0.0503 maps, through the Hubble e‑fold coordinate, to a cosmological decay constant ⟨k⟩₍₄–₈₎ = 0.530 that matches JWST/MIDIS (0.519 ± 0.061) without tuned parameters. 
+We present evidence for a universal scale‑coupling constant δ = 0.502 ± 0.031 spanning 61 orders of magnitude, from quantum entanglement (10⁻¹⁵ m) to cosmological structure (10⁴⁶ m). A hierarchical cross‑domain analysis prefers a single δ over domain‑specific values (ΔBIC = 27.4). 
+
+Two domains (cosmology; lab‑mapped quantum platforms) constrain a non‑zero δ. Two others (GW ringdown; EHT shadows) are compatible and used as consistency checks, not detections. A laboratory‑measured ratio β/α = 0.0503 maps, through the Hubble e‑fold coordinate, to a cosmological decay constant ⟨k⟩₍₄–₈₎ = 0.530 that matches JWST/MIDIS (0.519 ± 0.061) without tuned parameters. 
 
 In cosmology, small scale‑coupled corrections reduce the H₀ and S₈ tensions while leaving GR and early‑time physics intact. All results include propagated uncertainties and conservative domain priors.
 
@@ -73,19 +75,13 @@ where φ encodes how platform control translates to effective scale. The mapping
 - **Cat code stabilization:** φ ∈ [1.0, 1.6] from α² separation and dissipation engineering
 - **Optomechanical systems:** φ ∈ [0.8, 1.2] from Q-factor thermal occupancy scaling
 
-Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) over divisive (M2: θ = δ/φ) and power-law (M3: θ = δ × φ^β) alternatives. The mapped δ_lab→scale ≈ 0.500 shows negligible sensitivity to φ-prior edges (quantified in Appendix D4; scripts provided for alternative bounds).
-
-**Robustness to φ-priors.** Widening all φ priors ×4 leaves δ_{lab→scale} unchanged within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC_{M1−M2}=+9.6; ΔBIC_{M1−M3}=+12.2), ruling out prior-tuning as the origin of the agreement.
+Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) over divisive (M2: θ = δ/φ) and power-law (M3: θ = δ × φ^β) alternatives. The mapped δ_lab→scale ≈ 0.500 shows negligible sensitivity to φ-prior edges.
 
 **Physical basis for φ (platform→effective-scale).** Platform controls (e.g., N_DD, α², Q, purity p, GHZ N) shift the effective scale via S(X) = (X/X₀)^φ, where φ encodes how the control modifies the protected manifold (filter-function bandwidth narrowing, encoded-manifold separation, thermomechanical linewidth reduction, etc.). Assuming the universal law τ ∝ S^δ within the protection window, the measured slope is
 
 θ ≡ d log τ / d log X = δ · d log S / d log X = δ · φ,
 
-giving M1: θ = δ · φ.
-
-**Theory-bounded priors.** We use conservative priors per platform: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3].
-
-**Robustness.** Widening all φ priors ×4 changes δ_lab→scale by ≤0.01 and keeps M1 decisively favored (ΔBIC_M1−M2 = +9.6; ΔBIC_M1−M3 = +12.2). Jackknife shows negligible platform leverage. (Details: App. F; phi_sensitivity_test.csv.)
+giving M1: θ = δ · φ. We use conservative theory-bounded priors per platform: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3]. Widening all φ priors ×4 changes δ_lab→scale by ≤0.01 and keeps M1 decisively favored (ΔBIC_M1−M2 = +9.6; ΔBIC_M1−M3 = +12.2), ruling out prior-tuning as the origin of the agreement. Jackknife tests show negligible platform leverage. (Details: App. F; phi_sensitivity_test.csv.)
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:
@@ -221,9 +217,7 @@ We fit power laws τ ∝ S\_norm^δ only over protection windows where the slope
 
 ### 4.1 Hubble Tension
 
-**Scale assignments:** CMB uses the comoving sound‑horizon r_s; BAO uses the effective D_V/r_s kernel in the quoted z‑bin; SNe use the effective distance‑ladder kernel (calibrator sample depth). Reported results are fractional shifts relative to ΛCDM baselines; early‑time physics and r_s are unmodified. For background distances we take S(z) to track the **effective comoving measurement scale** (e.g., D_V(z) or r_com(z)), which **increases** with z. Thus CMB > BAO > SN in S, matching the Hubble-tension illustration.
-
-**Probe definitions.** S_CMB ≈ r_s(z_drag) (sound horizon), S_BAO(z) ≡ D_V(z) (BAO volume distance), and S_SNe ≈ ⟨D_L⟩ of the calibrator selection. We report fractional shifts about ΛCDM baselines. Because S_CMB ≫ S_BAO ≳ S_SNe, the small scale-coupled correction naturally orders CMB < BAO < SN for H₀ inferences without modifying early-time physics.
+**Scale assignments and probe definitions.** CMB uses the comoving sound‑horizon r_s; BAO uses the effective D_V/r_s kernel in the quoted z‑bin; SNe use the effective distance‑ladder kernel (calibrator sample depth). For background distances we take S(z) to track the **effective comoving measurement scale**, with explicit definitions: S_CMB ≈ r_s(z_drag) (sound horizon), S_BAO(z) ≡ D_V(z) (BAO volume distance), and S_SNe ≈ ⟨D_L⟩ of the calibrator selection. Because S_CMB ≫ S_BAO ≳ S_SNe, the small scale-coupled correction naturally orders CMB < BAO < SN for H₀ inferences without modifying early-time physics. Reported results are fractional shifts relative to ΛCDM baselines; early‑time physics and r_s are unmodified.
 
 Phenomenological illustration: incorporating scale-dependent corrections derived from δ:
 
