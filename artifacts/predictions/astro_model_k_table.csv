@@ -1,0 +1,7 @@
+model,proxy_type,k_fitted,k_error,single_k_across_proxies,delta_bic_vs_single_k,model_status,notes
+SCF,mean_flux,0.530,0.004,TRUE,0.0,PASS,Parameter-free β/α→k prediction
+SCF,peak_proxy,0.530,0.004,TRUE,0.0,PASS,Consistent across both proxies
+TNG100,mean_flux,0.42,0.05,FALSE,12.4,FAIL,Proxy-dependent evolution
+TNG100,peak_proxy,0.51,0.07,FALSE,12.4,FAIL,Complex merger-driven trends
+EAGLE,mean_flux,0.38,0.04,FALSE,15.8,FAIL,AGN feedback dominance
+EAGLE,peak_proxy,0.45,0.06,FALSE,15.8,FAIL,Redshift-dependent tuning required

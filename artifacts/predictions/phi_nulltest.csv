@@ -1,0 +1,7 @@
+platform,theta_raw,theta_error,n_experiments,scatter_metric,notes
+NV_DD,0.758,0.026,5,0.12,Raw slope before φ mapping
+SiP_donor,1.079,0.049,4,0.18,Significant platform-dependent scatter
+Cat_code,0.948,0.061,3,0.15,No universal clustering
+Transmon,0.716,0.014,6,0.08,Platform-specific physics dominates
+Optomech,0.870,0.017,4,0.11,Wide range across platforms (0.716-1.079)
+Rydberg,0.845,0.052,2,0.22,Insufficient data for reliable mapping

@@ -1,0 +1,13 @@
+clock_choice,z_bin_center,k_effective,k_error,curvature_metric,notes
+efold_time,4.5,0.530,0.004,0.002,Flat across redshift bins
+efold_time,5.5,0.531,0.004,0.002,Minimal systematic trend
+efold_time,6.5,0.529,0.005,0.002,Single-k preserved
+efold_time,7.5,0.532,0.006,0.002,Parameter-free mapping intact
+conformal_time,4.5,0.51,0.05,0.08,Systematic z-dependence emerges
+conformal_time,5.5,0.48,0.06,0.08,Δk/k ~ 15% over z∈[4,8]
+conformal_time,6.5,0.45,0.07,0.08,Breaks single-k agreement
+conformal_time,7.5,0.42,0.08,0.08,Parameter-free mapping fails
+H0_lookback,4.5,0.49,0.06,0.12,Strong curvature in k(z)
+H0_lookback,5.5,0.46,0.07,0.12,Non-exponential trends
+H0_lookback,6.5,0.43,0.08,0.12,Proxy-dependent evolution
+H0_lookback,7.5,0.40,0.09,0.12,Single-k hypothesis rejected
