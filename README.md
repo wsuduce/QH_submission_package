@@ -53,8 +53,8 @@ QH_submission_package/
 
 **Laboratory-to-Cosmology Validation:**
 - β/α = 0.0503 (lab measurement) → k_pred = 0.530
-- k_obs = 0.523 ± 0.058 (JWST/MIDIS) 
-- Agreement: 0.1σ with no tuned parameters
+- k_obs = 0.519 ± 0.061 (JWST/MIDIS) 
+- Agreement: 0.2σ with no tuned parameters
 
 **Platform-to-Scale Mapping:**
 - Model M1 (θ = δ × φ) selected by AIC/BIC + CV
