@@ -1,0 +1,6 @@
+platform,theta_obs,theta_error,phi_req_delta_0,phi_req_delta_0p5,phi_req_delta_1p0,theory_bounds_min,theory_bounds_max,viable_at_delta_0p5
+NV_DD,0.758,0.026,Inf,1.516,0.758,0.9,1.6,TRUE
+SiP_donor,1.079,0.049,Inf,2.158,1.079,0.8,1.3,FALSE
+Cat_code,0.948,0.061,Inf,1.896,0.948,1.0,1.6,FALSE
+Transmon,0.716,0.014,Inf,1.432,0.716,0.8,1.2,TRUE
+Optomech,0.870,0.017,Inf,1.740,0.870,0.8,1.2,FALSE

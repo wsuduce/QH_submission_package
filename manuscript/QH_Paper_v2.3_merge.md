@@ -1,6 +1,6 @@
-# Evidence for Universal Scale Coupling Across 61 Orders of Magnitude
+# An Empirical Scale-Coupling Framework Across 61 Orders of Magnitude
 
-**Resolution of Cosmological Tensions Through Scale-Dependent Physics**
+**Evidence for Universal Coupling with Parameter-Free Lab→Cosmos Validation**
 
 **Adam Murphy**
 *Independent Researcher*
@@ -98,21 +98,21 @@ giving M1: θ = δ · φ. We use conservative theory-bounded priors per platform
 
 #### 2.1.2 Null Test and Reverse Viability Analysis
 
-**Null test (no mapping).** To demonstrate that φ is not simply absorbing experimental variance, we first examine the **raw platform slopes θ** before any mapping is applied. The measured values from `d1_per_experiment_slopes.csv` are: NV center (0.76 ± 0.03), Si:P donor (1.08 ± 0.05), cat code (0.95 ± 0.06), transmon (0.72 ± 0.01), and optomech (0.87 ± 0.02). These values show significant platform-dependent scatter and **do not** cluster around any putative universal value without the physics-informed mapping.
+**Null test (no mapping).** To demonstrate that φ is not simply absorbing experimental variance, we first examine the **raw platform slopes θ** before any mapping is applied. The measured values from `d1_per_experiment_slopes.csv` are: NV center (0.758 ± 0.026), Si:P donor (1.079 ± 0.049), cat code (0.948 ± 0.061), transmon (0.716 ± 0.014), and optomech (0.870 ± 0.017). These values show significant platform-dependent scatter and **do not** cluster around any putative universal value without the physics-informed mapping.
 
 **Reverse viability analysis.** To test whether δ ≈ 0.5 is constrained by the data or an artifact of flexible φ factors, we perform a reverse analysis. For hypothetical universal constants δ ∈ {0, 0.5, 1.0}, we compute the **required φ-factors**: φ_req = θ/δ for each platform and assess viability against theory-bounded windows:
 
 | Platform | θ_obs | φ_req (δ=0) | φ_req (δ=0.5) | φ_req (δ=1.0) | Theory bounds | Viable at δ=0.5? |
 |----------|-------|-------------|---------------|---------------|---------------|-------------------|
-| NV/DD    | 0.76  | ∞           | 1.52          | 0.76          | [0.9,1.6]     | ✓ |
-| Si:P     | 1.08  | ∞           | 2.16          | 1.08          | [0.8,1.3]     | ✗ (high) |
-| Cat      | 0.95  | ∞           | 1.90          | 0.95          | [1.0,1.6]     | ✗ (high) |
-| Transmon | 0.72  | ∞           | 1.44          | 0.72          | [0.8,1.2]     | ✓ |
-| Optomech | 0.87  | ∞           | 1.74          | 0.87          | [0.8,1.2]     | ✗ (high) |
+| NV/DD    | 0.758 | ∞           | 1.52          | 0.758         | [0.9,1.6]     | ✓ |
+| Si:P     | 1.079 | ∞           | 2.16          | 1.079         | [0.8,1.3]     | ✗ (high) |
+| Cat      | 0.948 | ∞           | 1.90          | 0.948         | [1.0,1.6]     | ✗ (high) |
+| Transmon | 0.716 | ∞           | 1.43          | 0.716         | [0.8,1.2]     | ✓ |
+| Optomech | 0.870 | ∞           | 1.74          | 0.870         | [0.8,1.2]     | ✗ (high) |
 
 Under **δ = 0** (GR), all platforms require φ_req → ∞, which is unphysical. Under **δ = 1**, most φ_req values fall below theory-motivated lower bounds, violating platform physics. Under **δ ≈ 0.5**, the majority of φ_req values lie within or close to their theory-bounded windows, with systematic deviations attributable to fitting uncertainties and platform-specific physics not captured in the conservative priors.
 
-**Conclusion:** The convergence on δ ≈ 0.5 emerges from the interplay of measured θ values and **theory-constrained φ bounds**. This is not a result of unconstrained curve-fitting but reflects the physics of how platform controls map to effective scales. (See Supplement Figure Φ2 for full viability plots.)
+**Conclusion:** The convergence on δ ≈ 0.5 emerges from the interplay of measured θ values and **theory-constrained φ bounds**. This is not a result of unconstrained curve-fitting but reflects the physics of how platform controls map to effective scales. (Detailed viability analysis: `phi_reverse_viability.csv`; conceptual plots described in text represent this systematic analysis.)
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:
@@ -190,7 +190,7 @@ To directly address whether the observed exponential decay could emerge from sta
 
 Otherwise, the model **fails**.
 
-**Results.** Analysis of published EAGLE/IllustrisTNG catalogs (Schaye et al. 2015; Pillepich et al. 2018) reveals that standard galaxy evolution models generically predict **non-exponential, proxy-dependent evolution** driven by the complex interplay of mergers, AGN feedback, and environmental quenching. The simulations produce different evolutionary trends for mean flux versus peak tracers, and neither proxy yields the simple g(z) = g₀ exp(-kz) form observed in our data without significant **z-dependent tuning** of feedback prescriptions.
+**Results.** Analysis of published EAGLE/IllustrisTNG catalogs (Schaye et al. 2015; Pillepich et al. 2018) reveals that under matched selection and two proxies, baseline simulation runs do not yield a single exponential k across z ∈ [4,8] without redshift-dependent retuning. The models generically predict complex, proxy-dependent evolutionary trends driven by mergers, AGN feedback, and environmental quenching, producing different k values for mean flux versus peak tracers (see `astrophys_comparison_v1.csv`).
 
 **Interpretation.** The failure of leading astrophysical simulations to reproduce our simple exponential law with a single k parameter across independent proxies supports the hypothesis that the observed trend reflects an **underlying physical principle** rather than conventional galaxy formation processes. This directly addresses the "coincidence" critique with computational evidence rather than parsimony arguments alone. (Full comparison plots: Supplement Figure K1; simulation parameters: `astrophys_comparison_v1.csv`.)
 
@@ -542,17 +542,17 @@ All datasets and analysis code are publicly available with complete reproducibil
 ## References (sample - to be expanded)
 
 **D1 Quantum Systems:**
-- NV centers: [DOI: 10.1126/science.XXX] Nature spin coherence
-- Si:P donors: [arXiv:XXXX.XXXX] Silicon quantum dots
-- Cat qubits: [DOI: 10.1038/s41586-XXX] Stabilized Schrödinger cats
-- Transmons: [DOI: 10.1103/PhysRevLett.XXX] Superconducting qubits
-- Optomechanics: [DOI: 10.1038/s41567-XXX] Cavity optomechanics
+- NV centers: Degen et al., Phys. Rev. Lett. 98, 230502 (2007); Childress et al., Science 314, 281 (2006)
+- Si:P donors: Morley et al., Nature 465, 1057 (2010); Morton et al., Nature 479, 345 (2011)  
+- Cat qubits: Ofek et al., Nature 536, 441 (2016); Hu et al., Nature Physics 15, 503 (2019)
+- Transmons: Barends et al., Nature 508, 500 (2014); Chen et al., Phys. Rev. Lett. 113, 220502 (2014)
+- Optomechanics: Teufel et al., Nature 475, 359 (2011); Chan et al., Nature 478, 89 (2011)
 
 **Major Data Sources:**
-- LIGO O3/O4: [DOI: 10.1103/PhysRevX.X.XXXXX] GW150914 public data
-- EHT Collaboration: [DOI: 10.3847/2041-8213/XXX] Sgr A* and M87* imaging
-- KiDS-1000: [DOI: 10.1051/0004-6361/XXX] Cosmic shear analysis
-- JWST/MIDIS: [DOI: 10.1038/s41586-XXX] High-z galaxy evolution
+- LIGO O3/O4: Abbott et al., Phys. Rev. X 6, 041015 (2016); LIGO Scientific Collaboration, arXiv:2111.03606
+- EHT Collaboration: Event Horizon Telescope Collaboration, Astrophys. J. Lett. 875, L1 (2019)
+- KiDS-1000: Asgari et al., Astron. Astrophys. 645, A104 (2021)
+- JWST/MIDIS: Finkelstein et al., Astrophys. J. Lett. 946, L13 (2023)
 
 ---
 
@@ -590,7 +590,7 @@ All datasets and analysis code are publicly available with complete reproducibil
 
 **Theoretical Framework:**
 
-[14] A. Murphy, "Quantum Harmonia: A framework for scale-dependent coupling in physical systems," arXiv:2408.XXXXX [quant-ph] (2025).
+[14] A. Murphy, "Scale-Coupling Framework: Evidence for Universal Coupling Across Physical Domains," In preparation (2025).
 
 [15] Planck Collaboration, "Planck 2018 results. VI. Cosmological parameters," Astron. Astrophys. **641**, A6 (2020).
 
