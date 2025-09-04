@@ -130,7 +130,7 @@ This matches the MIDIS cross-match observation k_obs = 0.519 ± 0.061 within 0.2
 
 At the MIDIS bin centers (z = 4.5, 5.5, 6.5, 7.5), the model predicts k = \[0.367, 0.470, 0.582, 0.701] with mean 0.530, in excellent agreement with observations.
 
-**Figure 2** shows this mapping graphically, demonstrating how the laboratory-measured ratio β/α = 0.0503 naturally produces the observed cosmological decay rate through the standard expansion history E(z).
+**Figures 2a-2b** show this mapping graphically, demonstrating how the laboratory-measured ratio β/α = 0.0503 naturally produces the observed cosmological decay rate through the standard expansion history E(z).
 
 ### 2.3 Information Density: γ
 
@@ -360,7 +360,7 @@ All parameter posteriors and correlation matrices are provided in the repository
 * **Limited data quality**: Several constraints rely on reanalysis of public datasets with inherent systematic uncertainties. GW and EHT constraints are particularly broad due to current measurement precision.
 * **Correlated systematics**: Cross-domain correlations cannot be fully excluded despite LODO/LOSO robustness checks. Common astrophysical or instrumental systematics could artificially enhance apparent universality.
 * **Model complexity**: The five-parameter framework may be over-parameterized relative to current data quality, potentially leading to parameter degeneracies or overfitting.
-* **MIDIS selection/binning**: Results depend on F560W flux proxy and mass cuts (log M_⋆ > 10); binning/selection effects (e.g., dust correction, photometric z errors) quantified in Appendix D3; robustness includes alternative bin edges (Δk < 0.02) and mass thresholds (log M_⋆ > 9.5, shifts k by ±5%).
+* **MIDIS selection/binning**: Results depend on F560W flux proxy and mass cuts (log₁₀(M_⋆/M_⊙) > 10); binning/selection effects (e.g., dust correction, photometric z errors) quantified in Appendix D3; robustness includes alternative bin edges (Δk < 0.02) and mass thresholds (log₁₀(M_⋆/M_⊙) > 9.5, shifts k by ±5%).
 
 ### 7.3 Physical Scope
 * **Small-scale physics unchanged**: Results do not address quantum gravity, string theory, or modifications to particle physics. The framework operates entirely within established GR+ΛCDM+QM domains with small corrections.
@@ -543,6 +543,8 @@ with cutoff Λ(S) ∝ S^{-1/2}. Hence
 
 **Mixed geometry:** Real cosmology/observational kernels are neither purely 2D nor purely 3D: they are **interface-weighted with finite line-of-sight depth**, i.e., d_eff ≈ 2.6 ± 0.2. For η ≈ 0.4 this yields an **effective exponent ≈ -0.6**, exactly between the surface and volume limits.
 
+*Example.* With d_eff = 2.6 and η = 0.4, σ(S) ∝ S^{-((2.6-1-0.4)/4)} = S^{-0.3} and σ² ∝ S^{-0.6}.
+
 **Empirical check:** Our pre-registered exponent scan (0.5–0.7) mildly prefers 0.6 (ΔBIC ≈ +2.6 to +3.2 against neighbors; see `exponent_stress_test.csv`). We therefore treat **S^{-0.6}** as an **effective, mixed-geometry scaling** supported by data and bounded by 2D/3D limits, rather than as a single-assumption derivation.
 
 ## Appendix J — Sensitivity of k to observable choice and selection
@@ -551,7 +553,7 @@ with cutoff Λ(S) ∝ S^{-1/2}. Hence
 |----------------------------------------------|---------------:|---------------------:|--------------------------------------------------|
 | Raw mean flux (no cuts)                     | 0.35–0.42     | −0.18 to −0.11       | Malmquist bias flattens high-z bins             |
 | Completeness-limited (uniform faint-end)    | 0.48 ± 0.05   | −0.05                | Uniform mag limit from z∈[7,8) 95th percentile  |
-| Mass+completeness (cross-match)             | 0.519 ± 0.061 | −0.011               | CEERS×MIDIS, log M_⋆>10, uniform faint-end      |
+| Mass+completeness (cross-match)             | 0.519 ± 0.061 | −0.011               | CEERS×MIDIS, log₁₀(M_⋆/M_⊙)>10, uniform faint-end (95th of z∈[7,8)) |
 | Peak proxy γ̂(z)                            | 0.52 ± 0.03   | −0.01                | Coherent front tracer (log-flux histogram peak) |
 
 **Caption.** Mean-flux k is sensitive to selection; raw (no cuts) is flatter due to incompleteness. Under uniform completeness and mass cuts, mean-flux converges to k ≈ 0.52, matching the peak-proxy and the parameter-free prediction k_pred = 0.530. See §D3 for the final method and scripts.
@@ -576,6 +578,8 @@ S_vN = -Tr[ρ ln ρ] for maximally entangled states → A_iface ~ (coherence_are
 All conversions preserve relative scaling; absolute normalization chosen to match theoretical expectations for interface information density.
 
 ### S2. TDF → S^{-0.6} Derivation Sketch
+
+*See Appendix I for the mixed-geometry bounded motivation; the steps below summarize limiting cases and historical scaffolding retained for context.*
 
 **Step 1:** TDF asymptotic behavior for large S gives correction terms δS^{-α} where α comes from temporal asymmetry ε and scale coupling δ.
 
