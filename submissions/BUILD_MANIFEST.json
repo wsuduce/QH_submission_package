@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-09-03T18:32:41.418852",
+  "figures": {
+    "fig1_delta_posterior.pdf": "eb27553a",
+    "fig2a_midis_betaalpha_to_k.pdf": "f637b5e0",
+    "fig2b_k_posterior.pdf": "0fa7c1c4",
+    "fig3_hierarchical_corner.pdf": "f1936021",
+    "fig4_ringdown_forecast.pdf": "8350a9d8"
+  },
+  "packages": [
+    "PRD_submission",
+    "JCAP_submission",
+    "arXiv_package"
+  ]
+}

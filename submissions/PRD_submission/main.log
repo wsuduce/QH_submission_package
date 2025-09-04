@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.13)  3 SEP 2025 18:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.13)  3 SEP 2025 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,6 +413,11 @@ Package cleveref Info: always capitalise cross-reference names on input line 78
 Package cleveref Info: always capitalise cross-reference names on input line 78
 52.
 )
+(C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+)
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
 lass! (Proceeding with fingers crossed.) on input line 12.
 Class revtex4-2 Info: cite was not loaded (OK!) on input line 12.
@@ -424,7 +429,8 @@ tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box70
-) (main.aux)
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -462,7 +468,6 @@ LaTeX Info: Redefining \showhyphens on input line 12.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
 (C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -475,12 +480,12 @@ ii
 \scratchbox=\box71
 \nofMPsegments=\count306
 \nofMParguments=\count307
-\everyMPshowfont=\toks27
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count308
 \MPscratchDim=\dimen158
 \MPnumerator=\count309
 \makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks28
+\everyMPtoPDFconversion=\toks30
 )
 (C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -501,7 +506,6 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 12.
- (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -510,8 +514,7 @@ Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 12.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
-
-(C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 (C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
@@ -526,130 +529,1823 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 ... magnitude, from quantum entanglement (10^
+                                                  {-}¹⁵ m) to cosmologica...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-! LaTeX Error: Unicode character β (U+03B2)
+
+LaTeX Warning: Command \textonesuperior invalid in math mode on input line 23.
+
+
+LaTeX Warning: Command \textonesuperior invalid in math mode on input line 23.
+
+
+! LaTeX Error: Unicode character ⁵ (U+2075)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 ...aboratory β/α Mapping to Cosmological k}
-                                                  
+l.23 ...de, from quantum entanglement (10^{-}¹⁵
+                                                   m) to cosmological struct...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-! LaTeX Error: Unicode character α (U+03B1)
+! LaTeX Error: Unicode character ⁴ (U+2074)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34 ...aboratory β/α Mapping to Cosmological k}
-                                                  
+l.23 ...}¹⁵ m) to cosmological structure (10⁴
+                                                  ⁶ m). A hierarchical cro...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[1{C:/Users/wsudu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (28.79007pt too wide) in paragraph at lines 43--44
-[]\OT1/cmr/m/n/12 (-20) At the MIDIS bin cen-ters ($\OML/cmm/m/it/12 z \OT1/cmr
-/m/n/12 (-20) = 4\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 5\OML/cmm/m/it/12 ; \O
-T1/cmr/m/n/12 (-20) 5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 5\OML/cmm/m/it/12 
-; \OT1/cmr/m/n/12 (-20) 6\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 5\OML/cmm/m/it
-/12 ; \OT1/cmr/m/n/12 (-20) 7\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 5$), the m
-odel pre-dicts $\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 (-20) = [0\OML/cmm/m/it/12 :
-\OT1/cmr/m/n/12 (-20) 367\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 0\OML/cmm/m/i
-t/12 :\OT1/cmr/m/n/12 (-20) 470\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 0\OML/c
-mm/m/it/12 :\OT1/cmr/m/n/12 (-20) 582\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) 0
-\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 701]$
+
+! LaTeX Error: Unicode character ⁶ (U+2076)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...⁵ m) to cosmological structure (10⁴⁶
+                                                   m). A hierarchical cross-...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+Missing character: There is no � in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 ...s-domain analysis prefers a single $\delta
+                                                  $ over domain-specific val...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Unicode character Δ (U+0394)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...e $\delta$ over domain-specific values (Δ
+                                                  BIC = 27.4). Two domains (...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 ...ogical decay constant $\langle$k$\rangle$_
+                                                  {4-8} = 0.530 that matches...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.23 ... 0.530 that matches JWST/MIDIS (0.519 $\pm
+                                                  $ 0.061) without tuned par...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Unicode character ₀ (U+2080)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ... scale-coupled corrections reduce the H₀
+                                                   and S_8 tensions while le...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 ...coupled corrections reduce the H₀ and S_
+                                                  8 tensions while leaving G...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \begin{itemize}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.26 \begin{itemize}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+[][][][]\OT1/cmr/m/n/10.95 (+20) We present ev-i-dence for a uni-ver-sal scale-
+coupling con-stant $\OML/cmm/m/it/10.95 ^^N$ \OT1/cmr/m/n/10.95 (+20) = 0.502
  []
 
-[2{C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-sup
-er-ts1.enc}]
-<../../artifacts/figures/fig1_delta_posterior.pdf, id=72, 1000.06313pt x 421.38
-493pt>
-File: ../../artifacts/figures/fig1_delta_posterior.pdf Graphic file (type pdf)
-<use ../../artifacts/figures/fig1_delta_posterior.pdf>
-Package pdftex.def Info: ../../artifacts/figures/fig1_delta_posterior.pdf  used
- on input line 63.
-(pdftex.def)             Requested size: 421.19714pt x 177.47556pt.
-<../../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf, id=73, 517.31078pt x 4
-04.97487pt>
-File: ../../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf Graphic file (type
- pdf)
-<use ../../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf>
-Package pdftex.def Info: ../../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf
-  used on input line 70.
-(pdftex.def)             Requested size: 421.19714pt x 329.74573pt.
- [3 <../../artifacts/figures/fig1_delta_posterior.pdf>]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
-Overfull \hbox (375.96376pt too wide) in paragraph at lines 79--80
-[]\OT1/cmr/m/n/12 (-20) Single Source of Truth dataset: \OT1/cmtt/m/n/12 data/m
-idis[]f560w[]masslim.csv \OT1/cmr/m/n/12 (-20) (SHA256: 370745AE4E9ADC8C4398A6E
-303AAB8A76E565FD1EB8380B363EBE014E6F89C53) 
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+\OMS/cmsy/m/n/10.95 ^^F$ \OT1/cmr/m/n/10.95 (+20) 0.031 span-ning 61 or-ders of
+ mag-ni-tude, from quan-tum en-tan-gle-ment
  []
 
-[4 <../../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf>] (main.bbl
 
-LaTeX Warning: Reference `LastBibItem' on page 5 undefined on input line 9.
-
-
-Package natbib Warning: Empty `thebibliography' environment on input line 53.
-
-) [5] (main.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
+Underfull \hbox (badness 10000) in paragraph at lines 23--26
+\OT1/cmr/m/n/10.95 (+20) (10$[]\OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (+20) )\
+OML/cmm/m/it/10.95 tocosmologicalstructure\OT1/cmr/m/n/10.95 (+20) (10\OML/cmm/
+m/it/10.95 m\OT1/cmr/m/n/10.95 (+20) )\OML/cmm/m/it/10.95 :Ahierarchicalcross \
+OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 domainanalysisprefersasingle$$^^N$
+ []
 
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (117.46489pt too wide) in paragraph at lines 23--26
+\OML/cmm/m/it/10.95 timephysicsintact:Allresultsincludepropagateduncertaintiesa
+ndconservativedomainpriors:Wecommittoconcrete; near \OMS/cmsy/m/n/10.95 ^^@
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \item L
+            IGO/Virgo/KAGRA O4--O5: ringdown overtone scaling f $\approx$ 42...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0733D99B074BB9BCABB61341F404F4EA;1791
-(rerunfilecheck)             After:  86D58E31CAC824D3F1555EDE67F60CA5;1897.
- ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \item E
+            uclid (z $\approx$ 1): BAO distance indicator shift $\approx$ +0...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \item D
+            ESI (z = 0.5): dark-energy state w $\approx$ −1.009 (see §5.3).
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Unicode character − (U+2212)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 ... = 0.5): dark-energy state w $\approx$ −
+                                                  1.009 (see §5.3).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! LaTeX Error: \begin{abstract} on input line 22 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.32 \end{abstract}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\endabstract ...pagefalse \color@endgroup \egroup 
+                                                  
+l.32 \end{abstract}
+                   
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{abstract}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \end{abstract}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.32 \end{abstract}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+
+Class revtex4-2 Warning: If you want your PACS to appear in your output, use do
+cument class option showpacs.
+
+
+! LaTeX Error: Unicode character Δ (U+0394)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...n $\delta$ over domain-specific values (Δ
+                                                  BIC = 27.4).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[1{C:/Users/wsudu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2{C:/User
+s/wsudu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}]
+
+! LaTeX Error: Unicode character ₀ (U+2080)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...t the starting point. The 4.4$\sigma$ H₀
+                                                   split \~\cite{ref1}, the ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ... point. The 4.4$\sigma$ H₀ split \~\cite
+                                                  {ref1}, the 3.2$\sigma$ S_...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ... point. The 4.4$\sigma$ H₀ split \~\cite
+                                                  {ref1}, the 3.2$\sigma$ S_...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Package natbib Warning: Citation `\global ' on page 3 undefined on input line 4
+4.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ... point. The 4.4$\sigma$ H₀ split \~\cite
+                                                  {ref1}, the 3.2$\sigma$ S_...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ... point. The 4.4$\sigma$ H₀ split \~\cite
+                                                  {ref1}, the 3.2$\sigma$ S_...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Package natbib Warning: Citation `\egroup ' on page 3 undefined on input line 4
+4.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \accent@spacefactor 
+l.44 ... point. The 4.4$\sigma$ H₀ split \~\cite
+                                                  {ref1}, the 3.2$\sigma$ S_...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Bad space factor (0).
+<to be read again> 
+                   \accent@spacefactor 
+l.44 ... point. The 4.4$\sigma$ H₀ split \~\cite
+                                                  {ref1}, the 3.2$\sigma$ S_...
+I allow only values in the range 1..32767 here.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.44 ...�� split \~\cite{ref1}, the 3.2$\sigma$ S_
+                                                  8 offset \~\cite{ref2}, an...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 44.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Package natbib Warning: Citation `\global ' on page 3 undefined on input line 4
+4.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...gnorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...{ref1}, the 3.2$\sigma$ S_8 offset \~\cite
+                                                  {ref2}, and the unitary-vs...
+
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+
+Package natbib Warning: Citation `\egroup ' on page 3 undefined on input line 4
+4.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 44.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Package natbib Warning: Citation `\global ' on page 3 undefined on input line 4
+4.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...gnorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...cal bookkeeping around black holes \~\cite
+                                                  {ref3}, together with long...
+
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+
+Package natbib Warning: Citation `\egroup ' on page 3 undefined on input line 4
+4.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 44.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \global 
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+Package natbib Warning: Citation `\global ' on page 3 undefined on input line 4
+4.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...gnorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \egroup 
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...th long-lived biological coherence \~\cite
+                                                  {ref4}, all sit on the sam...
+
+Please use the math alphabet \mathbf instead of the \bfseries command. 
+
+
+Package natbib Warning: Citation `\egroup ' on page 3 undefined on input line 4
+4.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.45 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.45 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (824.65485pt too wide) in paragraph at lines 44--45
+\OT1/cmr/m/n/12 (-20) point. The 4.4$\OML/cmm/m/it/12 ^^[$ \OT1/cmr/m/n/12 (-20
+) H split ~[\OT1/cmr/bx/n/12 (-20) ? \OT1/cmr/m/n/12 (-20) ]ref1, the 3.2$\OML/
+cmm/m/it/12 ^^[$ \OT1/cmr/m/n/12 (-20) S$[]\OML/cmm/m/it/12 offset[]$ 
+ []
+
+
+! LaTeX Error: Unicode character Δ (U+0394)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 ...ent domains in a hierarchical analysis (Δ
+                                                  BIC = 27.4).
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\delta' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+Missing character: There is no G in font tcrm1200!
+Missing character: There is no ; in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no k in font tcrm1200!
+Missing character: There is no g in font tcrm1200!
+Missing character: There is no w in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no r in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no p in font tcrm1200!
+Missing character: There is no y in font tcrm1200!
+Missing character: There is no ) in font tcrm1200!
+Missing character: There is no B in font tcbx1200!
+Missing character: There is no a in font tcbx1200!
+Missing character: There is no k in font tcbx1200!
+Missing character: There is no H in font tcbx1200!
+Missing character: There is no o in font tcbx1200!
+Missing character: There is no e in font tcbx1200!
+Missing character: There is no S in font tcbx1200!
+Missing character: There is no h in font tcbx1200!
+Missing character: There is no a in font tcbx1200!
+Missing character: There is no o in font tcbx1200!
+Missing character: There is no w in font tcbx1200!
+Missing character: There is no C in font tcbx1200!
+Missing character: There is no o in font tcbx1200!
+Missing character: There is no s in font tcbx1200!
+Missing character: There is no t in font tcbx1200!
+Missing character: There is no r in font tcbx1200!
+Missing character: There is no a in font tcbx1200!
+Missing character: There is no i in font tcbx1200!
+Missing character: There is no t in font tcbx1200!
+Missing character: There is no ( in font tcbx1200!
+Missing character: There is no E in font tcbx1200!
+Missing character: There is no H in font tcbx1200!
+Missing character: There is no T in font tcbx1200!
+Missing character: There is no ) in font tcbx1200!
+Missing character: There is no : in font tcrm1200!
+Missing character: There is no U in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no g in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no p in font tcrm1200!
+Missing character: There is no r in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no r in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no g in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no y in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no s in font tcrm1200!
+Missing character: There is no f in font tcrm1200!
+Missing character: There is no o in font tcrm1200!
+Missing character: There is no r in font tcrm1200!
+Missing character: There is no S in font tcrm1200!
+Missing character: There is no g in font tcrm1200!
+Missing character: There is no r in font tcrm1200!
+Missing character: There is no A in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no e in font tcrm1200!
+Missing character: There is no x in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no i in font tcrm1200!
+Missing character: There is no t in font tcrm1200!
+Missing character: There is no a in font tcrm1200!
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 7
+3.
+(C:\Users\wsudu\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
+
+Overfull \hbox (11.77599pt too wide) in paragraph at lines 72--75
+\OMS/cmsy/m/n/12 and com-pat-i-ble with $\OML/cmm/m/it/12 ^^N$ $\OMS/cmsy/m/n/1
+2 ^^Y$ 0.5. No de-vi-a-tion from GR is as-serted; the anal-y-sis demon-strates
+ []
+
+
+Overfull \hbox (5.67172pt too wide) in paragraph at lines 72--75
+\OMS/cmsy/m/n/12 that a sin-gle uni-ver-sal $\OML/cmm/m/it/12 ^^N$ \OMS/cmsy/m/
+n/12 is not ruled out by EHT data. (Pos-te-rior bands and pri-ors de-
+ []
+
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 76.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.77 ...ta$_lab$\rightarrow$scale $\approx$ 0.500}
+                                                   with \textbf{negligible j...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.77 ...ta$_lab$\rightarrow$scale $\approx$ 0.500}
+                                                   with \textbf{negligible j...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.77 ...gma$. (See Appendix D4 and artifacts: `d1_
+                                                  per_experiment_slopes.csv`...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (9.39595pt too wide) in paragraph at lines 76--78
+[]\OMS/cmsy/b/n/12 Laboratory Quan-tum En-tan-gle-ment\OMS/cmsy/m/n/12 : Cu-rat
+ed protection-window fits across
+ []
+
+
+Overfull \hbox (8.8134pt too wide) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 mul-ti-ple plat-forms (NV cen-ter, SiP donors, sta-bi-lized ca
+t codes, trans-mons, op-
+ []
+
+
+Overfull \hbox (18.1766pt too wide) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 tome-chan-ics) yield \OMS/cmsy/b/n/12 plat-form pro-tec-tion e
+x-po-nents $\OML/cmm/m/it/12 ^^R$ \OMS/cmsy/m/n/12 (raw, per plat-form; typ-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 i-cally 0.7--1.1). A \OMS/cmsy/b/n/12 physics-informed platfor
+m-to-scale map-ping
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 was then ap-plied to com-pare lab mea-sure-ments to the uni-ve
+r-sal cou-pling axis. Model
+ []
+
+
+Overfull \hbox (2.44762pt too wide) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 se-lec-tion (AIC/BIC with cross-validation) \OMS/cmsy/b/n/12 s
+trongly fa-vors M1: $\OML/cmm/m/it/12 ^^R$ \OMS/cmsy/b/n/12 = $\OML/cmm/m/it/12
+ ^^N$ \TS1/cmr/bx/n/12 (-20) � $\OML/cmm/m/it/12 ^^^$ \OMS/cmsy/m/n/12 over
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 M2/M3; the mapped lab-to-scale cou-pling is $\OML/cmm/m/it/12 
+^^N$$[]ab$$\OMS/cmsy/m/n/12 !$\OMS/cmsy/b/n/12 scale $\OMS/cmsy/m/n/12 ^^Y$ \OM
+S/cmsy/b/n/12 0.500 \OMS/cmsy/m/n/12 with \OMS/cmsy/b/n/12 neg-li-gi-
+ []
+
+
+Overfull \hbox (19.14836pt too wide) in paragraph at lines 76--78
+\OMS/cmsy/b/n/12 ble jack-knife shift\OMS/cmsy/m/n/12 , and $\OML/cmm/m/it/12 ^
+^^$ \OMS/cmsy/m/n/12 val-ues within the-ory bounds. This agrees with the cross-
+domain
+ []
+
+
+Overfull \hbox (283.21964pt too wide) in paragraph at lines 76--78
+\OMS/cmsy/m/n/12 pos-te-rior $\OML/cmm/m/it/12 ^^N$ \OMS/cmsy/m/n/12 = 0.502 $^
+^F$ 0.031 within []0\OT1/cmr/m/n/12 (-20) .1$\OML/cmm/m/it/12 ^^[$\OT1/cmr/m/n/
+12 (-20) . (See Ap-pendix D4 and ar-ti-facts: `d1$[]\OML/cmm/m/it/12 er[]xperim
+ent[]lopes:csv\OT1/cmr/m/n/12 (-20) `\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) `
+\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 (-20) 1[]\OML/cmm/m/it/12 apped[]elta:csv\OT1
+/cmr/m/n/12 (-20) `\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (-20) `\OML/cmm/m/it/12 d
+\OT1/cmr/m/n/12 (-20) 1[]\OML/cmm/m/it/12 hi[]stimates:csv\OT1/cmr/m/n/12 (-20)
+ `\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) )$ 
+ []
+
+[4]
+! You can't use `macro parameter character #' in horizontal mode.
+<argument> ##
+              2.1.1 Physical Basis for Platform-to-Scale Mapping
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                    
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@temp@A.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@temp@B.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@temp@A.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@temp@B.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   }
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@UnexpandableSpace 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   }
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \HyPsd@String.
+<to be read again> 
+                   \HyPsd@SPACEOPTI 
+l.79 ...sical Basis for Platform-to-Scale Mapping}
+                                                  
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 15505 strings out of 473523
- 251744 string characters out of 5714630
- 709284 words of memory out of 5000000
- 38446 multiletter control sequences out of 15000+600000
- 577391 words of font info for 143 fonts, out of 8000000 for 9000
+ 15493 strings out of 473523
+ 250598 string characters out of 5714630
+ 712360 words of memory out of 5000000
+ 38428 multiletter control sequences out of 15000+600000
+ 578364 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1003b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wsudu/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/wsudu/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/wsudu/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/wsudu/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
-wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmti12.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmtt12.pfb><C:/Users/wsudu/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (5 pages, 254762 bytes).
-PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 37475 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 75i,8n,79p,1003b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -39,7 +39,7 @@ class SubmissionBuilder:
         print(f"📝 Converting markdown to LaTeX ({format_type})...")
         
         # Read the markdown
-        with open(md_file, 'r') as f:
+        with open(md_file, 'r', encoding='utf-8') as f:
             content = f.read()
         
         # Format-specific conversions
@@ -50,15 +50,40 @@ class SubmissionBuilder:
         elif format_type == "arxiv":
             latex_content = self.convert_to_arxiv_latex(content)
         
-        with open(output_file, 'w') as f:
+        with open(output_file, 'w', encoding='utf-8') as f:
             f.write(latex_content)
             
         return output_file
     
     def convert_to_prd_latex(self, markdown_content):
-        """Convert to PRD REVTeX format"""
-        # This would contain the full conversion logic
-        # For now, using the existing content.tex as template
+        """Convert to PRD REVTeX format with full markdown parsing"""
+        import re
+        
+        # Split content into sections
+        lines = markdown_content.split('\n')
+        
+        # Extract abstract
+        abstract_start = None
+        abstract_end = None
+        main_content_start = None
+        
+        for i, line in enumerate(lines):
+            if line.strip() == "## Abstract":
+                abstract_start = i + 1
+            elif abstract_start and line.strip().startswith("##") and "Abstract" not in line:
+                abstract_end = i
+                main_content_start = i
+                break
+        
+        # Process abstract
+        abstract_lines = lines[abstract_start:abstract_end] if abstract_start else [""]
+        abstract_content = self.process_markdown_text('\n'.join(abstract_lines))
+        
+        # Process main content
+        main_lines = lines[main_content_start:] if main_content_start else lines
+        main_content = self.process_markdown_sections(main_lines)
+        
+        # LaTeX template
         template = r"""\documentclass[aps,prd,preprint,onecolumn,nofootinbib,superscriptaddress,longbibliography]{revtex4-2}
 \usepackage{microtype}
 \usepackage{graphicx}
@@ -66,6 +91,7 @@ class SubmissionBuilder:
 \usepackage{bm}
 \usepackage[hidelinks]{hyperref}
 \usepackage[capitalise]{cleveref}
+\usepackage[utf8]{inputenc}
 
 \graphicspath{{../../artifacts/figures/}}
 
@@ -97,9 +123,155 @@ We thank the LIGO/Virgo/KAGRA collaborations, the Event Horizon Telescope consor
 
 \end{document}"""
         
-        # Extract abstract and main content from markdown
-        # This is simplified - you'd need proper markdown parsing
-        return template
+        # Replace placeholders
+        latex_content = template.replace('%ABSTRACT_CONTENT%', abstract_content)
+        latex_content = latex_content.replace('%MAIN_CONTENT%', main_content)
+        
+        return latex_content
+    
+    def process_markdown_text(self, text):
+        """Convert basic markdown formatting to LaTeX"""
+        if not text:
+            return ""
+        
+        import re
+        text = text.strip()
+        
+        # Convert bold **text** to \textbf{text}
+        text = re.sub(r'\*\*(.*?)\*\*', r'\\textbf{\1}', text)
+        
+        # Convert italic *text* to \textit{text}
+        text = re.sub(r'(?<!\*)\*([^*]+?)\*(?!\*)', r'\\textit{\1}', text)
+        
+        # Convert citations [1] to \cite{ref1}
+        text = re.sub(r'\[(\d+)\]', r'~\\cite{ref\1}', text)
+        
+        # Convert Greek letters and math symbols
+        text = text.replace('δ', '$\\delta$')
+        text = text.replace('α', '$\\alpha$')
+        text = text.replace('β', '$\\beta$')
+        text = text.replace('γ', '$\\gamma$')
+        text = text.replace('ε', '$\\varepsilon$')
+        text = text.replace('θ', '$\\theta$')
+        text = text.replace('φ', '$\\phi$')
+        text = text.replace('σ', '$\\sigma$')
+        text = text.replace('≈', '$\\approx$')
+        text = text.replace('±', '$\\pm$')
+        text = text.replace('→', '$\\rightarrow$')
+        text = text.replace('⟨', '$\\langle$')
+        text = text.replace('⟩', '$\\rangle$')
+        text = text.replace('⁻', '^{-}')
+        text = text.replace('⁺', '^{+}')
+        text = text.replace('₍₄–₈₎', '_{4-8}')
+        text = text.replace('₄', '_4')
+        text = text.replace('₈', '_8')
+        text = text.replace('⊙', '$M_\\odot$')
+        text = text.replace('≲', '$\\lesssim$')
+        text = text.replace('≳', '$\\gtrsim$')
+        
+        # Convert em-dashes and special characters
+        text = text.replace('—', '---')
+        text = text.replace('–', '--')
+        text = text.replace('"', '``')
+        text = text.replace('"', "''")
+        text = text.replace('‑', '-')  # Non-breaking hyphen
+        
+        # Handle lists
+        lines = text.split('\n')
+        processed_lines = []
+        in_itemize = False
+        
+        for line in lines:
+            if line.strip().startswith('•') or line.strip().startswith('*') or line.strip().startswith('-'):
+                if not in_itemize:
+                    processed_lines.append('\\begin{itemize}')
+                    in_itemize = True
+                item_text = line.strip()[1:].strip()  # Remove bullet
+                processed_lines.append(f'\\item {item_text}')
+            else:
+                if in_itemize:
+                    processed_lines.append('\\end{itemize}')
+                    in_itemize = False
+                if line.strip():
+                    processed_lines.append(line)
+        
+        if in_itemize:
+            processed_lines.append('\\end{itemize}')
+        
+        return '\n'.join(processed_lines)
+    
+    def process_markdown_sections(self, lines):
+        """Convert markdown sections to LaTeX"""
+        import re
+        content = []
+        i = 0
+        
+        while i < len(lines):
+            line = lines[i].strip()
+            
+            # Skip metadata and version stamps
+            if line.startswith('**Manuscript ID:**') or line.startswith('**Change set:**') or line.startswith('<!--'):
+                i += 1
+                continue
+            
+            # Handle headers
+            if line.startswith('###'):
+                title = line[3:].strip()
+                title = self.process_markdown_text(title)
+                content.append(f'\\subsection{{{title}}}')
+                
+            elif line.startswith('##'):
+                title = line[2:].strip()
+                title = self.process_markdown_text(title)
+                if title.startswith('Appendix'):
+                    content.append(f'\\appendix')
+                    title = title.replace('Appendix', '').strip()
+                    if title:
+                        content.append(f'\\section{{{title}}}')
+                else:
+                    content.append(f'\\section{{{title}}}')
+                    
+            elif line.startswith('#') and not line.startswith('##'):
+                # Skip main title - already in template
+                pass
+                
+            # Handle figures
+            elif line.startswith('!['):
+                # Extract figure info: ![caption](path){options}
+                fig_match = re.match(r'!\[(.*?)\]\((.*?)\)(?:\{(.*?)\})?', line)
+                if fig_match:
+                    caption = fig_match.group(1)
+                    path = fig_match.group(2)
+                    
+                    # Extract filename from path
+                    filename = path.split('/')[-1]
+                    
+                    content.append('\\begin{figure}[htbp]')
+                    content.append('\\centering')
+                    content.append(f'\\includegraphics[width=0.9\\textwidth]{{{filename}}}')
+                    content.append(f'\\caption{{{self.process_markdown_text(caption)}}}')
+                    content.append('\\end{figure}')
+            
+            # Handle regular text
+            elif line:
+                # Collect paragraph until empty line
+                paragraph_lines = [line]
+                j = i + 1
+                while j < len(lines) and lines[j].strip() and not lines[j].strip().startswith('#') and not lines[j].strip().startswith('!['):
+                    paragraph_lines.append(lines[j])
+                    j += 1
+                
+                paragraph = '\n'.join(paragraph_lines)
+                processed_paragraph = self.process_markdown_text(paragraph)
+                
+                if processed_paragraph:
+                    content.append(processed_paragraph)
+                
+                i = j - 1  # Adjust for the loop increment
+            
+            i += 1
+        
+        return '\n\n'.join(content)
     
     def copy_bibliography(self, target_dir):
         """Copy bibliography files"""

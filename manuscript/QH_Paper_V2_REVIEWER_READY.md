@@ -9,11 +9,11 @@
 <!-- Version Stamp -->
 
 **Manuscript ID:** QH‑δ/V2 • **Draft:** v2.3‑final • **Timestamp (PT):** 2025‑08‑30 21:15 • **Editor:** AM + Claude • **Commit:** *submission-ready*
-**Change set:** Abstract toned to “evidence,” priors/uncertainties noted; BAO reframed as fractional distance‑indicator shift; DESI w(0.5) corrected to ≈ −1.009; §6 Statistical Validation added (priors/likelihoods/correlations + LODO/LOSO scaffold); §7 Key Limitations added; Appendix D1 δ\_quantum provenance table added; Appendix E Assertions map added; MIDIS k updated to **0.523 ± 0.058** via script replication; Lab platform‑to‑scale mapping integrated (M1 selected by BIC/CV; δ_lab→scale ≈ 0.500, consistent with cross‑domain δ).
+**Change set:** Abstract toned to "evidence," priors/uncertainties noted; BAO reframed as fractional distance‑indicator shift; DESI w(0.5) corrected to ≈ −1.009; §6 Statistical Validation added (priors/likelihoods/correlations + LODO/LOSO scaffold); §7 Key Limitations added; Appendix D1 δ\_quantum provenance table added; Appendix E Assertions map added; MIDIS k updated to **0.519 ± 0.061** via script replication; Lab platform‑to‑scale mapping integrated (M1 selected by BIC/CV; δ_lab→scale ≈ 0.500, consistent with cross‑domain δ).
 
 ## Abstract
 
-We present evidence for a universal scale‑coupling constant δ = 0.502 ± 0.031 spanning 61 orders of magnitude, from quantum entanglement (10⁻¹⁵ m) to cosmological structure (10⁴⁶ m). A hierarchical cross‑domain analysis prefers a single δ over domain‑specific values (ΔBIC = 27.4). Two domains (cosmology; lab‑mapped quantum platforms) constrain a non‑zero δ. Two others (GW ringdown; EHT shadows) are compatible and used as consistency checks, not detections. A laboratory‑measured ratio β/α = 0.0503 maps, through the Hubble e‑fold coordinate, to a cosmological decay constant ⟨k⟩₍₄–₈₎ = 0.530 that matches JWST/MIDIS (0.523 ± 0.058) without tuned parameters. 
+We present evidence for a universal scale‑coupling constant δ = 0.502 ± 0.031 spanning 61 orders of magnitude, from quantum entanglement (10⁻¹⁵ m) to cosmological structure (10⁴⁶ m). A hierarchical cross‑domain analysis prefers a single δ over domain‑specific values (ΔBIC = 27.4). Two domains (cosmology; lab‑mapped quantum platforms) constrain a non‑zero δ. Two others (GW ringdown; EHT shadows) are compatible and used as consistency checks, not detections. A laboratory‑measured ratio β/α = 0.0503 maps, through the Hubble e‑fold coordinate, to a cosmological decay constant ⟨k⟩₍₄–₈₎ = 0.530 that matches JWST/MIDIS (0.519 ± 0.061) without tuned parameters. 
 
 In cosmology, small scale‑coupled corrections reduce the H₀ and S₈ tensions while leaving GR and early‑time physics intact. All results include propagated uncertainties and conservative domain priors.
 
@@ -436,7 +436,7 @@ Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the 
 * **δ (μ_δ = 0.502 ± 0.031):** `hierarchical_delta_results.csv` (posterior summary), `fig1_delta_posterior.pdf`.
 * **Model selection (ΔBIC = 27.4):** `bic_compare.csv`.
 * **LODO/LOSO (max |Δμ_δ| = 0.18σ):** `lodo_loso.csv`.
-* **β/α → k (k_obs = 0.523 ± 0.058):** `midis_k_posterior.csv`, `fig2_beta_over_alpha_to_k.pdf`.
+* **β/α → k (k_obs = 0.519 ± 0.061):** `midis_k_posterior.csv`, `fig2_beta_over_alpha_to_k.pdf`.
 * **θ_platform (per‑experiment lab slopes):** `d1_per_experiment_slopes.csv`; panels in `fig_D1_*.pdf`.
 * **Lab mapping (δ_lab→scale ≈ 0.500) & φ posteriors:** `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `fig_D4_phi_posteriors.pdf`.
 * **GW forecast band:** `fig4_ringdown_forecast.pdf` (prediction code path noted in `predictions_calculator.ipynb`).
