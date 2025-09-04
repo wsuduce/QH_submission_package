@@ -77,9 +77,15 @@ Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) ov
 
 **Robustness to φ-priors.** Widening all φ priors ×4 leaves δ_{lab→scale} unchanged within 0.01 and preserves decisive preference for M1 over M2/M3 (ΔBIC_{M1−M2}=+9.6; ΔBIC_{M1−M3}=+12.2), ruling out prior-tuning as the origin of the agreement.
 
-**Physical basis for φ (platform→effective-scale).** Platform controls (e.g., N_DD, α², Q, p, C) shift the effective scale S seen by the protection window. Filter‑function theory (DD), central‑spin diffusion (Si:P/SiC), encoded‑manifold lifetimes (cat codes), thermomechanical scaling (optomech), and Rydberg blockade fidelity set hard slope windows for θ vs control, which we encode as priors on φ: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3].
+**Physical basis for φ (platform→effective-scale).** Platform controls (e.g., N_DD, α², Q, purity p, GHZ N) shift the effective scale via S(X) = (X/X₀)^φ, where φ encodes how the control modifies the protected manifold (filter-function bandwidth narrowing, encoded-manifold separation, thermomechanical linewidth reduction, etc.). Assuming the universal law τ ∝ S^δ within the protection window, the measured slope is
 
-**Robustness.** Widening all φ bounds ×2 and ×4 leaves δ_lab→scale unchanged within 0.01 and preserves decisive preference for M1: θ = δ × φ over M2/M3 (ΔBIC +9.6 / +12.2). Jackknife tests show negligible platform leverage. Thus φ is theory‑bounded, not tune‑to‑fit. (Details in App. F; phi_sensitivity_test.csv.)
+θ ≡ d log τ / d log X = δ · d log S / d log X = δ · φ,
+
+giving M1: θ = δ · φ.
+
+**Theory-bounded priors.** We use conservative priors per platform: DD [0.9,1.6], Si:P [0.8,1.3], Cat [1.0,1.6], Optomech [0.8,1.2], Rydberg [0.7,1.3].
+
+**Robustness.** Widening all φ priors ×4 changes δ_lab→scale by ≤0.01 and keeps M1 decisively favored (ΔBIC_M1−M2 = +9.6; ΔBIC_M1−M3 = +12.2). Jackknife shows negligible platform leverage. (Details: App. F; phi_sensitivity_test.csv.)
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:
@@ -156,7 +162,7 @@ where S_info is the measured entropy/information content, A_iface is the effecti
 
 This parameter corresponds to maximum information density at measurement interfaces, whether quantum, gravitational, or cosmological. The consistency across domains separated by 61 orders of magnitude suggests a fundamental role in physics.
 
-**A_iface summary.** We normalize γ on a common basis γ ≡ S_info/(A_iface/ℓ_P²). A_iface is physically defined per domain: BH = horizon area (spin-corrected), Cosmology = density-peak aperture from the estimator window, Quantum = coherence aperture (mode waist/device/ensemble). Varying A_iface by ×4 (area) shifts combined γ by ≤0.2σ, indicating robustness (App. H; gamma_iface_sensitivity.csv).
+**Common-basis definition.** We compare interface information densities via γ ≡ S_info/(A_iface/ℓ_P²). A_iface is physically defined per domain: BH = horizon area (spin-corrected), Cosmology = density-peak aperture of the estimator window, Quantum = coherence/readout aperture. Varying A_iface by ×4 shifts the combined γ by ≤0.2σ (App. H; gamma_iface_sensitivity.csv)—the cross-domain consistency is not an artifact of area choice.
 
 ## 3. Mathematical Framework
 
@@ -174,7 +180,7 @@ where:
 
 **Motivation.** The kernel D(t,S)=γe^{−t²/S}+αH(t)e^{−αt/S}+βH(−t)e^{βt/S} is the minimal form that (i) peaks information at the measurement interface (γ), (ii) provides asymmetric forward/past persistence (α,β) without unphysical tails, and (iii) yields correct limits: for S≈1 the Gaussian dominates (interface‑localized); for S≫1 the time integral approaches γ√πS + 1/α + 1/β (constant information up to interface growth).
 
-**Why S^{−0.6}?** Coarse‑graining by b rescales S→b²S while interface‑correlated fluctuations with anomalous dimension η contribute a low‑k spectrum ~k^{−(1+η)}. Integrating to Λ(S)∝S^{−1/2} gives variance ∝S^{−(1−η)}. With η≈0.4 observed across platform noise spectra (1/f^{1+η}), the late‑time correction naturally scales ~S^{−0.6}. Exponent scans in 0.5–0.7 mildly disfavor alternatives (ΔBIC ~ +2.6 to +3.2 vs 0.6). See Appendix I for detailed derivation and `exponent_stress_test.csv` for numerical validation.
+**Effective mixed-geometry scaling.** If P(k) ∝ k^{−(1+η)} with η ≈ 0.4 and the smoothing kernel has effective dimension 2 < d_eff < 3, then σ²(S) ∝ S^{−(d_eff−1−η)} (with Λ ∝ S^{−1/2}). Surface-dominated (≈−0.3) and volume-dominated (≈−0.8) limits bound the exponent; a realistic interface-weighted kernel (e.g., d_eff ≈ 2.6 ± 0.2) yields an effective ≈−0.6. Our exponent scan in [0.5,0.7] mildly prefers 0.6 (ΔBIC ≈ +2–3 versus neighbors). We treat S^{−0.6} as an effective, mixed-geometry scaling consistent with theory bounds and data. (Full derivation: Appendix I; numerical validation: `exponent_stress_test.csv`.)
 
 **Intuition for TDF terms:** The γ term represents interface information density (peaked at t=0, observation events). The α term governs forward temporal persistence (exponential decay for t>0). The β term captures backward temporal influence (exponential growth for t<0). Together, these encode how information and coherence evolve across temporal and scale boundaries, with δ controlling the scale-dependence of protection windows.
 
@@ -217,7 +223,7 @@ We fit power laws τ ∝ S\_norm^δ only over protection windows where the slope
 
 **Scale assignments:** CMB uses the comoving sound‑horizon r_s; BAO uses the effective D_V/r_s kernel in the quoted z‑bin; SNe use the effective distance‑ladder kernel (calibrator sample depth). Reported results are fractional shifts relative to ΛCDM baselines; early‑time physics and r_s are unmodified. For background distances we take S(z) to track the **effective comoving measurement scale** (e.g., D_V(z) or r_com(z)), which **increases** with z. Thus CMB > BAO > SN in S, matching the Hubble-tension illustration.
 
-**Probe definitions.** We take S_CMB ≈ r_s (drag), S_BAO as the effective D_V/r_s kernel of the quoted z bin, and S_SN ≈ ⟨D_L⟩ of the calibrator sample (distance-ladder kernel). These choices implement the effective comoving measurement scale we use throughout; results are reported as fractional shifts relative to ΛCDM baselines.
+**Probe definitions.** S_CMB ≈ r_s(z_drag) (sound horizon), S_BAO(z) ≡ D_V(z) (BAO volume distance), and S_SNe ≈ ⟨D_L⟩ of the calibrator selection. We report fractional shifts about ΛCDM baselines. Because S_CMB ≫ S_BAO ≳ S_SNe, the small scale-coupled correction naturally orders CMB < BAO < SN for H₀ inferences without modifying early-time physics.
 
 Phenomenological illustration: incorporating scale-dependent corrections derived from δ:
 
