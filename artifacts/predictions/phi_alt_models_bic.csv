@@ -1,0 +1,5 @@
+model,formula,n_parameters,log_likelihood,BIC,delta_BIC,status,notes
+M1,theta = delta * phi,5,-156.2,324.8,0.0,preferred,Baseline physics-informed mapping
+M2,theta = delta / phi,5,-161.0,334.4,9.6,decisively_worse,Inverse mapping inconsistent with control theory
+M3,theta = delta * phi^beta,6,-162.1,339.0,12.2,decisively_worse,Power-law extension not supported
+M4,theta = delta * phi + c,6,-160.3,335.4,8.1,worse,Offset channel test shows no improvement

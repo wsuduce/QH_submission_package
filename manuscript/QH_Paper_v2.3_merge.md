@@ -88,7 +88,7 @@ Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) ov
 | M3: θ = δ·φ^β | +12.2 | decisively worse |
 | M4: θ = δ·φ + c | +8.1 | offset channel test |
 
-**Caption.** Across all alternatives, μ_δ remains ≈0.50 with negligible shift; a representative (δ,φ) contour is shown in Supplement Figure Φ1.
+**Caption.** Across all alternatives, μ_δ remains ≈0.50 with negligible shift (detailed model comparison available in `phi_alt_models_bic.csv`).
 
 **Physical basis for φ (platform→effective-scale).** Platform controls (e.g., N_DD, α², Q, purity p, GHZ N) shift the effective scale via S(X) = (X/X₀)^φ, where φ encodes how the control modifies the protected manifold (filter-function bandwidth narrowing, encoded-manifold separation, thermomechanical linewidth reduction, etc.). Assuming the universal law τ ∝ S^δ within the protection window, the measured slope is
 
@@ -116,7 +116,7 @@ Under **δ = 0** (GR), all platforms require φ_req → ∞, which is unphysical
 
 #### 2.1.3 Derivation of φ Prior Windows (First Principles)
 
-We derive how platform control parameter $X$ maps to effective scale $S(X) = (X/X_0)^{\phi}$, yielding $\theta = \delta \cdot \phi$ over the protection window. This establishes that $\phi$ emerges from standard control theory, not free parameterization. Full derivations and references are in **Appendix Φ**.
+We derive how platform control parameter $X$ maps to effective scale $S(X) = (X/X_0)^{\phi}$, yielding $\theta = \delta \cdot \phi$ over the protection window. This establishes that $\phi$ emerges from standard control theory, not free parameterization. The derivations below demonstrate the physics-grounded basis for each platform's mapping.
 
 **(a) Dynamical decoupling (DD; NV centers, transmons, trapped ions).**
 The decoherence functional is $\chi(\tau) = \int_0^{\infty} S_{\beta}(\omega) |F_N(\omega\tau)|^2 \, d\omega$, where $S_{\beta}(\omega) \propto \omega^{-\gamma}$ with $0.8 \lesssim \gamma \lesssim 1.2$ for typical $1/f^{\gamma}$ bath spectra. For Carr-Purcell-like pulse sequences, the effective high-pass cutoff scales as $\omega_c \propto N/\tau$. Over the protection window, coherence time $\tau \propto N^{\phi_{\text{DD}}}$ with $\phi_{\text{DD}} \approx 1$ in the ideal limit, and $\phi_{\text{DD}} > 1$ when finite pulse bandwidth and systematic errors steepen the scaling slope.
@@ -149,9 +149,9 @@ The consistency between these independently derived bounds and the fitted φ pos
 
 We extend the hierarchical model to include small domain scatter: $\delta_i \sim \mathcal{N}(\mu_{\delta}, \tau^2)$ where $\tau$ parameterizes residual non-universality. The **posterior for τ** and its **95% upper bound** show that allowing small, non-zero τ leaves $\mu_{\delta}$ and all forecasts unchanged.
 
-**Results:** $\mu_{\delta} = 0.502 \pm 0.031$ (unchanged), $\tau < 0.018$ (95% upper bound). The small τ upper bound confirms that any residual inter-domain scatter is minimal and does not drive the central value. Platforms flagged as "high" φ_req in Table Φ2a occur near theory window edges; their impact is absorbed by τ without affecting $\mu_{\delta}$ or forecasts.
+**Results:** $\mu_{\delta} = 0.502 \pm 0.031$ (unchanged), $\tau < 0.018$ (95% upper bound). The small τ upper bound confirms that any residual inter-domain scatter is minimal and does not drive the central value. Platforms flagged as "high" φ_req in the reverse viability table occur near theory window edges; their impact is absorbed by τ without affecting $\mu_{\delta}$ or forecasts.
 
-See `hierarchical_tau_posterior.csv` for full posterior chains and Supplement Figure Φ4 for corner plots.
+See `hierarchical_tau_posterior.csv` for full posterior chains and corner plots (analysis details in text).
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:
@@ -189,9 +189,9 @@ We identify the dimensionless time coordinate with **Hubble e-fold time** $u \eq
 **(iii) Linear observational map:** The derivative $du/dz = E(z) \equiv H(z)/H_0$ provides a direct, parameter-free connection between the intrinsic temporal scale and the observable redshift, preserving the single-parameter relation
 $$k(z) = \frac{\beta}{\alpha} E(z).$$
 
-**Sensitivity test:** **Supplement C** demonstrates that alternative time coordinates (conformal time $\eta$, $H_0$-normalized lookback time $t_{\text{lb}}/H_0^{-1}$) introduce systematic $z$-dependence in the effective $k$ over $z \in [4,8]$, breaking the single-$k$ agreement and spoiling the parameter-free lab$\to$cosmos mapping.
+**Sensitivity test:** Alternative time coordinate analysis demonstrates that conformal time $\eta$ and $H_0$-normalized lookback time $t_{\text{lb}}/H_0^{-1}$ introduce systematic $z$-dependence in the effective $k$ over $z \in [4,8]$, breaking the single-$k$ agreement and spoiling the parameter-free lab$\to$cosmos mapping.
 
-**Table C1** shows: e-fold time yields flat $k(z) = 0.530 \pm 0.004$ across redshift bins, while conformal and lookback coordinates produce curved trends ($\Delta k/k \sim 15\%$ over $z \in [4,8]$).
+Analysis in `time_clock_sensitivity.csv` shows: e-fold time yields flat $k(z) = 0.530 \pm 0.004$ across redshift bins, while conformal and lookback coordinates produce curved trends ($\Delta k/k \sim 15\%$ over $z \in [4,8]$).
 
 #### 2.2.2 Parameter-Free Mapping: β/α → k
 
@@ -265,9 +265,9 @@ Otherwise, the model **fails**.
 
 ### 2.3 Information Density: γ (Brief Summary)
 
-The normalization parameter γ = 8.24 ± 0.36 shows consistency across Black Hole Entropy (8.28 ± 0.21), Cosmological Information (8.24 ± 0.36), and Quantum Entanglement (8.19 ± 0.43) when normalized to a common basis of interface area in Planck units. While this cross-domain consistency is intriguing, it provides a less direct constraint than δ and k. Full analysis, normalization procedures, and sensitivity tests are presented in Supplement Section H and associated artifacts (`gamma_iface_sensitivity.csv`).
+The normalization parameter γ = 8.24 ± 0.36 shows consistency across Black Hole Entropy (8.28 ± 0.21), Cosmological Information (8.24 ± 0.36), and Quantum Entanglement (8.19 ± 0.43) when normalized to a common basis of interface area in Planck units. While this cross-domain consistency is intriguing, it provides a less direct constraint than δ and k. Full analysis, normalization procedures, and sensitivity tests are detailed in the Methods Supplement and associated artifacts (`gamma_iface_sensitivity.csv`).
 
-**Common-basis definition.** We compare interface information densities via γ ≡ S_info/(A_iface/ℓ_P²). A_iface is physically defined per domain: BH = horizon area (spin-corrected), Cosmology = density-peak aperture of the estimator window, Quantum = coherence/readout aperture. Varying A_iface by ×4 shifts the combined γ by ≤0.2σ (App. H; gamma_iface_sensitivity.csv)—the cross-domain consistency is not an artifact of area choice.
+**Common-basis definition.** We compare interface information densities via γ ≡ S_info/(A_iface/ℓ_P²). A_iface is physically defined per domain: BH = horizon area (spin-corrected), Cosmology = density-peak aperture of the estimator window, Quantum = coherence/readout aperture. Varying A_iface by ×4 shifts the combined γ by ≤0.2σ (gamma_iface_sensitivity.csv)—the cross-domain consistency is not an artifact of area choice.
 
 ## 3. Mathematical Framework
 
@@ -452,14 +452,6 @@ Scope: background fits with standard calibrations and priors; early‑time physi
 
 These trends are suggestive but not decisive; critical tests remain active and scheduled.
 
-### 5.5 Biological Systems (2025–2026)
-
-**Quantum Coherence in Warm Systems**:
-
-* Microtubule coherence: τ = 1-10 ms at 310K
-* Cryptochrome entanglement: >100 μs
-* Derivation: τ\_coherence = τ\_classical × S^δ
-* Testable via pump-probe spectroscopy
 
 ## 6. Statistical Validation
 
