@@ -1,0 +1,6 @@
+variant,probe,change_description,delta_H0_sigma,notes
+r_s_plus5,CMB,"Sound horizon +5% (r_s → 1.05×r_s)",NaN,"Fill after CMB scale variation"
+r_s_minus5,CMB,"Sound horizon -5% (r_s → 0.95×r_s)",NaN,"Fill after CMB scale variation"
+D_M_vs_D_V,BAO,"Angular diameter D_M vs volume-average D_V",NaN,"Fill after BAO kernel comparison"
+D_L_window_narrow,SNe,"Calibrator distance window -20%",NaN,"Fill after SNe scale variation"
+D_L_window_wide,SNe,"Calibrator distance window +20%",NaN,"Fill after SNe scale variation"

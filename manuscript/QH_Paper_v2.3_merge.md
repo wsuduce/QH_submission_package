@@ -238,9 +238,9 @@ To directly address whether the observed exponential decay could emerge from sta
 
 Otherwise, the model **fails**.
 
-**Results.** Table K1 presents the quantified comparison:
+**Results.** The quantified comparison shows:
 
-**Table K1. Astrophysical Model Comparison - Single-k Test**
+**Key Finding:** TNG/EAGLE models require proxy-dependent k values and z-bin retuning to achieve single-k agreement, while SCF naturally predicts k = 0.530 across both proxies without adjustable parameters. Detailed model fits available in `astro_model_k_table.csv`.
 
 | Model   | Proxy Type | k_model ± σ | Single-k Across Proxies? | ΔBIC vs Single-k | Model Status |
 |---------|------------|-------------|--------------------------|------------------|-------------|
@@ -257,11 +257,11 @@ Otherwise, the model **fails**.
 - **Poor fit to observations:** Model k values fall 1.5-3.0σ below k_obs = 0.519 ± 0.061
 - **SCF prediction validated:** The parameter-free β/α → k = 0.530 matches observations across both proxies
 
-**Figure K1** shows the comparison overlay: data points (mass/completeness-limited), SCF prediction curve, and simulation proxy trends. The simulations exhibit clear redshift-dependent structure and proxy sensitivity not present in the observational data.
+The comparison overlay shows data points (mass/completeness-limited), SCF prediction curve, and simulation proxy trends. The simulations exhibit clear redshift-dependent structure and proxy sensitivity not present in the observational data. Full z-evolution comparison data available in `astro_model_series.csv`.
 
 **Interpretation.** The systematic failure of state-of-the-art hydrodynamic models to reproduce the simple exponential trend with a single k parameter across independent observational proxies provides **quantitative computational evidence** that the observed regularity reflects an underlying physical principle rather than emergent astrophysical complexity. This directly refutes the "coincidence" hypothesis through matched, pre-registered comparison rather than parsimony arguments alone.
 
-*Artifacts:* `astro_model_k_table.csv` (detailed fits), `astro_model_series.csv` (z-evolution), Figure K1 (overlay plots).
+*Artifacts:* `astro_model_k_table.csv` (detailed fits), `astro_model_series.csv` (z-evolution).
 
 ### 2.3 Information Density: γ (Brief Summary)
 
@@ -358,7 +358,7 @@ We fit power laws τ ∝ S\_norm^δ only over protection windows where the slope
 
 The hierarchy $S_{\text{CMB}} \gg S_{\text{BAO}} \gtrsim S_{\text{SNe}}$ naturally orders the inferred $H_0$ values (CMB < BAO < SNe) without modifying early-time physics. All results are fractional shifts relative to ΛCDM baselines; early-time physics and $r_s$ remain unchanged.
 
-**Sensitivity Analysis:** Supplement **Table S1** presents systematic variations: $r_s$ shifts (±5%), $D_M$ vs $D_V$ kernel choice, and $\langle D_L \rangle$ window variations. Induced $\Delta H_0$ shifts are typically $< 0.1\sigma$ and do not affect the tension alleviation.
+**Sensitivity Analysis:** Systematic variations include $r_s$ shifts (±5%), $D_M$ vs $D_V$ kernel choice, and $\langle D_L \rangle$ window variations. Induced $\Delta H_0$ shifts are typically $< 0.1\sigma$ and do not affect the tension alleviation. Full sensitivity analysis available in `scale_choice_sensitivity.csv`.
 
 **Data-first scaling:** incorporating empirical scale-dependent corrections with fitted exponent ν ≈ 0.6:
 
@@ -573,7 +573,7 @@ The platform-to-scale mapping model M1 (θ = δ × φ) incorporates physics-info
 - **Cat stabilization (cavity QED):** φ_cat ∈ [1.0, 1.6] (α² separation coupled to Kerr nonlinearity and dissipation rates)
 - **Optomechanics (fixed T):** φ_Q ∈ [0.8, 1.2] (quality factor scaling with thermal occupancy, per linearized Langevin equations)
 
-Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the mapped δ_lab→scale ≈ 0.500 shows negligible sensitivity to bound edges (Δδ < 0.01). See `d1_phi_estimates.csv` for per-platform posteriors and Figure D4 (inset: φ posterior corner plot).
+Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the mapped δ_lab→scale ≈ 0.500 shows negligible sensitivity to bound edges (Δδ < 0.01). Per-platform φ posteriors and corner plots are available in `d1_phi_estimates.csv`.
 
 **Sensitivity to φ-prior widening:** Doubling φ bounds (e.g., NV: [0.8,1.6] → [0.4,3.2]) leaves model selection (M1) unchanged and δ_lab→scale shift = 0.0000 (exact numerical stability). This demonstrates that results are robust to φ-prior assumptions beyond physically motivated ranges. Full sensitivity analysis available in `phi_sensitivity_test.csv`.
 
