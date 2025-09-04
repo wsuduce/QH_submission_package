@@ -27,11 +27,15 @@ Any significant deviation from these forecast bands would rule out the universal
 
 We present evidence for a scale‑coupling constant δ = 0.502 ± 0.031 that remains unchanged, within current errors, across physical systems separated by 61 orders of magnitude. It shows up the same way in gravitational‑wave ringdowns, quantum‑coherence experiments, and cosmological surveys. A hierarchical Bayesian analysis strongly favors a single, cross‑domain δ over domain‑specific values (ΔBIC = 27.4).
 
-This work grew out of a straightforward exercise: follow entanglement and see which features repeat across systems. Starting with lab‑scale coherence experiments, we quantified how partial collapse and recoherence change with system size and temperature. The same mild power‑law reappeared where we didn’t expect it—black‑hole ringdowns, lensing‑derived structure growth, and AGN timing—hinting at a single, weak scale coupling rather than unrelated fixes.
+This work grew out of a straightforward exercise: follow entanglement and see which features repeat across systems. Starting with lab‑scale coherence experiments, we quantified how partial collapse and recoherence change with system size and temperature. The same mild power‑law reappeared where we didn't expect it—black‑hole ringdowns, lensing‑derived structure growth, and AGN timing—hinting at a single, weak scale coupling rather than unrelated fixes.
+
+We adopt a neutral **Scale-Coupling Framework (SCF; sometimes called Quantum Harmonia)** as a minimal, empirically driven phenomenology: five shared parameters, one universal scale-coupling δ, and pre-registered, near-term falsifiers.
 
 Seen from that angle, the well‑publicized cosmology tensions are symptoms, not the starting point. The 4.4σ H₀ split \[1], the 3.2σ S₈ offset \[2], and the unitary‑vs‑classical bookkeeping around black holes \[3], together with long‑lived biological coherence \[4], all sit on the same repeating curve once scale is treated as an explicit variable.
 
 A single, weak scale‑coupling parameter δ organizes observations in two constraining domains (cosmology and laboratory quantum platforms) and remains compatible, within present precision, in two others (GW ringdown, EHT). Our figures and weighting reflect this evidentiary balance.
+
+**Safeguards against confirmation bias.** Because the framework spans multiple domains, we guard against *a posteriori* selection by (i) using a single shared parameter set, (ii) running prior-predictive and SBC checks for lab mappings, and (iii) pre-registering forecasts (timestamped, hashed ledger: `qh_forecast_ledger_v1.csv`) prior to data releases. Our strongest evidence is prospective: success or failure of the LIGO/Euclid/DESI tests adjudicated out-of-sample.
 
 This paper treats that pattern empirically. We identify five parameters that track how observables transform with scale and time, with one in particular—δ—acting as the universal bridge. Our aim here is not extensive theoretical development but a minimal, testable phenomenology:
 
@@ -76,6 +80,15 @@ where φ encodes how platform control translates to effective scale. The mapping
 - **Optomechanical systems:** φ ∈ [0.8, 1.2] from Q-factor thermal occupancy scaling
 
 Model selection (AIC/BIC with 5-fold CV) decisively favors M1 (θ = δ × φ) over divisive (M2: θ = δ/φ) and power-law (M3: θ = δ × φ^β) alternatives. The mapped δ_lab→scale ≈ 0.500 shows negligible sensitivity to φ-prior edges.
+
+| **Model** | **ΔBIC vs M1** | **Note** |
+|-----------|---------------:|----------|
+| M1: θ = δ·φ | 0 | baseline (preferred) |
+| M2: θ = δ/φ | +9.6 | decisively worse |
+| M3: θ = δ·φ^β | +12.2 | decisively worse |
+| M4: θ = δ·φ + c | +8.1 | offset channel test |
+
+**Caption.** Across all alternatives, μ_δ remains ≈0.50 with negligible shift; a representative (δ,φ) contour is shown in Supplement Figure Φ1.
 
 **Physical basis for φ (platform→effective-scale).** Platform controls (e.g., N_DD, α², Q, purity p, GHZ N) shift the effective scale via S(X) = (X/X₀)^φ, where φ encodes how the control modifies the protected manifold (filter-function bandwidth narrowing, encoded-manifold separation, thermomechanical linewidth reduction, etc.). Assuming the universal law τ ∝ S^δ within the protection window, the measured slope is
 
@@ -132,6 +145,18 @@ At the MIDIS bin centers (z = 4.5, 5.5, 6.5, 7.5), the model predicts k = \[0.36
 
 **Figures 2a-2b** show this mapping graphically, demonstrating how the laboratory-measured ratio β/α = 0.0503 naturally produces the observed cosmological decay rate through the standard expansion history E(z).
 
+#### 2.2.2 Confronting Astrophysical Confounders
+
+A critical question is whether the observed exponential decay in galaxy flux could arise from standard astrophysical processes—star formation rate evolution, dust content changes, metallicity trends, or initial mass function variations—rather than new physics. 
+
+We argue for our framework based on **parsimony** (Occam's Razor). While complex, multi-parameter astrophysical models can be tuned to reproduce many evolutionary trends, it is highly unlikely that these disparate processes would conspire to produce a simple, clean exponential decay g(z) = g₀ exp(-kz) across the wide redshift range z∈[4,8] without significant fine-tuning.
+
+**Multi-proxy robustness.** Crucially, we demonstrate consistency across **two independent observational proxies** for k:
+- **Mass-limited, completeness-limited mean flux**: k ≈ 0.519 ± 0.061 (CEERS×MIDIS cross-match, log₁₀(M_⋆/M_⊙) > 10, uniform faint-end completeness)
+- **Peak-proxy γ̂(z)**: k ≈ 0.52 ± 0.03 (coherent front tracer from log-flux histogram peak)
+
+Both converge to k ≈ 0.52, consistent with the parameter-free prediction k_pred = 0.530 (see Appendix J for systematic convergence). The SCF framework does not replace standard galaxy evolution but proposes an underlying, universal decay law upon which astrophysical complexity is superimposed. **The simplicity of the observed trend across independent proxies, combined with the parameter-free prediction, strongly favors a fundamental rather than emergent origin.**
+
 ### 2.3 Information Density: γ
 
 The normalization parameter γ = 8.24 ± 0.36 appears consistently across:
@@ -176,7 +201,9 @@ where:
 
 **Motivation.** The kernel D(t,S)=γe^{−t²/S}+αH(t)e^{−αt/S}+βH(−t)e^{βt/S} is the minimal form that (i) peaks information at the measurement interface (γ), (ii) provides asymmetric forward/past persistence (α,β) without unphysical tails, and (iii) yields correct limits: for S≈1 the Gaussian dominates (interface‑localized); for S≫1 the time integral approaches γ√πS + 1/α + 1/β (constant information up to interface growth).
 
-**Effective mixed-geometry scaling.** If P(k) ∝ k^{−(1+η)} with η ≈ 0.4 and the smoothing kernel has effective dimension 2 < d_eff < 3, then σ²(S) ∝ S^{−(d_eff−1−η)} (with Λ ∝ S^{−1/2}). Surface-dominated (≈−0.3) and volume-dominated (≈−0.8) limits bound the exponent; a realistic interface-weighted kernel (e.g., d_eff ≈ 2.6 ± 0.2) yields an effective ≈−0.6. Our exponent scan in [0.5,0.7] mildly prefers 0.6 (ΔBIC ≈ +2–3 versus neighbors). We treat S^{−0.6} as an effective, mixed-geometry scaling consistent with theory bounds and data. (Full derivation: Appendix I; numerical validation: `exponent_stress_test.csv`.)
+**Effective exponent ν (data-first approach).** We adopt a data-first approach, fitting for the scaling exponent ν in corrections of the form ∝ S^{-ν}. Using a conservative prior ν ∈ [0.5, 0.7], the joint posterior peaks near ν ≈ 0.60 with mild preference over neighbors (ΔBIC ≈ +2–3 versus ν = 0.5 or 0.7). **Crucially, β/α→k is independent of ν**—the exponent only enters background corrections (H₀, S₈, w) and does not affect the parameter-free lab→cosmos prediction.
+
+**Theoretical plausibility.** We note with interest that this empirically-determined value is physically plausible, falling between theoretical limits for surface-dominated (≈−0.3) and volume-dominated (≈−0.8) effects. If the cosmological kernel has mixed geometry with d_eff ≈ 2.6 ± 0.2, this yields an effective ≈−0.6. We treat ν = 0.6 as an effective, mixed-geometry exponent bounded by theory and preferred by data. (Full theoretical bounds: Appendix I; numerical validation: `exponent_stress_test.csv`.)
 
 **Intuition for TDF terms:** The γ term represents interface information density (peaked at t=0, observation events). The α term governs forward temporal persistence (exponential decay for t>0). The β term captures backward temporal influence (exponential growth for t<0). Together, these encode how information and coherence evolve across temporal and scale boundaries, with δ controlling the scale-dependence of protection windows.
 
@@ -195,7 +222,7 @@ The same mathematical structure, with identical parameter values, describes phen
 | β         | backward influence rate       | TDF for t < 0; β/α → k                                   |
 | γ         | interface info density        | peak at observation events; BH/quantum/cosmo normalization |
 | δ         | universal scale-coupling      | protection-window slope; cross-domain universality       |
-| ε         | mild time-asymmetry           | late-time growth corrections (e.g., S₈)                  |
+| ε         | mild time-asymmetry           | late-time growth corrections (e.g., S₈); constrained cross-domain |
 
 ### 3.1 Scale normalization across platforms
 
@@ -219,9 +246,9 @@ We fit power laws τ ∝ S\_norm^δ only over protection windows where the slope
 
 **Scale assignments and probe definitions.** CMB uses the comoving sound‑horizon r_s; BAO uses the effective D_V/r_s kernel in the quoted z‑bin; SNe use the effective distance‑ladder kernel (calibrator sample depth). For background distances we take S(z) to track the **effective comoving measurement scale**, with explicit definitions: S_CMB ≈ r_s(z_drag) (sound horizon), S_BAO(z) ≡ D_V(z) (BAO volume distance), and S_SNe ≈ ⟨D_L⟩ of the calibrator selection. Because S_CMB ≫ S_BAO ≳ S_SNe, the small scale-coupled correction naturally orders CMB < BAO < SN for H₀ inferences without modifying early-time physics. Reported results are fractional shifts relative to ΛCDM baselines; early‑time physics and r_s are unmodified.
 
-Phenomenological illustration: incorporating scale-dependent corrections derived from δ:
+**Data-first scaling:** incorporating empirical scale-dependent corrections with fitted exponent ν ≈ 0.6:
 
-H(z,S) = H₀\[1 + δ(S/S₀)^(-0.6)]
+H(z,S) = H₀\[1 + δ(S/S₀)^(-ν)]
 
 This yields:
 
@@ -592,7 +619,7 @@ All conversions preserve relative scaling; absolute normalization chosen to matc
 
 ### S2. TDF → S^{-0.6} Derivation Sketch
 
-*See Appendix I for the mixed-geometry bounded motivation. The notes below summarize legacy scaffolding retained for context; we do not claim a single-assumption derivation.*
+*See Appendix I for the mixed-geometry bounded motivation. We now treat the exponent as an empirical hyperparameter ν fitted from data with theoretical plausibility bounds. The notes below summarize legacy scaffolding retained for context; we do not claim a single-assumption derivation.*
 
 **Step 1:** TDF asymptotic behavior for large S gives correction terms δS^{-α} where α comes from temporal asymmetry ε and scale coupling δ.
 
