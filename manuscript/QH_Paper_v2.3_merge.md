@@ -560,7 +560,7 @@ with cutoff Λ(S) ∝ S^{-1/2}. Hence
 
 **Mixed geometry:** Real cosmology/observational kernels are neither purely 2D nor purely 3D: they are **interface-weighted with finite line-of-sight depth**, i.e., d_eff ≈ 2.6 ± 0.2. For η ≈ 0.4 this yields an **effective exponent ≈ -0.6**, exactly between the surface and volume limits.
 
-*Example.* With d_eff = 2.6 and η = 0.4, σ(S) ∝ S^{-((2.6-1-0.4)/4)} = S^{-0.3} and σ² ∝ S^{-0.6}.
+*Example.* With d_eff = 2.6 and η = 0.4, σ²(S) ∝ S^{-(2.6-1-0.4)/2} = S^{-0.6} (hence σ(S) ∝ S^{-0.3}).
 
 **Empirical check:** Our pre-registered exponent scan (0.5–0.7) mildly prefers 0.6 (ΔBIC ≈ +2.6 to +3.2 against neighbors; see `exponent_stress_test.csv`). We therefore treat **S^{-0.6}** as an **effective, mixed-geometry scaling** supported by data and bounded by 2D/3D limits, rather than as a single-assumption derivation.
 
@@ -574,6 +574,8 @@ with cutoff Λ(S) ∝ S^{-1/2}. Hence
 | Peak proxy γ̂(z)                            | 0.52 ± 0.03   | −0.01                | Coherent front tracer (log-flux histogram peak) |
 
 **Caption.** Mean-flux k is sensitive to selection; raw (no cuts) is flatter due to incompleteness. Under uniform completeness and mass cuts, mean-flux converges to k ≈ 0.52, matching the peak-proxy and the parameter-free prediction k_pred = 0.530. See §D3 for the final method and scripts.
+
+*Uncertainties reflect each pipeline's fitting method (raw/completeness: WLS log-fit; cross-match: MCMC posterior; proxy: histogram-peak fit).*
 
 *(CSV: `artifacts/predictions/k_sensitivity_variants.csv`.)*
 
@@ -596,11 +598,11 @@ All conversions preserve relative scaling; absolute normalization chosen to matc
 
 ### S2. TDF → S^{-0.6} Derivation Sketch
 
-*See Appendix I for the mixed-geometry bounded motivation; the steps below summarize limiting cases and historical scaffolding retained for context.*
+*See Appendix I for the mixed-geometry bounded motivation. The notes below summarize legacy scaffolding retained for context; we do not claim a single-assumption derivation.*
 
 **Step 1:** TDF asymptotic behavior for large S gives correction terms δS^{-α} where α comes from temporal asymmetry ε and scale coupling δ.
 
-**Step 2:** Anomalous dimension η = 0.4 from quantum field theory (related to β-function near criticality) gives scaling exponent -(1-η) = -0.6.
+**Step 2:** In limiting cases, anomalous dimension considerations suggest scaling exponents in the range -(1-η) with η ∈ [0.2, 0.6].
 
 **Step 3:** Late-time phenomenological corrections: H(z,S) ~ H₀[1 + correction × (S/S₀)^{-0.6}] where correction ~ δ from TDF amplitude.
 
