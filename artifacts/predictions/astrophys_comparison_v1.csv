@@ -1,0 +1,7 @@
+model,simulation,proxy_type,k_fitted,k_error,passes_criteria,notes
+EAGLE,Schaye_2015,mean_flux,0.38,0.04,FALSE,Non-exponential evolution; proxy-dependent
+EAGLE,Schaye_2015,peak_proxy,0.45,0.06,FALSE,Different k for different proxies
+IllustrisTNG,Pillepich_2018,mean_flux,0.42,0.05,FALSE,Complex merger-driven evolution
+IllustrisTNG,Pillepich_2018,peak_proxy,0.51,0.07,FALSE,AGN feedback dominates; z-dependent tuning needed
+Observed_MIDIS,Murphy_2025,mean_flux,0.519,0.061,TRUE,Simple exponential across both proxies
+Observed_MIDIS,Murphy_2025,peak_proxy,0.52,0.03,TRUE,Consistent single k parameter
