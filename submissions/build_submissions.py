@@ -13,8 +13,11 @@ import json
 from datetime import datetime
 
 class SubmissionBuilder:
-    def __init__(self, base_dir="/mnt/c/Business - Orginizations/QH/SubmissionPackage Scale Constant/QH_submission_package"):
-        self.base_dir = Path(base_dir)
+    def __init__(self, base_dir=None):
+        if base_dir is None:
+            self.base_dir = Path(__file__).parent.parent
+        else:
+            self.base_dir = Path(base_dir)
         self.submissions_dir = self.base_dir / "submissions"
         self.artifacts_dir = self.base_dir / "artifacts"
         self.manuscript_dir = self.base_dir / "manuscript"
@@ -112,7 +115,8 @@ We thank the LIGO/Virgo/KAGRA collaborations, the Event Horizon Telescope consor
         print("🖼️  Validating figures...")
         required_figures = [
             "fig1_delta_posterior.pdf",
-            "fig2_beta_over_alpha_to_k.pdf", 
+            "fig2a_midis_betaalpha_to_k.pdf",
+            "fig2b_k_posterior.pdf", 
             "fig3_hierarchical_corner.pdf",
             "fig4_ringdown_forecast.pdf"
         ]

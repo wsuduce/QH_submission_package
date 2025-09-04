@@ -1,0 +1,65 @@
+[
+  {
+    "Observable":"Overtone frequency (70 M\u2299)",
+    "Value":"480.0 Hz",
+    "Uncertainty":"\u00b12.1 Hz",
+    "Experiment":"LIGO O4\/O5",
+    "Timeline":"2025-2026"
+  },
+  {
+    "Observable":"Overtone frequency (80 M\u2299)",
+    "Value":"420.0 Hz",
+    "Uncertainty":"\u00b12.1 Hz",
+    "Experiment":"LIGO O4\/O5",
+    "Timeline":"2025-2026"
+  },
+  {
+    "Observable":"Overtone frequency (90 M\u2299)",
+    "Value":"373.3 Hz",
+    "Uncertainty":"\u00b12.1 Hz",
+    "Experiment":"LIGO O4\/O5",
+    "Timeline":"2025-2026"
+  },
+  {
+    "Observable":"\u0394(D_V\/r_s) at z=0.8",
+    "Value":"+46.70%",
+    "Uncertainty":"\u00b10.04%",
+    "Experiment":"Euclid",
+    "Timeline":"2026-2028"
+  },
+  {
+    "Observable":"\u0394(D_V\/r_s) at z=1.0",
+    "Value":"+46.10%",
+    "Uncertainty":"\u00b10.04%",
+    "Experiment":"Euclid",
+    "Timeline":"2026-2028"
+  },
+  {
+    "Observable":"\u0394(D_V\/r_s) at z=1.2",
+    "Value":"+45.56%",
+    "Uncertainty":"\u00b10.04%",
+    "Experiment":"Euclid",
+    "Timeline":"2026-2028"
+  },
+  {
+    "Observable":"w(z=0.0)",
+    "Value":"-1.012",
+    "Uncertainty":"\u00b10.003",
+    "Experiment":"DESI",
+    "Timeline":"2025-2027"
+  },
+  {
+    "Observable":"w(z=0.5)",
+    "Value":"-1.009",
+    "Uncertainty":"\u00b10.003",
+    "Experiment":"DESI",
+    "Timeline":"2025-2027"
+  },
+  {
+    "Observable":"w(z=1.0)",
+    "Value":"-1.008",
+    "Uncertainty":"\u00b10.003",
+    "Experiment":"DESI",
+    "Timeline":"2025-2027"
+  }
+]

@@ -1,0 +1,10 @@
+Observable,Value,Uncertainty,Experiment,Timeline
+Overtone frequency (70 M⊙),480.0 Hz,±2.1 Hz,LIGO O4/O5,2025-2026
+Overtone frequency (80 M⊙),420.0 Hz,±2.1 Hz,LIGO O4/O5,2025-2026
+Overtone frequency (90 M⊙),373.3 Hz,±2.1 Hz,LIGO O4/O5,2025-2026
+Δ(D_V/r_s) at z=0.8,+46.70%,±0.04%,Euclid,2026-2028
+Δ(D_V/r_s) at z=1.0,+46.10%,±0.04%,Euclid,2026-2028
+Δ(D_V/r_s) at z=1.2,+45.56%,±0.04%,Euclid,2026-2028
+w(z=0.0),-1.012,±0.003,DESI,2025-2027
+w(z=0.5),-1.009,±0.003,DESI,2025-2027
+w(z=1.0),-1.008,±0.003,DESI,2025-2027
