@@ -20,7 +20,7 @@ In cosmology, small scale‑coupled corrections reduce the H₀ and S₈ tension
 We commit to concrete, near‑term tests (central values with propagated theory error):
 
 • LIGO/Virgo/KAGRA O4–O5: ringdown overtone scaling f ≈ 420 Hz × (80 M⊙/M\_f) for 70–90 M⊙ remnants with a\* ≲ 0.7.
-• Euclid (z ≈ 1): BAO distance indicator shift ≈ +0.22% (≈ +0.33 Mpc relative to a 147.0 Mpc fiducial).
+• Euclid (z ≈ 1): BAO distance indicator shift ≈ +0.22%.
 • DESI (z = 0.5): dark‑energy state w ≈ −1.009 (see §5.3).
 
 Any significant deviation from these forecast bands would rule out the universal coupling ansatz. Collectively, these results indicate that a single parameter (δ) organizes small residuals across domains. Quantum Harmonia offers one interpretation; the parameters stand on their own and warrant explanation.
@@ -379,7 +379,9 @@ All parameter posteriors and correlation matrices are provided in the repository
 
 ![**Figure 1:** Cross‑domain δ constraints and posterior. Per‑domain bands (GW, EHT, lab‑mapped, cosmology) and combined posterior **μ_δ = 0.502 ± 0.031**; inset: **ΔBIC = 27.4** single‑δ vs multi‑δ; right panel: LODO/LOSO shifts (max **0.18σ**).](../artifacts/figures/fig1_delta_posterior.pdf){#fig:delta-posterior width=90%}
 
-![**Figure 2:** Laboratory β/α maps to cosmological k without tuning. (a) JWST/MIDIS F560W flux evolution with mass-limited cross-match data (z∈[4,8]); fitted model (solid purple), 68% credible interval (thin band), posterior predictive (wide band), parameter-free prediction (dashed green). (b) k posterior agreement: **k_obs = 0.519 ± 0.061**; **k_pred = 0.530**; **0.2σ agreement** demonstrates parameter-free validation.](../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf){#fig:beta-alpha-k width=90%}
+![**Figure 2a:** JWST/MIDIS F560W flux evolution with mass-limited cross-match data (z∈[4,8]); fitted model (solid purple), 68% credible interval (thin band), posterior predictive (wide band), parameter-free prediction (dashed green).](../artifacts/figures/fig2a_midis_betaalpha_to_k.pdf){#fig:beta-alpha-k-a width=90%}
+
+![**Figure 2b:** k posterior agreement: **k_obs = 0.519 ± 0.061**; **k_pred = 0.530**; **0.2σ agreement** demonstrates parameter-free validation.](../artifacts/figures/fig2b_k_posterior.pdf){#fig:beta-alpha-k-b width=90%}
 
 ![**Figure 3:** Hierarchical model diagnostics. Corner plot for (μ_δ, τ) with posterior predictive checks and a ΔBIC bar chart; LODO/LOSO table excerpt.](../artifacts/figures/fig3_hierarchical_corner.pdf){#fig:hier-corner width=90%}
 
@@ -436,7 +438,7 @@ Model selection (AIC/BIC with 5-fold CV) was performed within these priors; the 
 * **δ (μ_δ = 0.502 ± 0.031):** `hierarchical_delta_results.csv` (posterior summary), `fig1_delta_posterior.pdf`.
 * **Model selection (ΔBIC = 27.4):** `bic_compare.csv`.
 * **LODO/LOSO (max |Δμ_δ| = 0.18σ):** `lodo_loso.csv`.
-* **β/α → k (k_obs = 0.519 ± 0.061):** `midis_k_posterior.csv`, `fig2_beta_over_alpha_to_k.pdf`.
+* **β/α → k (k_obs = 0.519 ± 0.061):** `midis_k_posterior.csv`, `fig2a_midis_betaalpha_to_k.pdf`, `fig2b_k_posterior.pdf`.
 * **θ_platform (per‑experiment lab slopes):** `d1_per_experiment_slopes.csv`; panels in `fig_D1_*.pdf`.
 * **Lab mapping (δ_lab→scale ≈ 0.500) & φ posteriors:** `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `fig_D4_phi_posteriors.pdf`.
 * **GW forecast band:** `fig4_ringdown_forecast.pdf` (prediction code path noted in `predictions_calculator.ipynb`).
@@ -453,7 +455,7 @@ All datasets and analysis code are publicly available with complete reproducibil
 
 **Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `exponent_stress_test.csv`, `gamma_iface_sensitivity.csv`.
 
-**Key artifacts (Figures/PDF):** `fig1_delta_posterior.pdf`, `fig2_beta_over_alpha_to_k.pdf`, `fig3_hierarchical_corner.pdf`, `fig4_ringdown_forecast.pdf`, `fig_D1_*` per‑experiment panels, `fig_D4_phi_posteriors.pdf`.
+**Key artifacts (Figures/PDF):** `fig1_delta_posterior.pdf`, `fig2a_midis_betaalpha_to_k.pdf`, `fig2b_k_posterior.pdf`, `fig3_hierarchical_corner.pdf`, `fig4_ringdown_forecast.pdf`, `fig_D1_*` per‑experiment panels, `fig_D4_phi_posteriors.pdf`.
 
 **Archive Details:**
 **Zenodo DOI:** https://doi.org/10.5281/zenodo.17010399  
