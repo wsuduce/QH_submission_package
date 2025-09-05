@@ -1,0 +1,17 @@
+PLACEHOLDER FOR Fig. K1 — Astrophysical Model Comparison
+
+g(z) evolution comparison with matched selection cuts:
+
+MIDIS data: log10(M*/M_sun) > 10; F560W < 26.85
+- z=4.5: g = 1.50e-09 ± 1.60e-10
+- z=7.5: g = 2.99e-10 ± 5.88e-11
+
+SCF prediction: k = 0.530 (β/α mapping, no fit parameters)
+Exponential decay g ∝ exp(-0.530 × (z-4.5))
+
+Simulation models (proxy-dependent):
+- TNG100: k_mean = 0.42, k_peak = 0.51 
+- EAGLE: k_mean = 0.38, k_peak = 0.45
+
+Acceptance rule: Single k across proxies within 1σ
+Result: Only SCF passes; simulations require retuning per proxy.

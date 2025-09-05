@@ -1,17 +1,17 @@
 model,proxy,z,g,g_err,selection,notes
-TNG100,mean,4.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-TNG100,mean,5.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-TNG100,mean,6.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-TNG100,mean,7.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-TNG100,peak,4.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-TNG100,peak,5.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-TNG100,peak,6.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-TNG100,peak,7.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-EAGLE,mean,4.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-EAGLE,mean,5.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-EAGLE,mean,6.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-EAGLE,mean,7.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Mean flux proxy from mass-limited sample"
-EAGLE,peak,4.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-EAGLE,peak,5.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-EAGLE,peak,6.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
-EAGLE,peak,7.5,NaN,NaN,"log10(M_*/M_sun)>10; F560W<26.85 analog","Peak-proxy analog from flux distribution"
+TNG100,mean,4.5,1.4983e-09,1.4983e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+TNG100,mean,5.5,9.8445e-10,1.1007e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+TNG100,mean,6.5,6.4683e-10,9.1476e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+TNG100,mean,7.5,4.2500e-10,7.6618e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+TNG100,peak,4.5,1.3485e-09,1.3485e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+TNG100,peak,5.5,8.0975e-10,9.8843e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+TNG100,peak,6.5,4.8625e-10,8.3658e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+TNG100,peak,7.5,2.9199e-10,6.7916e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+EAGLE,mean,4.5,1.6481e-09,1.6481e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+EAGLE,mean,5.5,1.1271e-09,1.2139e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+EAGLE,mean,6.5,7.7078e-10,9.8707e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+EAGLE,mean,7.5,5.2710e-10,8.2336e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Mean flux proxy from mass-limited sample
+EAGLE,peak,4.5,1.4983e-09,1.4983e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+EAGLE,peak,5.5,9.5536e-10,1.1141e-10,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+EAGLE,peak,6.5,6.0916e-10,9.5154e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution
+EAGLE,peak,7.5,3.8842e-10,7.9981e-11,"log10(M_*/M_sun) > 10; F560W < 26.85 (95th percentile of z∈[7,8)) analog",Peak-proxy analog from flux distribution

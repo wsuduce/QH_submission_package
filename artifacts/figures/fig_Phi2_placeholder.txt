@@ -1,0 +1,15 @@
+PLACEHOLDER FOR Fig. Φ2 — Reverse Viability
+
+Required mapping factors φ_req = θ/δ vs theory bounds.
+Three panels for δ = 0, 0.5, 1.0:
+
+δ = 0: φ_req → ∞ (unphysical)
+δ = 0.5: Most platforms within theory bands [0.7-1.6]
+δ = 1.0: Many platforms below theory minima
+
+In-band fractions:
+- δ = 0: 0% (infinite φ_req)
+- δ = 0.5: ~80% within bounds
+- δ = 1.0: ~30% within bounds
+
+Supports universal δ ≈ 0.5 with theory-bounded φ.

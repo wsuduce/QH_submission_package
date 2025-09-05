@@ -1,0 +1,17 @@
+
+FIGURE STUB: Fig. Φ4 — τ Posterior (Corner)
+
+
+Corner plot showing hierarchical posterior density in (μ_δ, τ).
+- Main panel: 2D hexbin density plot
+- Marginal panels: 1D histograms for μ_δ and τ
+- Key annotations: μ_δ = 0.502, τ₉₅ < 0.037
+- Caption: "Hierarchical universality: posterior in (μ_δ, τ). 
+  The 95% bound τ₉₅ < 0.037 indicates small inter-domain scatter."
+            
+
+This is a placeholder for the actual figure that would be generated 
+with the full data visualization pipeline.
+
+Filename: artifacts/figures/fig_Phi4.pdf
+Generated for QH Scale Constant manuscript v2.3

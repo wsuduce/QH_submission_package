@@ -1,0 +1,18 @@
+
+FIGURE STUB: Fig. Φ0 — Raw θ (Null Test)
+
+
+Boxplot showing raw platform protection exponents θ prior to mapping.
+- X-axis: Platforms (NV, Si:P, Cat, Transmon, Optomech, Rydberg)
+- Y-axis: Raw protection exponent θ  
+- Box plots with median lines and jittered data points
+- N annotations per platform
+- Caption: "Raw platform protection exponents θ prior to any mapping. 
+  The spread demonstrates platform dependence without physics-informed mapping."
+            
+
+This is a placeholder for the actual figure that would be generated 
+with the full data visualization pipeline.
+
+Filename: artifacts/figures/fig_Phi0.pdf
+Generated for QH Scale Constant manuscript v2.3

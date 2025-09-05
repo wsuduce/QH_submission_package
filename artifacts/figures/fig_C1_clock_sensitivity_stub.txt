@@ -1,0 +1,17 @@
+
+FIGURE STUB: Fig. C1 — Clock Sensitivity k(z)
+
+
+Two-panel plot showing k(z) evolution for different time coordinates.
+- Top panel: k vs z for e-fold, conformal, H₀-lookback clocks
+- Bottom panel: Residual trends (curvature metric)
+- E-fold nearly flat; others show systematic k(z) drift
+- Caption: "Time-coordinate test: only e-fold u=ln a sustains single k across 4≤z<8. 
+  Other clocks exhibit pronounced k(z) curvature, breaking parameter-free mapping."
+            
+
+This is a placeholder for the actual figure that would be generated 
+with the full data visualization pipeline.
+
+Filename: artifacts/figures/fig_C1_clock_sensitivity.pdf
+Generated for QH Scale Constant manuscript v2.3

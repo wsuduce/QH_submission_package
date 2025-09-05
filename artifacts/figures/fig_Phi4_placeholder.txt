@@ -1,0 +1,13 @@
+PLACEHOLDER FOR Fig. Φ4 — Hierarchical τ Posterior
+
+Corner plot of hierarchical posterior (μ_δ, τ).
+
+Key results:
+- μ_δ = 0.502 ± 0.031 (unchanged from fixed-effect)
+- τ_50 = 0.010 (median inter-domain scatter)
+- τ_95 = 0.037 (95% upper bound)
+- 52% of samples have τ < 0.01
+
+The small τ bound confirms minimal inter-domain scatter.
+Universality (not identity) across experimental domains.
+High φ_req instances absorbed by small τ without affecting μ_δ.

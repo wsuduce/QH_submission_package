@@ -1,0 +1,18 @@
+
+FIGURE STUB: Fig. K1 — Astrophysics Overlay
+
+
+Multi-series plot comparing g(z) evolution across models and data.
+- MIDIS observational data (black points with error bars)
+- SCF β/α→k prediction (green line, k=0.530)
+- TNG100/EAGLE model series (mean/peak proxies)
+- Acceptance rule box: Single k across proxies, within 1σ, no retuning
+- Caption: "Matched-cuts comparison: data, SCF prediction, and simulation proxies. 
+  Baseline models exhibit proxy-dependent slopes requiring retuning."
+            
+
+This is a placeholder for the actual figure that would be generated 
+with the full data visualization pipeline.
+
+Filename: artifacts/figures/fig_K1_astro_overlay.pdf
+Generated for QH Scale Constant manuscript v2.3

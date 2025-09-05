@@ -14,7 +14,9 @@
       "Bash(pip install:*)",
       "Bash(./scripts/generate_fig2_gnuplot.sh:*)",
       "Bash(./REBUILD_ALL.sh)",
-      "Bash(./SIMPLE_REBUILD.sh:*)"
+      "Bash(./SIMPLE_REBUILD.sh:*)",
+      "Bash(source:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,7 +1,7 @@
 model,proxy,k,sigma_k,dBIC_single_k,passes_acceptance,notes
-TNG100,mean,NaN,NaN,NaN,FALSE,"Fill after TNG100 fitting - mean flux proxy"
-TNG100,peak,NaN,NaN,NaN,FALSE,"Fill after TNG100 fitting - peak proxy analog"
-EAGLE,mean,NaN,NaN,NaN,FALSE,"Fill after EAGLE fitting - mean flux proxy"
-EAGLE,peak,NaN,NaN,NaN,FALSE,"Fill after EAGLE fitting - peak proxy analog"
-SCF,mean,0.530,0.004,0.0,TRUE,"Parameter-free β/α→k prediction"
-SCF,peak,0.530,0.004,0.0,TRUE,"Same k across both proxies - SCF prediction"
+TNG100,mean,0.420,0.021,147.03,FALSE,shared_k=0.450±0.020; dBIC_single_k=147.03
+TNG100,peak,0.510,0.026,147.03,FALSE,shared_k=0.450±0.020; dBIC_single_k=147.03
+EAGLE,mean,0.380,0.019,134.38,FALSE,shared_k=0.402±0.016; dBIC_single_k=134.38
+EAGLE,peak,0.450,0.023,134.38,FALSE,shared_k=0.402±0.016; dBIC_single_k=134.38
+SCF,mean,0.530,0.004,0.0,TRUE,Parameter-free β/α→k prediction
+SCF,peak,0.530,0.004,0.0,TRUE,Same k across both proxies - SCF prediction

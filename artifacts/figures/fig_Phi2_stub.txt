@@ -1,0 +1,17 @@
+
+FIGURE STUB: Fig. Φ2 — Reverse Viability (φ_req vs theory bands)
+
+
+Three-panel plot showing required φ_req = θ/δ for δ = 0, 0.5, 1.0.
+- Scatter points: φ_req per platform with error bars
+- Shaded bands: Theory-predicted φ windows per platform
+- Annotations: In-band fraction per δ value
+- Caption: "Reverse viability: required mapping factors φ_req compared to theory windows. 
+  δ=0 and δ=1 broadly violate platform theory; δ≈0.5 lies largely within bands."
+            
+
+This is a placeholder for the actual figure that would be generated 
+with the full data visualization pipeline.
+
+Filename: artifacts/figures/fig_Phi2.pdf
+Generated for QH Scale Constant manuscript v2.3

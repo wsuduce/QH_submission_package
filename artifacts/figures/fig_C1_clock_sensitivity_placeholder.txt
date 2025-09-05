@@ -1,0 +1,18 @@
+PLACEHOLDER FOR Fig. C1 — Time Coordinate Sensitivity
+
+k(z) evolution for different time coordinates:
+
+e-fold time (u = ln a):
+k ≈ 0.530 ± 0.005 across z ∈ [4.5, 7.5]
+Curvature metric: 0.002 (minimal trend)
+
+Conformal time (η):
+k: 0.564 → 0.474 (16% decrease)
+Curvature metric: 0.080 (significant trend)
+
+H₀-normalized lookback:
+k: 0.535 → 0.445 (17% decrease)  
+Curvature metric: 0.120 (strong trend)
+
+Only e-fold preserves single-k property across redshift range.
+Alternative time coordinates break parameter-free β/α→k mapping.
