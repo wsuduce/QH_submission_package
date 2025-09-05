@@ -116,11 +116,15 @@ Under **δ = 0** (GR), all platforms require φ_req → ∞, which is unphysical
 
 #### 2.1.3 Platform Scale-Mapping (φ Derivations)
 
-Platform controls map to an effective scale $S(X) = (X/X_0)^{\phi}$. Over protection windows, $\tau \propto S^{\delta} \Rightarrow \theta = \delta \phi$. We bound $\phi$ from standard theory: DD (filter-function under $1/f^{\gamma}$) $[0.9,1.6]$; Si:P (central-spin spectral diffusion) $[0.8,1.3]$; Cat (Kerr-separation) $[1.0,1.6]$; Optomech (Langevin/Q-scaling) $[0.8,1.2]$; Rydberg (blockade GHZ) $[0.7,1.3]$. Empirical $\phi$ fall within/near these windows (Fig. Φ3); δ=0 or 1 would require broad violations (Fig. Φ2).
+Platform controls map to an effective scale $S(X) = (X/X_0)^{\phi}$. Over protection windows, $\tau \propto S^{\delta} \Rightarrow \theta = \delta \phi$. We derive φ bounds from standard physics per platform:
+
+**Dynamical decoupling (DD):** Filter-function theory under $1/f^{\gamma}$ noise gives effective high-pass cutoff $\omega_c \propto N/\tau$, yielding φ ∈ [0.9,1.6] for Carr-Purcell sequences with finite bandwidth and pulse errors. **Si:P spectral diffusion:** Central-spin dephasing $T_2 \propto p^{-\zeta}$ from impurity fraction p gives φ ∈ [0.8,1.3] across measured coherence windows. **Cat codes:** Protected-manifold lifetime linearization over engineering windows $\alpha^2$ yields φ ∈ [1.0,1.6] from Kerr nonlinearity scaling. **Optomechanics:** Linewidth $\Gamma \propto Q^{-1}$ with thermomechanical occupancy gives φ ∈ [0.8,1.2] after backaction corrections. **Rydberg arrays:** Blockade-limited GHZ preparation yields φ ∈ [0.7,1.3] after finite-size and transient effects are removed.
+
+Empirical φ fall within/near these windows (Fig. Φ3); δ=0 or 1 require broad violations (Fig. Φ2). Details in Appendix Φ.
 
 #### 2.1.4 Hierarchical τ Bound
 
-Our hierarchical fit allows domain scatter $\delta_i \sim N(\mu_{\delta}, \tau^2)$. Posterior gives $\tau_{95} < 0.037$; $\mu_{\delta} = 0.502$ and all forecasts are unchanged within 0.01. Instances of 'high' $\phi_{\text{req}}$ occur near window edges and are absorbed by small τ.
+Our hierarchical fit allows domain scatter $\delta_i \sim N(\mu_{\delta}, \tau^2)$. Posterior bound $\tau_{95} < 0.037$; $\mu_{\delta} = 0.502$. Small τ leaves μ_δ and all forecasts unchanged within 0.01. 'High' φ_req points (Si:P, Cat, Optomech) occur at window edges/systematics and are absorbed by τ—they do not drive the central value. The τ posterior confirms that allowing inter-domain scatter does not move the universal δ or its predictions (Fig. Φ4).
 
 **Cosmological Structure (KiDS-1000)**:
 Matter power spectrum analysis reveals scale-dependent growth:

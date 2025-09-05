@@ -53,7 +53,8 @@ theta_data = [df[df['Platform'] == p][theta_col].values for p in platforms]
 box_plot = ax.boxplot(theta_data, labels=platforms, patch_artist=True)
 
 # Color boxes
-colors = plt.cm.Set2(np.linspace(0, 1, len(platforms)))
+colors = sns.color_palette(n_colors=len(platforms))
+
 for patch, color in zip(box_plot['boxes'], colors):
     patch.set_facecolor(color)
     patch.set_alpha(0.7)
@@ -76,17 +77,19 @@ for i, platform in enumerate(platforms):
 # Styling
 ax.set_ylabel('Raw Protection Exponent θ', fontsize=14, weight='bold')
 ax.set_xlabel('Platform', fontsize=14, weight='bold')
-ax.set_title('Fig. Φ0: Raw θ Distribution (Null Test)', fontsize=16, weight='bold', pad=20)
+ax.set_title('Raw θ Distribution (Null Test)', fontsize=16, weight='bold', pad=20)
 ax.grid(True, alpha=0.3)
 ax.set_ylim(0.5, 1.4)
+
+# Add error bar legend
+ax.text(0.02, 0.98, 'Error bars = 1σ fit uncertainty', 
+        transform=ax.transAxes, fontsize=10, verticalalignment='top',
+        bbox=dict(boxstyle='round', facecolor='white', alpha=0.9))
 
 # Rotate x-axis labels for better readability
 plt.xticks(rotation=45, ha='right')
 
-# Add note
-ax.text(0.02, 0.98, 'Before physics-informed mapping', 
-        transform=ax.transAxes, fontsize=10, style='italic',
-        verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+# Note already covered by error bar legend above
 
 plt.tight_layout()
 plt.savefig('artifacts/figures/fig_Phi0.pdf', dpi=300, bbox_inches='tight')

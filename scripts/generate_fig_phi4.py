@@ -15,7 +15,7 @@ print(f"Loaded {len(df)} posterior samples")
 
 # Create corner plot 
 fig, axes = plt.subplots(2, 2, figsize=(10, 8))
-fig.suptitle('Fig. Φ4: Hierarchical τ Posterior Analysis', fontsize=16, weight='bold')
+fig.suptitle('Hierarchical τ Posterior Analysis', fontsize=16, weight='bold')
 
 # Extract data
 mu_delta = df['mu_delta'].values

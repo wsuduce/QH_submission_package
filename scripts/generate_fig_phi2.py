@@ -23,7 +23,7 @@ theory_bounds = {
 
 # Create figure with 3 panels
 fig, axes = plt.subplots(1, 3, figsize=(15, 5))
-fig.suptitle('Fig. Φ2: Reverse Viability Analysis (φ_req vs Theory Bounds)', 
+fig.suptitle('Reverse Viability Analysis (φ_req vs Theory Bounds)', 
              fontsize=16, weight='bold')
 
 delta_values = [0.0, 0.5, 1.0]
@@ -43,9 +43,9 @@ for i, (delta, col) in enumerate(zip(delta_values, delta_cols)):
         # Get theory bounds for this platform  
         bounds = [row['theory_bounds_min'], row['theory_bounds_max']]
         
-        # Plot theory band
+        # Plot theory band with increased alpha for gray printing
         ax.fill_between([j-0.3, j+0.3], bounds[0], bounds[1], 
-                       alpha=0.3, color='lightblue', label='Theory bounds' if j==0 else "")
+                       alpha=0.4, color='lightblue', label='Theory window' if j==0 and i==0 else "")
         
         # Plot φ_req point
         if phi_req == float('inf') or phi_req > 10:
@@ -60,18 +60,50 @@ for i, (delta, col) in enumerate(zip(delta_values, delta_cols)):
             viable = bounds[0] <= phi_req <= bounds[1]
             color = 'green' if viable else 'red'
             marker = 'o' if viable else 'x'
-            ax.scatter(j, phi_req, color=color, s=100, marker=marker, zorder=5)
+            
+            # Add legend labels for first occurrence
+            label = None
+            if j == 0 and i == 0:
+                if viable:
+                    label = '● In-band'
+                else:
+                    label = '✗ Out-of-band'
+            elif j == 1 and not viable and i == 0:  # Add red label if first was green
+                label = '✗ Out-of-band'
+                
+            ax.scatter(j, phi_req, color=color, s=100, marker=marker, zorder=5, label=label)
+    
+    # Clean platform names to match Phi0 style
+    platform_clean = [p.replace('NV/DD', 'NV Centers').replace('Si:P', 'Si:P Donors')
+                      .replace('Cat', 'Cat Codes').replace('Transmon', 'Transmons')
+                      .replace('Optomech', 'Optomech').replace('Rydberg', 'Rydberg') 
+                      for p in platforms]
+    
+    # Count in-band fraction for annotation
+    in_band_count = 0
+    for j, platform in enumerate(platforms):
+        row = df[df['platform'] == platform].iloc[0]
+        phi_req = row[col]
+        bounds = [row['theory_bounds_min'], row['theory_bounds_max']]
+        if phi_req != float('inf') and phi_req <= 10:
+            if bounds[0] <= phi_req <= bounds[1]:
+                in_band_count += 1
     
     # Styling
     ax.set_xticks(x_pos)
-    ax.set_xticklabels(platforms, rotation=45, ha='right')
-    ax.set_ylabel('Required φ = θ/δ' if i==0 else '')
+    ax.set_xticklabels(platform_clean, rotation=45, ha='right')
+    ax.set_ylabel('Required mapping factor φ_req = θ/δ' if i==0 else '')
     ax.set_title(f'δ = {delta}')
     ax.grid(True, alpha=0.3)
     ax.set_ylim(0, 3 if delta > 0 else 4)
     
+    # Add in-band fraction annotation
+    ax.text(0.98, 0.98, f'In-band: {in_band_count}/{len(platforms)}', 
+            transform=ax.transAxes, fontsize=10, ha='right', va='top',
+            bbox=dict(boxstyle='round', facecolor='white', alpha=0.9))
+    
     if i == 0:
-        ax.legend(loc='upper right')
+        ax.legend(loc='upper left', fontsize=9)
 
 plt.tight_layout()
 plt.savefig('artifacts/figures/fig_Phi2.pdf', dpi=300, bbox_inches='tight')
