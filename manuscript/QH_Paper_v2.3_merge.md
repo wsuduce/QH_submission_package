@@ -237,6 +237,8 @@ The comparison overlay shows data points (mass/completeness-limited), SCF predic
 
 **Interpretation.** The systematic failure of state-of-the-art hydrodynamic models to reproduce the simple exponential trend with a single k parameter across independent observational proxies provides **quantitative computational evidence** that the observed regularity reflects an underlying physical principle rather than emergent astrophysical complexity. This directly refutes the "coincidence" hypothesis through matched, pre-registered comparison rather than parsimony arguments alone.
 
+**Table K1 Summary:** ΔBIC analysis strongly favors proxy-dependent k models over single-k for TNG/EAGLE (ΔBIC = +12.4 and +15.8 respectively); both simulations fail the pre-registered acceptance rule requiring single-k agreement within 1σ of k_obs = 0.519 ± 0.061 without per-redshift retuning.
+
 *Artifacts:* `astro_model_k_table.csv` (detailed fits), `astro_model_series.csv` (z-evolution).
 
 ### 2.3 Information Density: γ (Brief Summary)
@@ -591,9 +593,9 @@ All datasets and analysis code are publicly available with complete reproducibil
 **GitHub:** https://github.com/wsuduce/QH_submission_package (tag v2.3-pre)  
 **Archive:** One-command reproducibility: `conda env create -f environment.yml && conda activate qh-delta && make all`
 
-**Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `exponent_stress_test.csv`, `gamma_iface_sensitivity.csv`.
+**Key artifacts (CSV):** `hierarchical_delta_results.csv`, `lodo_loso.csv`, `bic_compare.csv`, `midis_k_posterior.csv`, `d1_per_experiment_slopes.csv`, `d1_mapped_delta.csv`, `d1_phi_estimates.csv`, `exponent_stress_test.csv`, `gamma_iface_sensitivity.csv`, `astro_model_k_table.csv`, `astro_model_series.csv`, `time_clock_sensitivity.csv`, `hierarchical_tau_posterior.csv`, `phi_reverse_viability.csv`, `phi_nulltest.csv`.
 
-**Key artifacts (Figures/PDF):** `fig1_delta_posterior.pdf`, `fig2a_midis_betaalpha_to_k.pdf`, `fig2b_k_posterior.pdf`, `fig3_hierarchical_corner.pdf`, `fig4_ringdown_forecast.pdf`, `fig_D1_*` per‑experiment panels, `fig_D4_phi_posteriors.pdf`.
+**Key artifacts (Figures/PDF):** `fig1_delta_posterior.pdf`, `fig2a_midis_betaalpha_to_k.pdf`, `fig2b_k_posterior.pdf`, `fig3_hierarchical_corner.pdf`, `fig4_ringdown_forecast.pdf`, `fig_Phi0.pdf`, `fig_Phi2.pdf`, `fig_Phi4.pdf`, `fig_K1_astro_overlay.pdf`, `fig_C1_clock_sensitivity.pdf`, `fig_D1_*` per‑experiment panels, `fig_D4_phi_posteriors.pdf`.
 
 **Archive Details:**
 **Zenodo DOI:** https://doi.org/10.5281/zenodo.17010399  
