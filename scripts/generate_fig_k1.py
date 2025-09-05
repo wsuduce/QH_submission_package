@@ -50,9 +50,9 @@ g_obs = g0_scf * np.exp(-k_obs * z_smooth)
 ax.plot(z_smooth, g_obs, 'k:', linewidth=2, label='JWST/MIDIS: k = 0.519 ± 0.061', alpha=0.8)
 
 # Styling
-ax.set_xlabel('Redshift z', fontsize=14, weight='bold')
-ax.set_ylabel('Flux Proxy g(z)', fontsize=14, weight='bold') 
-ax.set_title('Fig. K1: Astrophysics Model Comparison', fontsize=16, weight='bold', pad=20)
+ax.set_xlabel('Redshift z', fontsize=11, weight='bold')
+ax.set_ylabel('Flux Proxy g(z)', fontsize=11, weight='bold') 
+ax.set_title('Astrophysics Model Comparison', fontsize=16, weight='bold', pad=20)
 ax.set_yscale('log')
 ax.set_xlim(4.0, 8.0)
 ax.legend(loc='upper right', fontsize=10)

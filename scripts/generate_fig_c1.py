@@ -16,10 +16,11 @@ print(f"Loaded {len(df)} time coordinate measurements")
 # Create figure
 fig, ax = plt.subplots(1, 1, figsize=(10, 6))
 
-# Unique clock choices
+# Unique clock choices - Color-blind safe palette
 clocks = df['clock_choice'].unique()
-colors = {'efold_time': 'red', 'conformal_time': 'blue', 'H0_lookback': 'green'}
+colors = {'efold_time': 'red', 'conformal_time': 'blue', 'H0_lookback': 'black'}
 markers = {'efold_time': 'o', 'conformal_time': 's', 'H0_lookback': '^'}
+linestyles = {'efold_time': '-', 'conformal_time': '--', 'H0_lookback': '-.'}
 labels = {
     'efold_time': 'E-fold time (u = ln a)', 
     'conformal_time': 'Conformal time (η)',
@@ -34,9 +35,10 @@ for clock in clocks:
     label = labels.get(clock, clock)
     
     # Plot k vs z with error bars
+    linestyle = linestyles.get(clock, '-')
     ax.errorbar(clock_data['z_bin_center'], clock_data['k_effective'], 
-               yerr=clock_data['k_error'], fmt=f'{marker}-', 
-               color=color, label=label, linewidth=2, markersize=8)
+               yerr=clock_data['k_error'], fmt=f'{marker}{linestyle}', 
+               color=color, label=label, linewidth=2.0, markersize=8)
 
 # Add horizontal line at SCF prediction
 ax.axhline(y=0.530, color='red', linestyle='--', alpha=0.7, 
@@ -47,31 +49,19 @@ ax.axhspan(0.519-0.061, 0.519+0.061, alpha=0.2, color='gray',
           label='JWST/MIDIS: 0.519 ± 0.061')
 
 # Styling
-ax.set_xlabel('Redshift z', fontsize=14, weight='bold')
-ax.set_ylabel('Effective k(z)', fontsize=14, weight='bold')
-ax.set_title('Fig. C1: Time Coordinate Sensitivity Analysis', fontsize=16, weight='bold', pad=20)
+ax.set_xlabel('Redshift z', fontsize=11, weight='bold')
+ax.set_ylabel('Effective k(z)', fontsize=11, weight='bold')
+ax.set_title('Time Coordinate Sensitivity Analysis', fontsize=16, weight='bold', pad=20)
 ax.set_xlim(4.0, 8.0)
 ax.set_ylim(0.35, 0.65)
 ax.legend(loc='upper right', fontsize=11)
 ax.grid(True, alpha=0.3)
 
-# Add key finding annotation
+# Add key finding annotation only
 ax.text(0.02, 0.98, 
-        'Key Finding:\n• E-fold time: flat k(z) ✓\n• Alternatives: curved trends ✗\n• Only u = ln a preserves\n  parameter-free mapping',
+        'Only u = ln a preserves\nsingle-k across z ∈ [4,8]',
         transform=ax.transAxes, fontsize=10, verticalalignment='top',
         bbox=dict(boxstyle='round', facecolor='white', alpha=0.9))
-
-# Add curvature metrics
-curvature_text = ""
-for clock in clocks:
-    clock_data = df[df['clock_choice'] == clock]
-    curvature = clock_data['curvature_metric'].iloc[0]
-    curvature_text += f"{labels[clock]}: {curvature:.3f}\n"
-
-ax.text(0.98, 0.02, f'Curvature Metrics:\n{curvature_text.strip()}',
-        transform=ax.transAxes, fontsize=9, verticalalignment='bottom', 
-        horizontalalignment='right',
-        bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8))
 
 plt.tight_layout()
 plt.savefig('artifacts/figures/fig_C1_clock_sensitivity.pdf', dpi=300, bbox_inches='tight')
